@@ -1,0 +1,27 @@
+<table class=wowmenu cellspacing=0 cellpadding=0>
+	<tr>
+		<td colspan=3 class=menubutton><!--Menu:Title--></td>
+	</tr>
+	<tr>
+		<td colspan=3 class=menutop></td>
+	</tr>
+	<tr>
+		<td class=menuleft></td>
+		<td class=menucontent>
+			<!--Menu:StartStandAlone-->
+				<!--Menu:StandAloneContent-->
+			<!--Menu:EndStandAlone-->
+		
+			<!--Menu:StartItemList-->
+				<!--Menu:StartItem-->
+					<li><a href="<!-- Menu:Link -->" <!--Menu:Popup -->><!-- Menu:LinkName --></a></li>
+				<!--Menu:EndItem-->
+			<!--Menu:EndItemList-->
+		</td>
+		<td class=menuright></td>
+	</tr>
+	<tr>
+		<td class=menubottom></td>
+	</tr>
+</table>
+<br>

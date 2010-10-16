@@ -1,0 +1,54 @@
+.glossymenu, .glossymenu li ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 155px; /*WIDTH OF MAIN MENU ITEMS*/
+border: 1px solid #202020;
+}
+
+.glossymenu li{
+position: relative;
+}
+
+.glossymenu li ul{ /*SUB MENU STYLE*/
+position: absolute;
+width: 190px; /*WIDTH OF SUB MENU ITEMS*/
+left: 0;
+top: 0;
+display: none;
+filter:alpha(opacity=100);
+-moz-opacity:1;
+}
+
+.glossymenu li a{
+background: black url(http://dkpfiles.com/noquarterguild/files/glossyback.gif) repeat-x bottom left;
+font: bold 11px Tahoma;
+color: 0057FF;
+display: block;
+width: auto;
+padding: 5px 0;
+padding-left: 10px;
+text-decoration: none;
+text-align: center;
+}
+
+.glossymenu .arrowdiv{
+position: absolute;
+left: 2px;
+background: transparent url() no-repeat center right;
+}
+
+.glossymenu li a:visited, .glossymenu li a:active{
+font: bold 11px Tahoma;
+color: #0057FF;
+}
+
+.glossymenu li a:hover{
+background-image: url(http://dkpfiles.com/noquarterguild/files/glossyback2.gif);
+color: #0057FF;
+}
+
+/* Holly Hack for IE \*/
+* html .glossymenu li { float: left; height: 1%; }
+* html .glossymenu li a { height: 1%; }
+/* End */

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<style>
+		body,.body{background-image:url(<!--System:Background-->)}
+	</style>
+	<link rel=stylesheet href="<!--System:CSS-->" type="text/css" />
+	<script language=javascript>
+		function recalcdivs()
+		{
+			var curw = document.body.clientWidth;
+			for(i=1;document.getElementById("content" + i);i++)
+				document.getElementById("content" + i).style.width=(curw - 230) + "px";
+		}
+
+		function showstats(tf)
+		{
+			document.getElementById("statistics").style.display = tf ? "" : "none";
+			document.getElementById("statisticshidden").style.display = tf ? "none" : "";
+		}
+	</script>
+	<title><!--System:siteName--> - <!--System:title--></title>
+</head>
+<body onresize="recalcdivs()">
+	<div id=river></div>
+	<table id=logotable cellspacing=0 cellpadding=0>
+		<tr>
+			<td class=logohoriz colspan=2></td>
+		</tr>
+		<tr>
+			<td class=logovert></td>
+			<td class=logoremainder>
+				<table cellspacing=0 cellpadding=0 align=left>
+					<tr>
+						<td><a href="news.php"><img src="<!--System:Logo-->" onload="recalcdivs()" border=0></a></td>
+						<td class=logovert></td>
+					</tr>
+				</table>
+			</td>
+			
+		</tr>
+		<tr>
+			<td class=logohorizflipped colspan=4></td>
+		</tr>
+		<tr>
+			<td class=logovert></td>
+			<td class=pagetitle>
+				<div id=content3><!--System:CountDown--></div>
+				<br>
+				<div id=content2>
+					<div id=pagetitle><!--System:Title--></div>
+					<!--System:PageDesc-->
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class=logovert></td>
+			<td class=horizthin></td>
+		</tr>
+		<tr>
+			<td class=logovert></td>
+			<td>
+				<div id=content1>
+					<!--System:content-->
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class=logohorizflipped colspan=2></td>
+		</tr>
+		<tr>
+			<td colspan=2 align=center class=copyright>
+				<!--System:Copyright-->
+			</td>
+		</tr>
+	</table>
+	
+	<table id=rightmenu cellspacing=0 cellpadding=0>
+		<tr>
+			<td class=logovert></td>
+			<td class=menuback>
+				<!--System:Calendar-->
+				<!--System:Menus:All:Calendar-->
+			</td>
+			<td class=logovert></td>
+		</tr>
+		<tr>
+			<td colspan=3 class=menuhoriz></td>
+		</tr>
+	</table>
+
+	<div id=statistics style="display:none">
+		<table cellspacing=0 cellpadding=0 align=center id=stattable>
+			<tr>
+				<td class=logovert></td>
+				<td class=statcontent colspan=3>
+					<table align=center>
+						<tr class=statheader>
+							<td>Statistics</td>
+							<td>Popular Threads</td>
+						</tr>
+						<tr class=statcontent>
+							<td><div class=topstats><!--System:TopStats--></div></td>
+							<td><div class=topstats><!--System:Popularthreads--></div></td>
+						</tr>
+					</table>
+				</td>
+				<td class=logovert></td>
+			</tr>
+			<tr>
+				<td class=statbotleft></td>
+				<td class=stathoriz></td>
+				<td class=statlabel><a href="javascript:showstats(0)">Hide Statistics</a></td>
+				<td class=stathoriz></td>
+				<td class=statbotright></td>
+			</tr>
+		</table>
+	</div>
+	<div id=statisticshidden>
+		<table cellspacing=0 cellpadding=0 align=center id=stattablehidden>
+			<tr>
+				<td class=statbotleft style="width:7px"></td>
+				<td class=stathoriz style="width:103px"></td>
+				<td class=statlabel style="width:130px"><a href="javascript:showstats(1)">Show Statistics</a></td>
+				<td class=stathoriz style="width:103px"></td>
+				<td class=statbotright style="width:7px"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+<script language=javascript>
+	recalcdivs();
+</script>

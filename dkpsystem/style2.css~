@@ -1,0 +1,183 @@
+	#logoinner{
+		position:absolute;
+		width:402px;
+		height:88px;
+		left:210px;
+		top:29px;
+    		z-index:9;
+	}
+
+	#supportbar{
+		position:absolute;
+		width:100%;
+		height:16px;
+		background:url(http://dkpfiles.com/dkp-templates/dkpsystem/bar.gif);
+		background-repeat:repeat-x;
+		top:66px;
+		left:0px;
+		z-index:0}
+	#logo{
+		position:absolute;
+		top:7px;
+		left:175px;
+		z-index:10}
+	#leftmenu{
+		position:absolute;
+		table-layout:fixed;
+		top:63px;
+		left:5px;
+		width:219px;
+		empty-cells:show;
+		z-index:1;
+	}
+
+	#pagetitle{
+		font-weight:bold;}
+
+	#rightmenu{
+		z-index:1;
+		position:absolute;
+		table-layout:fixed;
+		top:63px;
+		right:5px;
+		width:219px;
+		empty-cells:show;}
+
+	#rightmenumoved{
+		z-index:2;
+		empty-cells:show;
+		table-layout:fixed;
+		width:219px;
+		left:5px;
+     		top:0px;
+		position:absolute;
+	}
+		
+      	
+
+	#contentbar{
+		position:absolute;
+		top:140px;
+		left:0px;
+		width:100%;
+		height:47px;
+		empty-cells:show;
+		z-index:5;
+	}
+
+	#contentbarbar{
+		background-image:url(http://dkpfiles.com/dkp-templates/dkpsystem/bar.gif);
+		background-repeat:repeat-x;
+		background-position:0px 16px;
+		}
+
+	#contentbarleft{
+		width:138px;
+		text-align:right;}
+
+	#contentbarright{
+		width:139px;
+		text-align:left;}
+
+
+	#contenttobar1{
+		position:absolute;
+		left:350px;
+		top:153px;
+		z-index:10;}
+
+	#contenttobar2{
+		position:absolute;
+		right:325px;
+		top:153px;
+		z-index:10;}
+	
+	#contenthackbox{
+		position:absolute;
+		width:100%;
+		top:221px;
+		left:0px;}
+
+	#contenthackboxleft{
+		width:233px;}
+
+	#contenthackboxright{
+		width:233px;}
+
+	
+	#contenttopbar{
+		background-image:url(http://dkpfiles.com/dkp-templates/dkpsystem/topcontentbar.gif);
+		background-repeat:repeat-x;
+	}
+
+	#contentbottombar{
+		background-image:url(http://dkpfiles.com/dkp-templates/dkpsystem/bottomcontentbar.gif);
+		background-repeat:repeat-x;
+	}
+
+	#contentleftbar{
+		background-image:url(http://dkpfiles.com/dkp-templates/dkpsystem/leftcontentbar.gif);
+		background-repeat:repeat-y;
+	}
+
+	#contentrightbar{
+		background-image:url(http://dkpfiles.com/dkp-templates/dkpsystem/rightcontentbar.gif);
+		background-repeat:repeat-y;
+	}
+
+	#contentcontent{
+		background-color:#27270f;
+		background-image:url(http://dkpfiles.com/dkp-templates/dkpsystem/darkwood.jpg);
+		background-repeat:repeat;
+		padding:10px;
+	}
+	
+	#contenttitle{
+		background-image:url(http://dkpfiles.com/dkp-templates/dkpsystem/metal.gif);
+		background-repeat:repeat;
+		padding:10px;
+	}
+	#contentbelowtitle{
+		background-image:url(http://dkpfiles.com/dkp-templates/dkpsystem/menutitlebottom.gif);
+		background-repeat:repeat-x;
+		height:4px;
+	}
+
+	.contentcorner{
+		width:33px;
+		height:33px;}
+
+
+
+	.menuside{
+		background-image:url(http://dkpfiles.com/dkp-templates/dkpsystem/barvirt.gif);
+		background-repeat:repeat-y;
+		width:18px;}
+	.menutitle{
+		padding-top:5px;
+		background-image:url(http://dkpfiles.com/dkp-templates/dkpsystem/metal.gif);
+		background-repeat:repeat;
+		text-align:center;
+		padding-bottom:5px;
+		font-weight:bold;
+		font-size:10pt;
+	}
+	.menucontent{
+		font-size:9pt;
+		padding-top:4px;
+		background-image:url(http://dkpfiles.com/dkp-templates/dkpsystem/darkwood.jpg);
+		background-repeat:repeat;}
+	.menutitletop{
+		background-image:url(http://dkpfiles.com/dkp-templates/dkpsystem/menutitletop.gif);
+		background-repeat:repeat-x;
+		height:2px;
+		}
+	.menutitlebottom{
+		background-image:url(http://dkpfiles.com/dkp-templates/dkpsystem/menutitlebottom.gif);
+		background-repeat:repeat-x;
+		height:4px;}
+	.menutable{
+		position:relative;
+		left:-1px;
+		width:185px;}
+</style>

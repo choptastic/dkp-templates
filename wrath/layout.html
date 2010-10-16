@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style>
+		body {
+			background:url(<!--System:Background-->) repeat-y center;
+		}
+	</style>
+
+	<link rel="stylesheet" href="<!--System:CSS-->" type="text/css">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel=icon href="http://dkpfiles.com/<!--System:SD-->/icon">
+	<link rel="shortcut icon" href="http://dkpfiles.com/<!--System:SD-->/icon">
+
+	<link rel="alternate" title="<!--System:SiteName--> RSS" href="http://<!--System:SD-->.dkpsystem.com/feed.rss" type="application/rss+xml">
+
+	<title><!--System:SiteName--> - <!--System:Title--></title>
+</head>
+<script language=javascript>
+
+	// dge() is defined in dkpsystem.js and is a shortcut for document.getElementById()
+	function showwrathmenu(tf)
+	{
+		if(tf)
+		{
+			dge("showhidemenu").innerHTML="<a href='javascript:showwrathmenu(false)'>Hide Menu &lt;&lt;</a>";
+			dge("sidemenubar").className="sidebar";
+			dge("mainframeouter").className="mainframe";
+			dge("mainframeinner").className="mainframe-inner";
+			dge("mainframetop").className="mainframe-top";
+			dge("mainframebottom").className="mainframe-bottom";
+			dge("mainframecontent").className="mainframe-content";
+		}
+		else
+		{
+			dge("showhidemenu").innerHTML = "<a href='javascript:showwrathmenu(true)'>Show Menu &gt;&gt;</a>";
+			dge("sidemenubar").className="sidebarhidden";
+			dge("mainframeouter").className="mainframe-wide";
+			dge("mainframeinner").className="mainframe-inner-wide";
+			dge("mainframetop").className="mainframe-top-wide";
+			dge("mainframebottom").className="mainframe-bottom-wide";
+			dge("mainframecontent").className="mainframe-content-wide";
+		}
+	}
+</script>
+<body>	
+	<div id="nav">
+		<center>
+			<div id="navmenu">
+				<!--System:StartEmbedMenu:Menu-->
+					<!--Menu:StartItemList-->
+					<ul><li class="first"><a href="/">Home</a></li>
+
+						<!-- Menu:StartItem -->
+							<li><a href="<!-- Menu:Link -->" <!--Menu:Popup -->><!-- Menu:LinkName --></a></li>
+							<!-- Menu:EndItem -->
+					</ul>
+					<!--Menu:EndItemList-->
+				<!--System:EndEmbedMenu-->
+			</div>
+		</center>
+
+	</div>
+	<div class="body">
+		<div id="showhidemenu"></div>
+		<div class="header">
+		  <div class="lich-king">
+			<div class="frostmourne">
+				<div id="logo">
+					<a href="news.php"><img src="<!--System:Logo-->" alt="<!--System:SiteName-->" title="<!--System:SiteName-->" border=0 /></a>
+				</div>
+				<div id="upcoming">
+
+					<div class="events">
+						<!--System:StartNextEvents:4-->
+							<!--Event:IfNone--><span id="blue-header">Nothing Scheduled</span><!--Event:EndIfNone-->
+							<!--Event:StartEventList-->
+								<span id="blue-header">Upcoming Events:</span>
+								<ul>
+									<!--Event:StartEvent-->
+										<li><!--Event:Date--> <!--Event:Time-->: <span class="event"><!--Event:Link--></span></li>
+									<!--Event:EndEvent-->
+								</ul>
+							<!--Event:EndEventList-->
+						<!--System:EndNextEvents-->
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+		<div class="content-bg">
+
+			<div class="content-border">
+				<div class="content">
+					<img src="http://dkpfiles.com/dkp-templates/wrath/content_header.gif" height="151" alt="" />
+					<center>
+						<table align="center" cellpadding="0" cellspacing="0" border="0" class="content-table">
+							<tr>
+								<td class="sidebar" id="sidemenubar">
+									<!--System:Menus:Left:Menu--><br />
+									<!--System:Menus:Right:Menu-->
+
+								</td>
+								<td class="mainframe" id="mainframeouter">
+									<div class="mainframe-top" id="mainframetop">
+										<div class="mainframe-top-right"></div>
+									</div>
+									<table id="mainframecontent" class="mainframe-content" cellspacing=0 cellpadding=0 border=0>
+										<tr>
+											<td class="mainframe-left"></td>
+											<td class="mainframe-inner" id="mainframeinner">
+												<div id=pagetitle><!--System:Title--></div>
+												<div id=pagedesc><!--System:PageDesc--></div>
+
+												<!-- System:Content -->
+											</td>
+											<td class="mainframe-right"></td>
+										</tr>
+									</table>
+									<div class="mainframe-bottom" id="mainframebottom">
+										<div class="mainframe-bottom-right"></div>
+									</div>
+								</td>
+
+							</tr>
+						</table>
+						<br clear="all" />
+					</center>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<a href='http://www.worldofwarcraft.com/wrath'>Wrath of the Lich King</a> and <a href='http://www.worldofwarcraft.com'>World of Warcraft</a> are registered trademarks of <a href='http://www.blizzard.com'>Blizzard Entertainment</a><br />
+			Many of the layout images here are Copyright Blizzard Entertainment<br />
+			<!-- System:Copyright -->
+		</div>
+	</div>
+
+</body>
+</html>
+<script language=javascript>
+	showwrathmenu("<!--System:StaticName-->"=="news");
+</script>

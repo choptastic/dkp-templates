@@ -1,0 +1,113 @@
+body
+{
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+}
+
+.glowtopbottom
+{
+	display:none;
+}
+
+.glowside
+{
+	display:none;
+}
+
+.glowcorner
+{
+	display:none;
+}
+
+#body
+{
+	position:relative;
+	width:100% !important;
+	left:0 !important;
+	top:0 !important;
+}
+
+.flames
+{
+	display:none;
+}
+
+#topleft
+{
+	display:none;
+}
+
+#topright
+{
+	display:none;
+}
+
+#leftbar
+{
+	display:none;
+}
+
+#rightbar
+{
+	display:none;
+}
+
+.medal
+{
+	display:none;
+}
+
+#runeleft, #runeright
+{
+	display:none;
+}
+
+#bottombar
+{
+	display:none;
+}
+
+#contentfooter
+{
+	display:none;
+}
+
+#contentright, #contentleft
+{
+	display:none;
+}
+
+#main
+{
+	width:100%;
+}
+
+#left
+{
+	padding-left:0;
+	margin-left:0;
+}
+
+#right
+{
+	padding-right:0;
+	margin-right:0;
+}
+
+#main #left .menuouter
+{
+	left:0 !important;
+}
+
+#main #right .menuouter
+{
+	right:0 !important;
+}
+
+#headertext
+{
+	padding-top:5px;
+	height:32px;
+	background:url(http://dkpfiles.com/dkp-templates/ominouswar/listlabel.png) repeat-x;
+}
+	background:url(

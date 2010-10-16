@@ -1,0 +1,751 @@
+* {
+	border-width: 	0px;
+	font-family: 	Verdana, Arial, Helvetica, sans-serif;
+	margin: 		0px;
+	padding:		0px;
+}
+
+html
+{
+	background: 	#000 url('http://dkpfiles.com/cimmeria/background') no-repeat top center;
+	height: 		100%;
+}
+
+
+body
+{
+	color:			#20140C;
+	font-size:		11px;
+	text-align:		center;
+}
+
+#body
+{
+	height: 		100%;
+	top:			0;
+	text-align: 	left;
+	vertical-align: top;
+	width: 			100%;
+}
+
+#header
+{
+	height: 		130px;
+	text-align:		center;
+	vertical-align: middle;
+	width: 			100%;
+}
+
+#logo
+{
+	position: 		static;
+	margin-top: 	15px;
+	z-index: 		25;
+}
+
+a img 				{ border: 	0px; }
+a:link				{ color: 	#7f6947; }
+a:active,a:visited	{ color:	#243049; }
+a:hover 			{ color:	#334467; }
+a:focus				{ outline:	none; }
+
+
+table.list td {
+	padding:4px;
+	margin:0;
+}
+
+
+#sidebar-left, #sidebar-right
+{
+	margin-top:		5px;
+	position: 		relative;
+	text-align: 	left;
+	vertical-align: top;
+	width: 			195px;
+}
+
+.leftbar	{ height: 100%; }
+.rightbar	{ height: 100%; }
+
+#sidebar-left	{ height: 100%; background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/sidebar-left-bottom-border.gif') repeat-y top right; top: 0; left: 17px; }
+#sidebar-right	{ height: 100%; background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/sidebar-right-bottom-border.gif') repeat-y top left; top: 0; right: 17px; }
+
+#sidebar-left-top 	 	{ position: static; z-index: 5; height: 64px; width: 195px; background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/sidebar-left-top.gif') no-repeat top left; }
+#sidebar-right-top		{ position: static; z-index: 5; height: 64px; width: 195px; background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/sidebar-right-top.gif') no-repeat top right; }
+#sidebar-left-bottom	{ position: static; margin-top: -25px; z-index: 55; height: 157px; width: 196px; background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/sidebar-left-bottom.gif') no-repeat top right;}
+#sidebar-right-bottom	{ position: static; margin-top: -25px; margin-left: -1px; height: 157px; width: 195px; background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/sidebar-right-bottom.gif') no-repeat top left;}
+
+#sidebar-left #sidemenubar 	{ padding: 0 13px 6px 10px; position: static; margin-top: -5px; left: 0; z-index: 10; margin: 0 auto; background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/sidebar-left.gif') repeat-y top left; }
+#sidebar-right #sidemenubar { padding: 0 25px 6px 0; position: static; margin-top: -5px; left: 0; z-index: 10; margin: 0 auto; background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/sidebar-right.gif') repeat-y top right; }
+#sidemenucontent 			{ width: 195px; position: static; margin-top: -30px; }
+#sidemenubar #menus 		{ width: 165px; padding: 0; }
+
+#sidebar-left .menutitle 	{ padding: 10px 0 0 45px; height: 45px; background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/sideheader-left.png') no-repeat top left; }
+#sidebar-right .menutitle 	{ padding: 10px 0 0 25px; height: 45px; background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/sideheader-right.png') no-repeat top left; }
+#sidebar-left #sidemenubar #menus .menucontent, 
+#sidebar-right #sidemenubar #menus .menucontent { margin-left: 15px; width: 155px;}
+
+#sidemenubar .events h3, 
+#sidemenubar .menutitle h3	{ overflow: hidden; color: #ddbf91; font-size: 11px; font-weight: bold; line-height: 24px;}
+#sidemenubar #menus .menucontent center, #sidemenubar .events ul,
+#sidemenubar #menus .menucontent 		 { color: #F0E6B9; font-size: 9px !important; font-weight: bold; margin: 0 auto; padding: 0 0 4px 0; width: 99%; }
+#sidemenubar #menus .menucontent a		 { color: #e2c891; font-size: 9px; padding: 1px 4px 1px 4px; text-decoration: none; font-weight: normal;}
+#sidemenubar #menus .menucontent a:hover { color: #fff; }
+#sidemenubar .events ul,
+#sidemenubar #menus .menucontent ul		 { list-style: none; }
+#sidemenubar .events ul li				 { color: #e2c891; margin-left: 20px; width: 145px;}
+#sidemenubar .events ul li				 { background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/menu.gif') no-repeat 3px 20px; line-height: 14px; font-weight: normal;  }
+#sidemenubar #menus .menucontent ul li	 { background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/menu.gif') no-repeat 3px 6px; line-height: 14px; font-weight: normal;  }
+#sidemenubar .events ul li a 			 { color: #e2c891 !important; font-weight: bold !important; }
+#sidemenubar .events ul li a,
+#sidemenubar #menus .menucontent ul li a { color: #e2c891; display: block; font-size: 10px; padding: 2px 4px 2px 14px; text-decoration: none; font-weight: normal;}
+#sidemenubar .events ul li a:hover, 
+#sidemenubar #menus .menucontent ul li a:hover { color: #fff !important; background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/hilite.png'); }
+#sidemenubar #menus table td			 { font-size: 10px; }
+#sidemenubar #menus div table			 { margin: 0 auto; }
+
+.content-table 
+{ 
+	border-collapse: collapse; 
+	height:		100%;
+}
+
+#content 
+{
+	position:	relative;
+	height:		100%;
+	width: 		100%;
+}
+
+#wrapper
+{
+	position: relative;
+	height:   100%;
+	margin-top: -8px;
+	height:   expression(this.parentNode.offsetHeight + 'px');
+}
+
+#content .border-top 
+{
+	background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/border-top.png') repeat-x center top;
+	height:     60px;
+	width:      100%;
+	left:       50;
+}
+
+#content .border-top .left 
+{
+	background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/border-top-left.png') no-repeat left top;
+	position:   absolute;
+	left:      -22px;
+	top:       -6px;
+	height:     142px;
+	width:      69px;
+	z-index: 	1500;
+}
+
+#content .border-top .right 
+{
+	background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/border-top-right.png') no-repeat right top;
+	position:   absolute;
+	right:     -22px;
+	top:       -6px;
+	height:     142px;
+	width:      69px;
+	z-index: 	1500;
+}
+
+
+#content .border-top .left .left-right
+{
+	background:url(http://dkpfiles.com/dkp-templates/cimmeriablue/border-top-left-right.png) no-repeat left top;
+	width:86px;
+	height:62px;
+	position:absolute;
+	top:0;
+	left:69px;
+}
+
+#content .border-top .right .right-left
+{
+	background:url(http://dkpfiles.com/dkp-templates/cimmeriablue/border-top-right-left.png) no-repeat left top;
+	width:86px;
+	height:62px;
+	position:absolute;
+	top:0;
+	right:69px;
+}
+
+
+#content .border-top .center 
+{
+	background:   url('http://dkpfiles.com/dkp-templates/cimmeriablue/border-top-center.png') no-repeat left top;
+	position:     absolute;
+	left:         50%;
+	top:         -15px;
+	height:       83px;
+	width:        227px;
+	margin-left: -113px;
+	z-index:	  1500;
+}
+
+#content .outer 
+{
+	background:  	url('http://dkpfiles.com/dkp-templates/cimmeriablue/border-left.gif') repeat-y left top;
+	height:			100%;
+	padding-left: 	38px;
+}
+
+#content .inner 
+{
+	background:   	#c2a374 url('http://dkpfiles.com/dkp-templates/cimmeriablue/border-right.gif') repeat-y right top;
+	height:			100%;
+	padding-right:	38px;
+	position: 		relative; 
+}
+table.content-wrapper{ height: 100%; width: 100%; border-collapse: collapse; margin: 0; padding: 0;}
+td.content-wrapper	 { vertical-align:top;height: 100%; width: 100%; }
+div.content-wrapper	 { background: #c2a374; margin: 0 auto; margin-top: -20px; }
+
+ .content-top		 { height: 58px; background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/content-top.jpg') repeat-x top left;}
+ .content-top .left	 { height: 58px; width: 227px; float: left; background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/content-top-left.jpg') no-repeat top left;}
+ .content-top .right { height: 58px; width: 108px; float: right; background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/content-top-right.jpg') no-repeat top right;}
+
+ .content-outer		 { height: 100%; background: #f7e5bd url('http://dkpfiles.com/dkp-templates/cimmeriablue/content-left.jpg') repeat-y top left; padding-left: 20px; }
+ .content-inner		 { height: 100%; background: #f7e5bd; text-align: center; background: #f7e5bd url('http://dkpfiles.com/dkp-templates/cimmeriablue/content-right.jpg') repeat-y top right; padding-right: 20px; }
+ .content 			 { height: 100%; margin: 0 auto; padding-top: 2px; overflow: show;}
+
+ .content-bottom		{ position: relative; z-index: 150; height: 58px; background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/content-bottom.jpg') repeat-x top left;}
+ .content-bottom .left	{ position: relative; z-index: 150; height: 58px; float: left; width: 244px; background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/content-bottom-left.jpg') no-repeat top left;}
+ .content-bottom .right	{ position: relative; z-index: 150; height: 58px; float: right; width: 122px; background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/content-bottom-right.jpg') no-repeat top right;}
+
+#content-footer 
+{
+	background: #c6aa7b;
+}
+
+#content-footer .border-bottom 
+{
+	background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/border-bottom.gif') repeat-x center bottom;
+	clear: 		both;
+	height:     62px;
+	margin-top: 10px;
+	position:   relative;
+}
+
+#content-footer .border-bottom .left 
+{
+	background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/border-bottom-left.gif') no-repeat left top;
+	position:   absolute;
+	left:      -12px;
+	top:       -20px;
+	height:     84px;
+	width:      83px;
+	z-index: 	100;
+}
+#content-footer .border-bottom .right 
+{
+	background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/border-bottom-right.gif') no-repeat left top;
+	position:   absolute;
+	right:     -11px;
+	top:       -20px;
+	height:     84px;
+	width:      83px;
+	z-index: 	100;
+}
+
+#content-footer .border-bottom .center 
+{
+	background:   url('http://dkpfiles.com/dkp-templates/cimmeriablue/border-bottom-center.gif') no-repeat left top;
+	position:     absolute;
+	left:         50%;
+	top:          15px;
+	height:       78px;
+	width:        187px;
+	margin-left: -90px;
+}
+
+#content ul
+{
+	background: 	none !important;
+	line-height: 	17px;
+	list-style: 	none !important;
+	margin:			0 !important;
+	padding: 		5px 0px 7px 0 !important;
+}
+
+#content ul li
+{
+	background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/arrow.gif') no-repeat 20px 4px;
+	margin: 	0 !important;
+	padding: 	0px 0px 0px 40px !important;
+}
+
+#footer
+{
+	clear:			both;
+	color: 			#F0E6B9;
+	font-size: 		10px;
+	margin: 		0 auto;
+	padding: 		10px 0 25px 0;
+	text-align: 	center;
+	vertical-align: middle;
+	width: 			95%;
+}
+
+#footer a
+{
+	color: 			#b59769;
+}
+
+.listlabel, .list .listlabel td
+{
+	background:		#ead8b4;
+	border: 		1px solid #bc9970;
+	color: 			#fff;
+	height: 		25px !important;
+	font-weight:	bold;
+	vertical-align: middle;
+}
+
+#forumthreadsettings table td 
+{
+	background:	#ead8b4;
+	border: 	1px solid #bc9970;
+	color:		#7f6947;
+}
+.listlabel td
+{
+	background: 	url('http://dkpfiles.com/dkp-templates/cimmeriablue/tableheader.jpg') repeat-x !important;
+	border:			1px solid #000;
+	font-variant:	small-caps;
+	height:			28px;
+	padding: 		0 10px 0 10px;
+	vertical-align:	middle;
+}
+
+.listlabel i
+{
+	font-weight:bold;
+}
+
+.list, .List
+{
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 100% !important;
+}
+
+.PostInfo 
+{
+	background: #ead8b4;
+	border: 1px solid #bc9970;
+}
+
+.PostText 
+{
+	background: #ead8b4;
+	border: 1px solid #bc9970;
+}
+
+tr.list1 td, tr.list2 td, tr.newlist1 td, tr.newlist2 td
+{
+	padding: 5px;
+
+}
+
+/*.list1, .list2, 
+{
+	background: #ead8b4;
+	padding:15px !important;
+}
+	*/
+
+td .MakeAPost a
+{
+	font-size: 12px;
+}
+
+.newlist1, tr.list1 td
+{
+	background:#ead8b4;
+}
+
+.newlist2, tr.list2 td
+{
+	background: #F7E5BD;
+}
+
+.newlist1, .newlist2
+{
+	color:#000;
+}
+
+.newlist1 a, .newlist2 a {
+	font-weight:bold;
+}
+
+
+.hover_approved { color: #fff !important; }
+
+.wowtooltip
+{
+	text-align: left;
+}
+
+
+#menucontent div a { font-size: 10px !important;}
+
+.calday
+{
+	color: 			#b59769;
+	width:			20px;
+	height:			18px;
+	font-size: 		9px !important;
+	padding-top:	1px;
+	text-align:		center !important;
+	vertical-align: center !important;
+}
+
+.calsomething:hover
+{
+	background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/hilite.png'); 
+	color: #F0E6B9;
+}
+
+.calday a
+{
+	color: 			#F0E6B9 !important;
+	font-weight: 	bold !important;
+}
+
+
+tr.calheader, tr.calheader td
+{
+	font-size: 		11px !important;
+	font-weight:	bold;
+	text-align:		center !important;
+}
+
+tr.calheader
+{
+	background: 	url('http://dkpfiles.com/dkp-templates/cimmeriablue/hilite.png');
+	padding:	4px !important;
+}
+
+.calcurrent
+{
+	border-width:	1px;
+	border-style:	solid;
+	border-color:	#b59769;
+}
+
+.calcurrent a
+{
+	color:			#F0E6B9 !important;
+}
+
+.bigcal 
+{
+	width:			100% !important;
+	border-style:	inset;
+}
+
+.bigcalheader
+{
+	height: 		24px; 
+	vertical-align: middle;
+	font-size:		14px;
+	font-weight:	bold;
+	background:		;
+}
+
+td a.bigcalheader
+{
+	background: ;
+	display: block;
+	font-size: 1px; 
+	height: 24px;
+}
+
+td a.bigcalleft
+{
+	background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/bigcalprev.gif') no-repeat 5px 0;
+}
+
+td a.bigcalright
+{
+	background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/bigcalnext.gif') no-repeat top right;
+	margin-right: 5px;
+}
+
+td a:hover.bigcalright, td a:hover.bigcalleft, td a.bigcalright, td a.bigcalleft
+{
+	color: #c3a57e;
+}
+
+.bigcaldayheader td
+{
+	background: ;
+	font-size:10px;
+	font-weight:bold;
+	height: 22px;
+	padding-top: 5px;
+}
+
+.bigcalday 
+{
+	background: url('') no-repeat;
+	border: 1px solid #bc9970;
+	height:100px;
+	max-width: 125px;
+	width:14%;
+}
+
+.bigcallabel
+{
+	cursor:pointer;
+	font-size: 9px;
+	padding: 5px;
+}
+
+.bigcaldaylabel
+{
+	background:url('') repeat-x;
+	font-size:8pt;
+	font-weight: bold;
+	margin: 1px;
+	padding: 2px;
+	text-align:center
+}
+
+.bigcalday_hover
+{
+	border: ;
+}
+
+.bigcalcurrent
+{
+	background: #bf9e77;
+	border: 2px solid #bc9970;
+}
+
+/* One of the classes to display is something is scheduled on that day */
+.bigcalsomething{}
+
+.bigcalplus
+{
+	position:relative;
+	top:2px;
+	float:right;
+	width:11px;
+	height:11px;
+	overflow:hidden;
+	line-height:1px;
+	background:url('http://dkpfiles.com/dkp-templates/cimmeriablue/collapse_thead_collapsed.gif') no-repeat !important;
+	cursor:pointer;
+}
+
+.bigcalblank {}
+
+
+/* The following are the rules for tabs */
+div.tabrow{float:left;width:100%;padding-top:5px;}
+ul.tabrow, ul.tabrow li{list-style-type:none;margin:0;padding:0}
+ul.tabrow{margin-left:10px;}
+ul.tabrow li{list-style-image:none;float:left;margin-right: 3px;text-align:center;font-size:inherit}
+ul.tabrow a{float:left;width:8em;padding: 5px 0;background-color:;}
+ul.tabrow a:hover {background:;color:}
+ul.tabrow li.selected a,ul.tabrow li.selected a:hover {background-color:;color:}
+
+/* Login elements */
+
+input, select, textarea
+{
+	background: #f7e5bd;
+	font-size: 10px;
+	font-weight: bold;
+	padding: 2px;
+	margin: 2px;
+	border: 1px solid #bc9970;
+}
+
+input, select
+{
+	background: #f7e5bd url('http://dkpfiles.com/dkp-templates/cimmeriablue/form_bg.jpg') repeat-x;
+}
+
+textarea 
+{
+	margin: 0 auto;
+	width: 85% !important;
+}
+
+#loginstuff 
+{
+	color: #ffffff;
+	font-size: 9px;
+	font-weight: normal;
+	text-align: center;
+}
+
+#loginstuff input 
+{
+	width: 70px;
+	background: url('http://dkpfiles.com/dkp-templates/cimmeriablue/form_bg.jpg') repeat-x;
+	border: 1px solid #bc9970;
+	color: ;
+	font-size: 10px;
+	font-weight: bold;
+	padding: 2px;
+	margin: 2px;
+}
+
+#loginstuff input.button 
+{
+	width: auto;
+}
+
+#loginstuff table td 
+{
+	text-align:left !important;
+}
+
+#loginstuff table td.plain 
+{
+	text-align:right !important;
+	vertical-align: middle;
+}
+
+.MenuChoice td {
+	font-size: 10px;
+	padding: 1px;
+}
+
+/* Guides */
+.GuideTitle, .GuideSubTitle {
+	display: block;
+	font-weight: bold;
+	border-bottom: 1px solid ;
+}
+.GuideTitle {
+	font-size: 1.4em;
+}
+.GuideSubTitle {
+	font-size: 1.2em;
+}
+
+.xsmall
+{
+	font-size: 8px;
+	padding-bottom: 5px;
+}
+
+table.ttb 
+{
+	background: ;
+	color: ;
+	margin: 0px; 
+	border-bottom: ; 
+	border-right: ;
+	border-top: ; 
+	border-left: ;
+	font-size: 11px;
+}
+
+table.ttb tr td span
+{
+	color:  !important;
+}
+
+table.ttb h6 
+{
+	font-size: 10px;
+}
+
+table.ttb h6 a:link, table.ttb table a:link 
+{ 
+	color: ; 
+	text-decoration: underline; 
+}
+
+table.ttb h6 a:visited, table.ttb table a:visited 
+{
+	color: ; 
+	text-decoration: underline; 
+}
+
+table.ttb h6 a:hover, table.ttb table a:hover 
+{
+	color: ;
+}
+
+table.ttb h6 a:active, table.ttb table a:active
+{ 
+	color: ;
+}
+
+table.ttb a:link 
+{ 
+	color: ; text-decoration: none; 
+}
+
+table.ttb a:visited 
+{ 
+	color: ; text-decoration: none; 
+}
+
+table.ttb a:hover 
+{ 
+	color: ;
+}
+
+table.ttb a:active 
+{ 
+	color: ; 
+}
+
+table.ttb table 
+{
+	color:;
+}
+
+#shoutbox_menu
+{
+	height:300px;
+	overflow:auto;
+	font-weight:normal;
+}
+
+
+/* DHTML-MENUS */
+div.dhtmlddl, div.dhtmlddl *, div.dhtmlcombo, div.dhtmlcombo *{
+	/*
+	font-variant:normal !important;
+	font-weight:normal !important;
+	*/
+	font-size:8pt;
+	height:14px !important;
+	border-color:#555555 !important;
+	border-style:solid !important;
+}
+
+tr.listlabel div.dhtmlddl, tr.listlabel div.dhtmlcombo{
+	margin-top:-2px;
+}
+
+div.dhtml_ddl_list, div.dhtml_combo_list {
+	background-color:#F7E5BD;
+}
+
+.dhtml_ddl_listitem,.dhtml_ddl_listitem_highlight {
+	padding-top:2px;
+	margin:0;
+}
+
+div.dhtml_ddl_listitem_highlight{
+	font-weight:normal;
+	margin:0;
+}
+/* END-DHTML-MENUS */

@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title><!--System:SiteName--> - <!--System:title--></title>
+	<style>
+		body {
+			background:#000 url(<!--System:Background-->) repeat-x;
+		}
+	</style>	
+
+	<link rel=stylesheet href="<!--System:CSS-->" type="text/css" />
+
+
+	<script language=javascript>
+
+	var origleft, origtop, origright;
+	function accountforwindowsize()
+	{
+		var curwidth = document.body.clientWidth;
+
+		var rm = document.getElementById("rightmenu");
+		var lm = document.getElementById("leftmenu");
+		var rmm = document.getElementById("rightmenumoved");
+
+		var leftmenuheight = lm.clientHeight;
+		var leftmenustart = lm.offsetTop;
+		var backuprightmenutop = leftmenuheight + leftmenustart - 20;
+		rmm.style.top = backuprightmenutop + "px";
+
+		if(curwidth<=1130 || (location.href.match(/forum\.php|viewthread\.php/) && curwidth<=1230))
+		{
+			document.getElementById("contenthackboxright").style.width="10px";
+			document.getElementById("rightmenu").style.display="none";
+
+			document.getElementById("contentbarright").style.display="none";
+
+			document.getElementById("rightmenumoved").style.display="";
+			document.getElementById("contenttobar2").style.right="150px";
+			
+		}
+		else
+		{
+			document.getElementById("contenthackboxright").style.width="233px";
+			document.getElementById("rightmenu").style.display="";
+			document.getElementById("contentbarright").style.display="";
+
+			document.getElementById("rightmenumoved").style.display="none";
+			document.getElementById("contenttobar2").style.right="350px";
+		}
+			
+	}
+		
+	</script>
+</head>
+<body onresize="accountforwindowsize()">
+<img src="<!--System:Logo-->" id=logoinner>
+<a href="index.php?nosplash=1" id=logo><img src="http://dkpfiles.com/dkp-templates/dkpsystem/logoframe.gif" border=0></a>
+<div id=supportbar></div>
+
+
+<table id=leftmenu cellspacing=0 cellpadding=0>
+	<tr>
+		<td style="width:18px"></td>
+		<td style="width:183px"></td>
+		<td style="width:18px">
+	</tr>
+	<tr>
+		<td colspan=3><img src="http://dkpfiles.com/dkp-templates/dkpsystem/menutop.gif"></td>
+	</tr>
+	<tr>
+		<td class=menuside></td>
+		<td>
+			<table class=menutable cellspacing=0 cellpadding=0>
+				<!--System:Menus:Left-->
+				
+			</table>
+		</td>
+		<td class=menuside></td>
+	</tr>
+	<tr>
+		<td colspan=5><img src="http://dkpfiles.com/dkp-templates/dkpsystem/menubottom.gif"></td>
+	</tr>
+</table>
+
+
+<table id=rightmenumoved cellspacing=0 cellpadding=0>
+	<tr>
+		<td style="width:18px"></td>
+		<td style="width:183px"></td>
+		<td style="width:18px">
+	</tr>
+	<tr>
+		<td colspan=3><img src="http://dkpfiles.com/dkp-templates/dkpsystem/menutopshort.gif"></td>
+	</tr>
+	<tr>
+		<td class=menuside></td>
+		<td id=rightmenumovedcontent>
+			
+		</td>
+		<td class=menuside></td>
+	</tr>
+	<tr>
+		<td colspan=5><img src="http://dkpfiles.com/dkp-templates/dkpsystem/menubottom.gif"></td>
+	</tr>
+</table>
+
+<table id=rightmenu cellspacing=0 cellpadding=0>
+	<tr>
+		<td style="width:18px"></td>
+		<td style="width:183px"></td>
+		<td style="width:18px">
+	</tr>
+	<tr>
+		<td colspan=3><img src="http://dkpfiles.com/dkp-templates/dkpsystem/menutop.gif"></td>
+	</tr>
+	<tr>
+		<td class=menuside></td>
+		<td id=rightmenucontent>
+			<table class=menutable cellspacing=0 cellpadding=0>
+				<tr><td class=menutitle>Next Events</td></tr>
+				<tr><td class=menutitlebottom></td></tr>
+				<tr>
+					<td class=menucontent style="font-size:7.5pt">
+					       	<!--System:Next5Events-->
+						
+					</td>
+				</tr>
+				<tr><td class=menutitletop></td></tr>
+				<!--System:Menus:Right-->
+				<tr><td class=menutitle>Statistics</td></tr>
+				<tr><td class=menutitlebottom></td></tr>
+				<tr>
+					<td class=menucontent style="font-size:7.5pt">
+					       	<!--System:TopStats-->
+						
+					</td>
+				</tr>
+				<tr><td class=menutitletop></td></tr>
+				<!--System:IfFeature:Forum-->
+				<tr><td class=menutitle>Popular Threads</td></tr>
+				<tr><td class=menutitlebottom></td></tr>
+				<tr>
+					<td class=menucontent style="font-size:7.5pt">
+					       	<!--System:PopularThreads-->
+					</td>
+				</tr>
+				<tr><td class=menutitletop></td></tr>
+				<!--System:endIfFeature-->
+			</table>
+		</td>
+		<td class=menuside></td>
+	</tr>
+	<tr>
+		<td colspan=5><img src="http://dkpfiles.com/dkp-templates/dkpsystem/menubottom.gif"></td>
+	</tr>	
+</table>
+
+
+
+
+<table id=contentbar cellspacing=0 cellpadding=0 border=0>
+	<tr>
+		<td id=contentbarleft><img src="http://dkpfiles.com/dkp-templates/dkpsystem/3wayleft.gif"></td>
+		<td id=contentbarbar><img src="http://dkpfiles.com/dkp-templates/dkpsystem/px.gif"></td>
+		<td id=contentbarright><img src="http://dkpfiles.com/dkp-templates/dkpsystem/3wayright.gif"></td>
+	</tr>
+</table>
+
+<img id=contenttobar1 src="http://dkpfiles.com/dkp-templates/dkpsystem/contenttobar.gif">
+<img id=contenttobar2 src="http://dkpfiles.com/dkp-templates/dkpsystem/contenttobar.gif">
+
+<table cellspacing=0 cellpadding=0 id=contenthackbox border=0>
+	<tr>
+		<td id=contenthackboxleft></td>
+		<td id=contenthackboxcenter align=center>
+			<table cellspacing=0 cellpadding=0 width="100%" border=0>
+				<tr>
+					<td class=contentcorner><img src="http://dkpfiles.com/dkp-templates/dkpsystem/ul.gif"></td>
+					<td id=contenttopbar><img src="http://dkpfiles.com/dkp-templates/dkpsystem/px.gif"></td>
+					<td class=contentcorner><img src="http://dkpfiles.com/dkp-templates/dkpsystem/ur.gif"></td>
+				</tr>
+				<tr>
+					<td rowspan=3 id=contentleftbar><img src="http://dkpfiles.com/dkp-templates/dkpsystem/px.gif"></td>
+					<td id=contenttitle align=center>
+						<div id=pagetitle><!--System:title--></div><br>
+						<!--System:PageDesc-->
+					</td>
+					<td rowspan=3 id=contentrightbar><img src="http://dkpfiles.com/dkp-templates/dkpsystem/px.gif"></td>
+				</tr>
+				<tr><td id=contentbelowtitle></td></tr>
+				<tr>
+					<td id=contentcontent>
+						<!--System:Content-->
+					</td>
+				</tr>
+				<tr>
+					<td class=contentcorner><img src="http://dkpfiles.com/dkp-templates/dkpsystem/bl.gif"></td>
+					<td id=contentbottombar><img src="http://dkpfiles.com/dkp-templates/dkpsystem/px.gif"></td>
+					<td class=contentcorner><img src="http://dkpfiles.com/dkp-templates/dkpsystem/br.gif"></td>
+				</tr>
+			</table>
+			<br><br>
+			<div class=copyright>
+				<!--System:Copyright-->
+			</div>
+		</td>
+		<td id=contenthackboxright></td>
+	</tr>
+</table>
+
+</body>
+<Script language=javascript>
+	accountforwindowsize();
+	if(document.getElementById("rightmenumovedcontent") && document.getElementById("rightmenucontent"))
+		document.getElementById("rightmenumovedcontent").innerHTML = document.getElementById("rightmenucontent").innerHTML;
+</script>
+</html>

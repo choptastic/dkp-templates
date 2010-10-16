@@ -1,0 +1,27 @@
+.quality,.quality-1,.quality0,.quality1,.quality2,.quality3,.quality4,.quality5,.quality6,
+.quality:link,.quality-1:link,.quality0:link,.quality1:link,.quality2:link,.quality3:link,.quality4:link,.quality5:link,.quality6:link {
+	padding-right: 5px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+
+a.quality-1, a.quality-1:link, a.quality-1:visited { color: #FFCC00; }
+a.quality0, a.quality0:link, a.quality0:visited  { color: #808080; }
+a.quality, a.quality:link, a.quality:visited,
+a.quality1, a.quality1:link, a.quality1:visited  { color: #1C1C1C; }
+a.quality2, a.quality2:link, a.quality2:visited  { color: #00FF00; }
+a.quality3, a.quality3:link, a.quality3:visited  { color: #0068FF; }
+a.quality4, a.quality4:link, a.quality4:visited  { color: #8020FF}
+a.quality5, a.quality5:link, a.quality5:visited  { color: #FF8000; }
+a.quality6, a.quality6:link, a.quality6:visited  { color: #FF2020; }
+
+
+table.ttb {
+	background-color: #282828;
+	color: #FFFFFF;
+	margin: 1px;
+	font-size: 11px;
+	border: 1px solid #FFFFFF;
+	padding: 3px;
+}

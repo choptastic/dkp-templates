@@ -1,0 +1,26 @@
+<table border=0 class="Menu" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="MenuCat" align="center"><!-- Menu:StaticName  --></td>
+	</tr>
+	<!-- Menu:StartItemList -->
+	<tr>
+		<td class="MenuChoice" align="left" style="background-image: url('http://dkpfiles.com/dkp-templates/glass/Menu_C.png'); background-repeat: repeat-y; padding-left: 2px; padding-right: 2px">
+		<!-- Menu:StartItem -->
+			<li class="MenuLi" onmouseover="this.className='MenuLiOver'" onmouseout="this.className='MenuLi'"><a href="<!-- Menu:Link -->" <!--Menu:Popup -->><!-- Menu:LinkName --></a></li>
+		<!-- Menu:EndItem -->
+	</tr>
+	<!-- Menu:EndItemList -->
+
+	<!-- Menu:StartStandAlone -->
+	<tr>
+		<td class="MenuChoice" align="left" style="background-image: url('http://dkpfiles.com/dkp-templates/glass/Menu_C.png'); background-repeat: repeat-y; padding-left: 2px; padding-right: 2px">
+			<!-- Menu:StandAloneContent -->
+		</td>
+	</tr>
+	<!-- Menu:EndStandAlone -->
+
+	<tr>
+		<td class="MenuFtr"><img src="http://dkpfiles.com/dkp-templates/glass/170_19Spcr.gif" border="0"></td>
+	</tr>
+</table>
+<br />

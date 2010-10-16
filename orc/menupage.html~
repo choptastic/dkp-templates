@@ -1,0 +1,25 @@
+<div onclick="toggleMenu2('<!--Menu:StaticName-->')" class="MenuCat" style="background-image:url('http://dkpfiles.com/dkp-templates/tnb/Menu-HeadOpen2.gif');cursor:pointer;height:40px;width:200px;" name="L<!--Menu:StaticName-->" id="L<!--Menu:StaticName-->">
+	<center><!--Menu:Title--></center>
+</div>
+
+<span id="M<!--Menu:StaticName-->" class="hideMenu">
+	<table border=0 class="Menu" cellpadding="1" cellspacing="0" style="width:100%">
+		<!-- Menu:StartItemList -->
+		<tr>
+			<td class="MenuChoice" align="left">
+			<!-- Menu:StartItem -->
+				<a href="<!-- Menu:Link -->" <!--Menu:Popup --> ><!-- Menu:LinkName --></a><br>
+			<!-- Menu:EndItem -->
+		</tr>
+		<!-- Menu:EndItemList -->
+		<!-- Menu:StartStandAlone -->
+		<tr>
+			<td class=MenuChoice align=left>
+				<!-- Menu:StandAloneContent -->
+			</td>
+		</tr>
+		<!-- Menu:EndStandAlone -->
+	</table>
+	<br />
+</span>
+

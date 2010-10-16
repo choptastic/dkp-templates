@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="http://dkpfiles.com/<!--System:SD-->/style.css" type="text/css">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<link rel="alternate" title="<!--System:SiteName--> RSS" href="http://<!--System:SD-->.dkpsystem.com/feed.rss" type="application/rss+xml">
+	<!--[if lt IE 7]>
+		<style text="text/css">	
+			.menus{
+				background:url('http://dkpfiles.com/dkp-templates/war/hover_bg.gif') no-repeat !important;
+			}
+		</style>
+	<![endif]-->
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" href="http://dkpfiles.com/dkp-templates/war/ie.css" type="text/css"></script>
+	<![endif]-->
+	<title><!--System:SiteName--> - <!--System:Title--></title>
+</head>
+  <body>
+	<center>
+		<div id="body"><img src="http://dkpfiles.com/dkp-templates/war/header_top.jpg">
+		<div id="showhidemenu"><a style="z-index:1000" href="javascript:showhidemenu(1)">Show Menu</a></div>
+		<div id="header">
+			<div id="character"></div><img src="http://dkpfiles.com/<!--System:SD-->/logo" alt="<!--System:SiteName-->" title="<!--System:SiteName-->" id="logo" />
+			<div class="nav">
+			<div id="navmenu">
+				<!--System:StartEmbedMenu:Menu-->
+					<!--Menu:StartItemList-->
+					<ul>
+						<li class="first"><a href="/">Home</a></li>
+						<!-- Menu:StartItem -->
+							<li><a href="<!-- Menu:Link -->" <!--Menu:Popup -->><!-- Menu:LinkName --></a></li>
+						<!-- Menu:EndItem -->
+					</ul>
+					<!--Menu:EndItemList-->
+				<!--System:EndEmbedMenu-->
+			</div></div>
+		</div>
+		<div id="header-bot"></div>
+		<div id="content" class="content-collapsed">
+			<table align="center" cellpadding="0" cellspacing="0" border="0" class="content-table">
+				<tr>
+					<td id="sidebar" style="display:none">
+						<div id="sidemenubar">
+							<!--System:Menus:All:Menu-->
+						</div>
+					</td>
+					<td id="main" class="main-collapsed">
+						<div id="mainframe" class="mainframe-collapsed">
+							<div id=pagetitle><!--System:Title--></div>
+							<div id=pagesubtitle><!--System:PageDesc--></div>
+							<!-- System:Content -->
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="footer">
+			<div id="chains"></div>
+		</div>
+	</div>
+	<br clear="all" />
+			<div style="font-size:smaller;width:600px;margin-left:auto;margin-right:auto">
+				Disclaimer: Warhammer Online: Age of Reckoning content and materials, the Games Workshop, Warhammer, Warhammer Online: Age of Reckoning names and logos and all associated marks, names, races, race insignia, characters, vehicles, locations, units, illustrations and images from the Warhammer world are either ®, T and/or © Games Workshop Ltd 2000-2006. Used under license by Mythic Entertainment, Inc. Mythic Entertainment and the Mythic Entertainment logo are the registered trademarks of Mythic Entertainment, Inc. All Rights Reserved. You may not copy any images, videos or sound clips found on this site or 'deep link' to any image, video or sound clip directly.
+			</div><br /><br />
+
+			<!-- System:Copyright -->
+			<br /><br />
+</body>
+</html>
+
+<script language=javascript>
+	var square_tabs = true;
+	showwrathmenu("<!--System:StaticName-->"=="news");
+
+	function ie()
+	{
+		var agt=navigator.userAgent.toLowerCase();
+		var is_ie = (agt.indexOf("opera")==-1 && agt.indexOf("msie 7")==-1 && agt.indexOf("msie 8")==-1 && (agt.indexOf("msie 5.") != -1 || agt.indexOf("msie 6.") != -1));
+		return is_ie;
+
+	}
+
+	function hover_menu(t,divname)
+	{
+		if(page_fully_loaded)
+			dyn_drop_down(t,dge(divname).innerHTML,null,null,null,true)
+	}
+
+	function showwrathmenu(tf)
+	{
+		dge("showhidemenu").style.zIndex=10000;
+		if(tf)
+		{
+			dge("showhidemenu").innerHTML="<a href='javascript:showwrathmenu(false)' style='z-index:1000'>Hide Menu</a>";
+			dge("sidebar").style.display="";
+			dge("main").className="";
+			dge("mainframe").className="";
+			dge("content").className="";
+		}
+		else
+		{
+			dge("showhidemenu").innerHTML = "<a href='javascript:showwrathmenu(true)' style='z-index:1000'>Show Menu</a>";
+			dge("sidebar").style.display="none";
+			dge("content").className="content-collapsed";
+			dge("main").className="main-collapsed";
+			dge("mainframe").className="mainframe-collapsed";
+		}
+	}
+
+
+	// If the change the following paths or add new paths in the variable "c" below, you can insert your own characters into the random rotation.
+
+	function randomchar()
+	{
+		if(ie())
+			var c = ["http://dkpfiles.com/dkp-templates/war/darkelf2.gif","http://dkpfiles.com/dkp-templates/war/orc1.gif","http://dkpfiles.com/dkp-templates/war/orc2.gif"];
+		else
+			var c = ["http://dkpfiles.com/dkp-templates/war/darkelf2.gif","http://dkpfiles.com/dkp-templates/war/orc1.gif","http://dkpfiles.com/dkp-templates/war/orc2.gif","http://dkpfiles.com/dkp-templates/war/chaos.png","http://dkpfiles.com/dkp-templates/war/delf.png","http://dkpfiles.com/dkp-templates/war/orcs.png"];
+
+		var i = Math.floor(Math.random() * c.length);
+		dge("character").style.backgroundImage = "url(" + c[i] + ")";
+	}
+	
+	randomchar();
+</script>

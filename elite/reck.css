@@ -1,0 +1,235 @@
+ 
+/* This is the body, pretty straightforward */
+BODY,.body {		cursor: default;
+		font-family: Arial,sans-serif;
+		font-size: 9pt;
+			background-color: #000000;
+		color: #eeeeee;}
+
+/* used when [quote] tags are used in posts */
+.quote{		
+	font-size:7.5pt;
+	background: #0F101E;}
+	
+.quoteheader {
+	font-size:7.5pt;
+	font-weight: bold;
+	background: #0F101E;}
+
+/* Most tables use this type    */
+.List{	background-color: #000000;
+	border: inset;
+	border-width: 0px;
+	}
+
+
+/* used for the newsletter table */
+table.newsletter{
+		border: inset;
+		border-width: 1px;
+		font-family:monospace;
+		font-size: 9pt}
+
+/* Used in the default base as the Title table.  Even with custom layouts, it's used in the Add/Edit Post and other popups that have a title */
+Table.Subject{
+		border: outset;
+		border-width: 1px;}
+
+/* used to define the Menus on the left */	
+.Menu{		width: 185px;
+		padding-left: 10px;
+		font-weight: bold;
+		border-width: 0px;
+		background: none transparent scroll repeat 0% 0% }
+
+/* This is used with [title] tags in guides and posts */
+.GuideTitle{	font-weight:bold;
+		font-size: 10pt;
+		color: white;}
+
+		
+/* used with [subtitle] tags in guides and posts */
+.GuideSubTitle{	font-weight:bold;
+		font-size: 11pt;
+		color:white;}
+
+/* The Row of the "Title Table" */
+.Subject{	font-size: 10pt;
+		font-weight: bold;
+		background: none transparent scroll repeat 0% 0%;
+		color: #ffffff}
+		
+/* This is the "PAge Description" row of the "Title Table" */
+.SubSubject{	font-size: 9pt;
+		font-weight: bold;
+		background: none transparent scroll repeat 0% 0%;
+		color: #ffffff;}
+
+/* in the default layout, this is the style associated with the Count Down: "x minutes until the next raid" */
+.CountDown{	font-size: 8pt;
+		font-weight: normal;}
+		
+/* In the default, is the style of the Next Event Name at the top */
+.EventName{	font-size:8pt;
+		font-weight:bold; }
+
+/* same as above, only for the Date/Time */
+.EventTime{	font-size:8pt;
+		font-weight:normal; }
+		
+/* for the TopStats, is the color of the Statistic itself */
+.StatCount{	
+	color: #ffffff;
+	font-size: 9pt;}
+
+/* for the TopStats, is the color of a Statistic designed to get the user's attention */
+.StatAlert{	color: #818A65;}
+
+/* In the default layout, is the style of the "Top Stats" */
+.TopStats{	background: none transparent scroll repeat 0% 0%;
+		font-size: 7.5pt}
+
+/* In the Default Layout, Is essentially the background information for the Next Event. */
+.Event{		background: none transparent scroll repeat 0% 0%;
+		font-size:9pt;}
+		
+/* Error box description */
+table.error{	border-width: 1px;
+		border-style:outset;}
+
+/* Error box description */
+td.error,.missing,div.error{	
+		font-size: 9pt;
+		background: #771111;
+		color: #FFFFFF;}
+
+/* Error box title */
+.errorlistlabel{background:#BB1111;
+		font-weight:bold;
+		color:#FFFFFF;
+		font-size:11pt}
+
+/* used on almost every page, is the style of one of the row-types in a table with alternating row types */
+.list1,.l1{	font-size: 9pt;
+		background: #000000;}
+
+/* used on almost every page, is the style of the other of the row-types in a table with alternating row types */
+.list2,.l2{	font-size: 9pt;
+		background: #171717;}
+
+/* used commonly, is for rows that want to "Get Your attention" in a table.  IE, Missing Raids on your member profile. */
+.listred,.lr{	background: #520000;
+		color: #FFFFFF;
+		font-size: 9pt;}
+
+/* used to mark a "new or recently posted" thread. */
+.newlist1,.newl1{
+		background: #181A30;
+		font-weight:bold;
+		font-size: 9pt;}
+
+.newlist2,.newl2{
+		background: #181A30;
+		font-weight:bold;
+		font-size: 9pt;}
+
+/* used in the copyright notice */
+.copyright{font-size: 7.5pt;font-style:italic}
+
+/* used in a few places to just define a normal place to put simple kinda-small text */
+.plain{font-size:9pt}
+
+/* to define small text in random places */
+.xsmall{font-size:7.5pt}
+
+.calcurrent{
+	font-size: 8pt;
+	color: #FFFFFF;
+	font-weight: bold;
+	background: #222222; 
+}
+
+
+/* The menu header (Menu, Resources, etc) as well as the Calendar Header, and the current date on the calendar */
+.MenuCat,.calheader{
+		font-size: 9pt;
+		font-weight: normal;
+		background: none transparent scroll repeat 0% 0%;
+		color: #818A65;
+		
+		}
+
+/* The cell record on the calendar for if there is something scheduled this day */
+.calsomething{
+	font-size: 7.5pt;
+	background: #953D3D;
+	font-weight: bold;
+	color:#FFFFFF;
+	}
+
+/* The header bar of tables that act as lists */
+.listlabel{
+		font-size: 9pt;
+		font-weight: bold;
+		background: #00000;
+		color: #818A65;}
+
+/* The Menu option contents, as well as the body for the calendar */
+.MenuChoice,.calbody{
+		font-size: 8.5pt;
+		background: none transparent scroll repeat 0% 0%;
+		color: #706F6F;}
+
+/* is the information about the poster on the forum.  The left-most pane on each post */
+.PostInfo{	font-size: 9pt;
+		background: #000000;
+		padding:5px;
+		border-style:solid;
+		border-width:1px;
+		border-color: #818A65;
+
+}
+		
+/* While rather rarely used, this is the "color picker" popup. Probably shouldn't ever change */
+.cp{		width:10;height:10}
+
+/*  On the forum, this is the little blurb at the top that gives statistic info "Total Posts" "Total Threads" "Deepest Thread" */
+.ThreadHeader{	font-size: 11pt;}
+	
+/* The style associated with the "Add a Post to this thread" link on the forum */
+.MakeAPost{	font-weight: bold;
+		font-size: 11pt;}
+
+/* The style associated with the pane in the layout containing the body of each post */
+.PostText{	font-size: 9pt;
+		background: #232323;
+		padding:10px;
+		border-style:solid;
+		border-width:1px;
+		border-color: #818A65;
+		}
+
+/* used on the [pre] tags in posts and stuff */
+pre{		font-size:11pt;}
+
+
+/* Basic Link Definition */
+A:visited	{color: #818A65;}
+A:link		{color: #818A65;}
+A:active	{color: #706F6F;}
+A:hover		{color: #706F6F;}
+
+/* for any list rows that must show up to get the user's attention, this is the link for them */
+A.inred:visited	{color:#818A65;}
+A.inred:link	{color:#818A65;}
+A.inred:active	{color:#706F6F;}
+A.inred:hover	{color:#706F6F;}
+
+/* used in on most pages as the button class */
+input.button{	background: #000000;
+		color: #818A65;}
+
+/* used in the default layout as any list items */
+li{	
+		list-style-image:url(http://afterlife.dkpsystem.com/settings/afterlife/files/tri.gif);
+}

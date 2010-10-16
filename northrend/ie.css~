@@ -1,0 +1,9 @@
+#characterimage
+{
+	background:url(http://dkpfiles.com/dkp-templates/northrend/arthas.gif) !important;
+}
+
+.menuglow
+{
+	display:none !important;
+}

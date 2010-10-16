@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+xml:lang="en" lang="en">
+
+<head>
+<title><!--System:SiteName--> - <!-- System:Title --></title>
+<meta http-equiv="Page-Enter" content="blendTrans(Duration=0.1)">
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<style>
+	html{
+		background-image:url(<!--System:Background-->);
+	}
+</style>
+
+<link href="<!--System:CSS-->" rel="stylesheet" type="text/css">
+<link href="http://dkpfiles.com/dkp-templates/renewalasmodian/itemlinks.css" rel="stylesheet" type="text/css">
+
+<!--[if gte IE 5.5]>
+<link href="http://dkpfiles.com/dkp-templates/renewalasmodian/iehacks.css" rel="stylesheet" type="text/css">
+<![endif]-->
+
+<script language="javascript" src="http://dkpfiles.com/dkp-templates/renewalasmodian/dynmenu.js" type="text/javascript"></script>
+</head>
+<body onLoad="initPage('<!-- System:Title -->');">
+
+<div id="wrapper">
+	<div id="logowrapper">
+		<a href="news.php"><img src="<!--System:Logo-->" border=0 alt="<!--system:SiteName-->" title="<!--System:SiteName-->" /></a>
+	</div>
+	
+	<div id="menubar">
+		<span id=menutext>
+		<!--System:StartEmbedMenu:Menu-->	
+			<!--Menu:StartItemList-->
+				<!--Menu:StartItem-->
+				<a href="<!--Menu:Link-->" <!--Menu:Popup-->>[ <!--Menu:LinkName--> ]</a>
+				<!--Menu:EndItem-->
+			<!--Menu:EndItemList-->
+			<!--System:EndEmbedMenu-->
+		</span>
+	</div> <!-- #menubar -->
+
+	<div id="main">
+		<div class="Subject">
+			<div id="pagetitle"><!-- System:Title --></div>
+			<div id="SubSubject"><!-- System:PageDesc --></div>
+		</div>
+		
+			
+		<div id="content">
+
+			<div id="toggle">
+				<a href="#" onClick="return toggleMenu();" onFocus="this.blur()"><img src="http://dkpfiles.com/dkp-templates/renewalasmodian/toggle.gif" border="0" width="10" height="71" /></a>
+			</div>
+
+			<div id="MenuArea">
+			
+				<div id="mainmenu">
+					<span class=menuwrapper>
+						<!--System:Calendar-->
+					</span>
+					<!--System:Menus:All:Calendar;Menu-->
+				</div>
+			</div> 
+			<!-- #MenuArea -->	
+
+			<div id="ContentArea">
+
+				<!-- System:Content-->
+
+			<div id="stats">
+				<div class="TopStats" id="invisible">
+					<!-- System:TopStats -->
+				</div>
+				<div class="TopStats" id="right">
+					<b>Popular Threads</b><br />
+					<!-- System:PopularThreads -->
+				</div>
+				<div class="TopStats" id="left">					
+					<!-- System:TopStats -->
+				</div>
+
+			</div> <!-- #stats -->
+
+
+			</div> <!-- #ContentArea -->
+
+		</div> <!-- #content -->
+
+		<div id="footer">	
+			<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">
+				<img src="http://creativecommons.org/licenses/by-nc-sa/3.0/us/" border="0" title="Creative Commons Attribution-Noncommercial-Share Alike 3.0" />
+			</a>
+			<div id="copyright">
+				<!-- System:Copyright -->
+			</div> <!-- #copyright -->
+
+		</div> <!-- #footer -->
+	</div> <!-- #content -->
+
+	
+</div> <!-- #main -->	  
+
+</body>
+</html>
+

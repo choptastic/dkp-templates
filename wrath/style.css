@@ -1,0 +1,696 @@
+html
+{
+	background-color:#000000;
+}
+
+body, table
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+body
+{
+	color:#ffffff;
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+
+
+
+#showhidemenu
+{
+	padding-top:8px;
+	position:absolute;
+	left:125px;
+	top:385px;
+	text-align:center;
+	width:100px;
+	height:19px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 8px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	background: url('http://dkpfiles.com/dkp-templates/wrath/showhidemenu.gif') no-repeat center;
+	z-index: 200;
+}
+#showhidemenu a
+{
+	color: #ffffff;
+}
+a:link,a:active,a:visited
+{
+	color:#feaf00;
+	text-decoration:none;
+}
+
+a:hover
+{
+	color:#00b3fe;
+}
+
+a:focus
+{
+	outline:none;
+}
+
+#nav
+{
+	position:fixed;
+	z-index:100;
+	width:100%;
+	left:0;
+	height:66px;
+	text-align:center;
+	background:url('http://dkpfiles.com/dkp-templates/wrath/navbar_bg.png') no-repeat center;
+}
+
+#navmenu
+{
+	text-align:center;
+	font-size:12px;
+	font-family:Arial, Helvetica, Sans-Serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	width:850px;
+	overflow:hidden;
+	padding:9px 0 0;
+}
+
+#navmenu ul
+{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#navmenu ul li
+{
+	display:inline;
+	list-style:none;
+	background:url('http://dkpfiles.com/dkp-templates/wrath/nav_separator.png') left center no-repeat;
+	margin:0;
+	padding:0 15px 0 22px;
+}
+
+#navmenu .first
+{
+	background:none;
+	padding-left:0;
+}
+
+.body
+{
+	position:relative;
+	width:989px;
+	top:0;
+	z-index:10;
+	margin:0 auto;
+}
+
+.header
+{
+	position:relative;
+	height:266px;
+	z-index:50px;
+	text-align:left;
+	top:0;
+}
+
+.frostmourne
+{
+	background:url('http://dkpfiles.com/dkp-templates/wrath/header_bot2.gif') no-repeat center bottom;
+	height:266px;
+	z-index:50;
+}
+
+/* If you want to remove the picture of Arthas, simply delete or comment out the next definition, or you can use your own image */
+.lich-king 
+{ 
+	height:266px; 
+	background:url('http://dkpfiles.com/dkp-templates/wrath/lich_king.jpg') no-repeat center; 
+	z-index:1; 
+}
+
+.header #logo
+{
+	position:absolute;
+	top:45px;
+	left:90px;
+	height:200px;
+	width:300px;
+	z-index:75px;
+}
+
+.header #upcoming
+{
+	position:absolute;
+	top:20px;
+	right:22px;
+	height:210px;
+	width:366px;
+	z-index:75px;
+	background:url('http://dkpfiles.com/dkp-templates/wrath/upcoming.png') no-repeat;
+}
+
+.header #upcoming .events
+{
+	text-align:left;
+	padding:65px 25px 20px 55px;
+}
+
+.header #upcoming .events #blue-header
+{
+	font-size:24px;
+	font-family:Georgia,"Times New Roman",Times,serif;
+	color:#598cb8;
+	font-style:normal;
+	font-weight:bold;
+	font-stretch:normal;
+	letter-spacing:-1px;
+	font-variant:small-caps;
+	line-height:normal;
+	margin:0;
+	padding:0;
+}
+
+.header #upcoming .events ul
+{
+	list-style:none;
+	text-align:left;
+	margin:0;
+	padding:0;
+}
+
+#pagetitle {
+	font-size:24px;
+	font-family:Georgia,"Times New Roman",Times,serif;
+	color:#598cb8;
+	font-style:normal;
+	font-weight:bold;
+	font-stretch:normal;
+	letter-spacing:-1px;
+	font-variant:small-caps;
+	text-align:center;
+	width:100%;
+}
+
+#pagedesc {
+	font-size:9pt;
+	font-weight:bold;
+	color:#627786;
+	width:100%;
+	text-align:center;
+	padding-bottom:10px;
+}
+
+
+
+.header #upcoming .events ul li
+{
+	background:url('http://dkpfiles.com/dkp-templates/wrath/event-bullet.gif') no-repeat left;
+	font-size:12px;
+	font-weight:bold;
+	font-family:Arial,Helvetica,sans-serif;
+	padding:0 0 2px 20px;
+}
+
+.content-bg
+{
+	background:url('http://dkpfiles.com/dkp-templates/wrath/content_top_bg.jpg') no-repeat top;
+	height:100%;
+}
+
+.content-border
+{
+	background:url('http://dkpfiles.com/dkp-templates/wrath/content_border.gif') repeat-y top center;
+	height:100%;
+}
+
+.content
+{
+	text-align:center;
+	height:100%;
+	background:url('http://dkpfiles.com/dkp-templates/wrath/content_studs.gif') repeat-y top center;
+	position:relative;
+}
+
+.content-table
+{
+	left:0;
+	width:875px;
+	border:0;
+	text-align:left;
+	vertical-align:top;
+	margin:0 57px;
+}
+
+.sidebar
+{
+	vertical-align:top;
+	text-align:left;
+	width:250px;
+}
+
+.sidebarhidden
+{
+	display:none
+}
+
+.sidebar .menus
+{
+	width:225px;
+	background:url('http://dkpfiles.com/dkp-templates/wrath/side_bg.gif') no-repeat;
+	padding:2px 25px 10px 10px;
+}
+
+.sidebar .menus h1
+{
+	font-size:18px;
+	font-family:Georgia,"Times New Roman",Times,serif;
+	color:#fff;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+}
+
+.sidebar .menus table td
+{
+	text-align: left;
+}
+
+.sidebar .menus ul
+{
+	list-style:none;
+	padding: 0 0 0 10px;
+	margin:0px:
+	text-align:left;
+}
+
+.sidebar .menus ul li
+{
+	padding:0px 0 2px 20px;
+	margin:0px;
+	background:url('http://dkpfiles.com/<!--System:SD-->/list') no-repeat left;
+	font-size:12px; 
+	font-weight: bold; 
+	font-family:	Arial,Helvetica,sans-serif;
+}
+
+.sidebar .base
+{
+	height:11px;
+	width:235px;
+	margin-bottom:10px;
+	background:url('http://dkpfiles.com/dkp-templates/wrath/side_base.gif') no-repeat;
+}
+
+.mainframe
+{
+	width:625px;
+	text-align:right;
+	vertical-align:top;
+}
+
+.mainframe-top
+{
+	width:625px;
+	height:21px;
+	background:url('http://dkpfiles.com/dkp-templates/wrath/mainframe_top.gif') no-repeat;
+}
+.mainframe-top-wide
+{
+	width:875px;
+	height:21px;
+	background:url('http://dkpfiles.com/dkp-templates/wrath/mainframe_top.gif') no-repeat;
+}
+.mainframe-top-right
+{
+	float:right;
+	width:525px;
+	height:21px;
+	background:url('http://dkpfiles.com/dkp-templates/wrath/mainframe_top.gif') no-repeat;
+	background-position:top right;
+}
+
+.mainframe-content
+{
+	width:625px;
+	empty-cells:show;
+}
+
+.mainframe-left
+{
+	width:15px;
+	background:url('http://dkpfiles.com/dkp-templates/wrath/content-left.jpg') repeat-y;
+}
+
+.mainframe-right
+{
+	width:15px;
+	background:url('http://dkpfiles.com/dkp-templates/wrath/content-right.jpg') repeat-y;
+}
+
+.mainframe-inner
+{
+	text-align:left;
+	width:595px;
+	background:url('http://dkpfiles.com/dkp-templates/wrath/content-center.jpg');
+	overflow:auto;
+}
+
+.mainframe-inner-wide
+{
+	text-align:left;
+	width:845px;
+	background:url('http://dkpfiles.com/dkp-templates/wrath/content-center.jpg');
+	overflow:auto;
+}
+
+.mainframe-content-wide
+{
+	width:875px;
+	empty-cells:show;
+}
+
+.mainframe-bottom
+{
+	width:625px;
+	height:21px;
+	background: url('http://dkpfiles.com/dkp-templates/wrath/mainframe_bottom.gif') no-repeat;
+}
+.mainframe-bottom-wide
+{
+	width:875px;
+	height:21px;
+	background: url('http://dkpfiles.com/dkp-templates/wrath/mainframe_bottom.gif') no-repeat;
+}
+
+.mainframe-bottom-right
+{
+	float:right;
+	width:525px;
+	height:21px;
+	background:url('http://dkpfiles.com/dkp-templates/wrath/mainframe_bottom.gif') no-repeat;
+	background-position:top right;
+}
+
+.post-header
+{
+	width:585px;
+	height:28px;
+	text-align:left;
+	vertical-align:top;
+	font-family:Arial, Helvetica, Sans-serif;
+	font-weight:bold;
+	font-size:12px;
+	background:url('http://dkpfiles.com/dkp-templates/wrath/post-header.png') no-repeat;
+	padding:6px 0 5px;
+}
+
+.post-header .post-top
+{
+	width:485px;
+	height:28px;
+	padding-left:5px;
+	overflow:hidden;
+}
+
+.post-header .author
+{
+	width:100px;
+	height:28px;
+	text-align:right;
+	overflow:hidden;
+	color:#598cb8;
+}
+
+.post-header img
+{
+	float:left;
+	margin:0 5px 0 0;
+}
+
+.post-heading
+{
+	padding-top:5px;
+	color:#00b3fe;
+}
+
+.post-date
+{
+	padding-top:5px;
+	color:#fff;
+}
+
+.post-title
+{
+	padding-top:5px;
+	color:#feaf00;
+}
+
+.post
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#d6f9ff;
+	line-height:18px;
+	width:585px;
+	overflow:auto;
+}
+
+.post p
+{
+	margin:0;
+	padding:0 5px 5px 0;
+}
+
+.post-comments
+{
+	text-align:right;
+	font-weight:bold;
+	padding:0 25px 20px 20px;
+}
+
+.post-comments img
+{
+	margin:0 5px 0 0;
+}
+
+.footer
+{
+	width:100%;
+	height:185px;
+	background:url('http://dkpfiles.com/dkp-templates/wrath/footer.jpg') no-repeat right;
+}
+
+.listlabel
+{
+	color:#00b3fe;
+	font-weight:bold;
+	background:url('http://dkpfiles.com/dkp-templates/wrath/post-header.png') repeat-x;
+}
+
+.listlabel i
+{
+	color:#ffffff;
+	font-weight:bold;
+}
+
+#navmenu a,#navmenu a:visited
+{
+	color:#fff;
+}
+
+#navmenu a:hover, .listlabel a
+{
+	color:#feaf00;
+}
+
+.list, .List, .PostText {
+	background-color: #112433;
+	border: 1px solid #263248;
+}
+.PostInfo {
+	border: 1px solid #263248;
+}
+.listred {
+	background-color: #331114;
+}
+.list1, .list2{
+	color:#d6f9ff;
+}
+.list1 div,.list2 div
+{
+	margin-bottom:5px !important;
+}
+
+.wowtooltip
+{
+	text-align: left;
+}
+
+table.ttb tr td
+{
+	text-align: left !important;
+}
+
+.list2, .PostInfo, .newlist2
+{
+	background-color: #132737;
+}
+.list td {
+	padding: 5px;
+}
+.newlist1
+{
+	background-color: #1b354a;
+	color: #ffffff;
+}
+.newlist2
+{
+	background-color: #183146;
+	color: #ffffff;
+}
+.calday
+{
+	width:20px;
+	height:18px;
+	text-align:center !important;
+	
+}
+
+tr.calheader, tr.calheader td
+{
+	text-align:center !important;
+	font-weight:bold;
+}
+
+.calcurrent
+{
+	border-width:1px;
+	border-style:solid;
+	border-color:#aaaaaa
+}
+
+
+
+/* The next rules (all preceded with bigcal) are for the 'Big Calendar' (bigcalendar.php) */
+
+/* this is the table that displays the calendar info */
+.bigcal {width:100%;border-style:inset;border-width:1px;}
+
+/* This is the header of the calendar, displaying the month and year, and the links to the next months */
+.bigcalheader{font-size:16pt;font-weight:bold;background:url('http://dkpfiles.com/dkp-templates/wrath/post-header.png') repeat-x;}
+
+/* Day Labels 'Sunday' 'Monday' etc */
+.bigcaldayheader{font-size:10pt;font-weight:bold;background:url('http://dkpfiles.com/dkp-templates/wrath/post-header.png') repeat-x;}
+
+/* This is the class for each day */
+.bigcalday {width:14%;border-style:solid;border-color:#8888bb;border-width:1px;height:100px;background:url('http://dkpfiles.com/dkp-templates/wrath/list1.jpg');}
+
+/* This is a class that is displayed on event labels (8:00pm - Gruul's Lair) */
+.bigcallabel{font-size:8pt;cursor:pointer}
+
+/* This is the div containing the day of the month */
+.bigcaldaylabel{font-size:8pt;background:url('http://dkpfiles.com/dkp-templates/wrath/post-header.png') repeat-x;text-align:center}
+
+/* The class when a day on the calendar is being hovered over */
+.bigcalday_hover{border-color:#D61318}
+
+/* One of the classes displayed on today */
+.bigcalcurrent{border-color:#000000;background:#222244}
+
+/* One of the classes to display is something is scheduled on that day */
+.bigcalsomething{}
+
+/* This is going to be the Arrows to the right and left */
+.bigcalheader a{color:}
+
+/* This is the div that gets clicked to add a new item.  The default image is a plus.  The Overflow:hidden is because IE, for whatever reason, wants to make it higher than the height attribute */
+.bigcalplus{	position:relative;
+		top:2px;
+		float:right;
+		width:10px;
+		height:10px;
+		overflow:hidden;
+		line-height:1px;
+		background-image:url(http://www.dkpsystem.com/plus.gif);
+		cursor:pointer;}		
+
+/* A day that's not in the current month (at the beginning and end of the calendar display) */
+.bigcalblank {}
+
+
+/* The following are the rules for tabs */
+div.tabrow{float:left;width:100%;padding-top:5px;}
+ul.tabrow, ul.tabrow li{list-style-type:none;margin:0;padding:0}
+ul.tabrow{margin-left:10px;}
+ul.tabrow li{list-style-image:none;float:left;margin-right: 3px;text-align:center;font-size:inherit}
+ul.tabrow a{float:left;width:8em;padding: 5px 0;background-color:#57667a;}
+ul.tabrow a:hover {background:#347892;color:#ffffff}
+ul.tabrow li.selected a,ul.tabrow li.selected a:hover {background-color:#22224f;color:#ffffff}
+
+/* Login elements */
+#loginstuff {
+	font-weight: bold;
+	color: #00b3fe;
+}
+#loginstuff input {
+	width: 125px;
+	background-color: #263248;
+	color: #ffffff;
+	font-weight: bold;
+	padding: 2px;
+	border: 1px solid #112433;
+}
+#loginstuff input.button {
+	width: auto;
+}
+
+/* Guides */
+.GuideTitle, .GuideSubTitle {
+	display: block;
+	font-weight: bold;
+	border-bottom: 1px solid #1b354a;
+}
+.GuideTitle {
+	font-size: 1.4em;
+}
+.GuideSubTitle {
+	font-size: 1.2em;
+}
+
+#shoutbox_menu{
+	height:300px;
+	overflow:auto;
+}
+
+#myventstatus{
+	height:300px;
+	overflow:auto;
+}
+
+/* DHTML-MENUS */
+div.dhtmlddl, div.dhtmlddl *, div.dhtmlcombo, div.dhtmlcombo *{
+	height:16px !important;
+}
+
+tr.listlabel div.dhtmlddl, tr.listlabel div.dhtmlcombo{
+}
+
+div.dhtml_ddl_list, div.dhtml_combo_list {
+	background-color:#132737;
+}
+
+.dhtml_ddl_listitem,.dhtml_ddl_listitem_highlight {
+	padding-top:2px;
+	margin:0;
+}
+
+div.dhtml_ddl_listitem_highlight{
+}
+/* END-DHTML-MENUS */
+

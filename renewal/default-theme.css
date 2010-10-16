@@ -1,0 +1,9 @@
+/* CSS Document */
+
+/* Title image, to be changed per style sheet to match the desired theme */ 
+#titleimage {
+	display: block;
+	height: 200px;
+	width: 900px;
+	background-image: url(lordaeron.jpg);
+}

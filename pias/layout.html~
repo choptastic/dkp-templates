@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<style>
+		body, .body {
+			background-image:url(http://dkpfiles.com/<!--System:SD-->/background);
+		}
+	</style>
+	<title><!--System:SiteName--> - <!-- System:Title --></title>
+	<link rel=stylesheet href="<!--System:CSS-->" type="text/css">
+	<link rel=icon href="settings/<!--System:SD-->/icon">
+	<link rel="shortcut icon" href="settings/<!--System:SD-->/icon">
+
+	<script language=javascript>
+		function menuwidth()
+		{
+			var curw = document.body.clientWidth;
+			var t = document.getElementById("topmenu").tBodies[0].rows[0].cells;
+			var numitems = t.length;
+			var newwidth = Math.floor(curw/numitems) + "px";
+			var i;
+			for(i=0;i<numitems;i++)
+				t[i].style.width=newwidth;
+		}
+	</script>
+</head>
+<body onresize="menuwidth()" onload="menuwidth()">
+	<a href="news.php"><img id=logo border=0 src="<!--System:logo-->" border=0></a>
+	
+	<table id=nextevent cellspacing=0 cellpadding=0 class=menu>
+		<tr align=center>
+			<Td class=menutopleft></td>
+			<td class=menutitle align=center>
+				Next Event
+			</td>
+			<td class=menutitle align=center>
+				Statistics
+			</td>
+			<td class=menutitle align=center>
+				Popular Threads
+			</td>
+			<Td class=menutopright></td>
+		</tr>
+		<tr valign=top>
+			<td class=contentleft></td>
+			<td class="stattd content" align=center>
+				<span style="font-weight:bold;font-size:12pt"><!-- System:NextEventName --></span><br>
+				<span style="font-size:10pt">
+					<!-- System:NextEventDate--><br>
+					<!-- System:NextEventTime-->
+				</span>
+			</td>
+			<td class="stattd content" align=left>
+				<span style="font-size:7pt">
+					<!-- System:TopStats -->
+				</span>
+			</td>
+			<td class="stattd content" align=left>
+				<span style="font-size:7pt">
+					<!-- System:PopularThreads -->
+				</span>
+			</td>
+			<td class=contentright></td>
+		</tr>
+		<tr>
+			<Td class=contentbottomleft></td>
+			<td class=contentbottom colspan=3></td>
+			<Td class=contentbottomright></td>
+		</tr>
+		
+	</table>
+	
+
+	<div id=mainmenu>
+		<table align=center width="100%" id=topmenu>
+			<tr align=center class=mainmenu valign=top>
+				<!--System:StartEmbedMenu:Menu-->
+					<!--Menu:StartItemList-->
+						<!--Menu:StartItem-->
+							<Td><a href="<!--Menu:Link-->"><!--Menu:LinkName--></a></td>
+						<!--Menu:EndItem-->
+					<!--Menu:EndItemList-->
+				<!--System:EndEmbedMenu-->
+			</tr>
+		</table>
+	</div>
+			
+		
+	<div id=menus>
+		<!--System:Menus:Left:Menu-->
+		<!--System:Menus:Right:Menu-->
+	</div>
+
+	<div id=content>
+		<table align=center id=titlebar cellspacing=0 cellpadding=0>
+			<tr align=center>
+				<Td style="width:15px"><img src="http://dkpfiles.com/dkp-templates/pias/titleleft.gif"></td>
+				<td id=pagetitle><!--System:Title--></td>
+				<td style="width:15px"><img src="http://dkpfiles.com/dkp-templates/pias/titleright.gif"></td>
+			</tr>
+			<tr align=center>
+				<td style="width:15px;background-image:url(http://dkpfiles.com/dkp-templates/pias/pagedescleft.gif);background-repeat:repeat-y">&nbsp;</td>
+				<Td id=pagedesc><!--System:PageDesc--></td>
+				<td style="width:15px;background-image:url(http://dkpfiles.com/dkp-templates/pias/pagedescright.gif);background-repeat:repeat-y">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class=contentleft>&nbsp;</td>
+				<td class=content>
+					<!--System:Content--><br><br>
+					<center class=copyright>
+						<!-- System:Copyright -->
+					</center>
+
+				</td>
+				<td class=contentright></td>
+			</tr>
+			<tr>
+				<Td class=contentbottomleft></td>
+				<td class=contentbottom></td>
+				<Td class=contentbottomright></td>
+			</tr>
+		</table>
+	</div>
+	<div id=countdown>
+		<!-- System:CountDown-->
+	</div>
+</body>
+</html>

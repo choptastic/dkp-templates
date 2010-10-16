@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<style>
+		#logo {
+			background:url(<!--System:Logo-->) center center no-repeat;
+		}
+		#background
+		{
+			background:url(<!--System:Background-->) top center;
+		}
+	</style>
+
+	<title><!--System:SiteName--> - <!--System:Title--></title>
+	<link rel="stylesheet" type="text/css" href="<!--System:CSS-->" />
+	<!--[if lte IE 6]>
+		<link rel="stylesheet" type="text/css" href="http://dkpfiles.com/dkp-templates/ominouslotro/ie.css" />
+	<![endif]-->
+	<link rel="icon" type="image/ico" href="http://dkpfiles.com/<!--System:SD-->/icon" />
+</head>
+
+<body>
+	<div id=body>
+		<div id=glowtopleft class=glowcorner></div>
+		<div id=glowtopright class=glowcorner></div>
+		<div id=glowbottomleft class=glowcorner></div>
+		<div id=glowbottomright class=glowcorner></div>
+
+		<div id=glowleft class=glowside></div>
+		<div id=glowright class=glowside></div>
+		<div id=glowtop class=glowtopbottom></div>
+		<div id=glowbottom class=glowtopbottom></div>
+
+		<div id=fireleft class=flames></div>
+		<div id=fireright class=flames></div>
+
+		<div id=topleft></div>
+		<div id=topright></div>
+
+		<div id=leftbar></div>
+		<div id=rightbar></div>
+
+		<div id=topbar>
+			<div class="leavesleft" id="leavestopleft"></div>
+			<div class="leavesright" id="leavestopright"></div>
+		</div>
+
+		<div id=background>
+			<div id=logo onClick="location.href='news.php'"></div>
+		</div>
+		<div id=navbar>
+			<ul>
+				<!--System:StartEmbedMenu:Menu-->
+					<!--Menu:StartItemList-->
+						<!--Menu:StartItem-->
+							<li><a href="<!--Menu:Link-->" <!--Menu:Popup-->><!--Menu:LinkName--></a></li>
+						<!--Menu:EndItem-->
+					<!--Menu:EndItemList-->
+				<!--System:EndEmbedMenu-->
+			</ul>
+		</div>
+		<div id=rune>
+		</div>
+
+		<table id=main>
+			<tr valign=top>
+				<!--System:IfMenus:Left:Menu-->
+					<td id=left>
+						<div class=menuouter>
+							<!--System:Menus:Left:Menu-->
+						</div>
+					</td>
+				<!--System:EndIfMenus-->
+				<td id=content>
+					<div id=contentheader>
+						<div id=headerbackground></div>
+						<div id=medalleft class=medal></div>
+						<div id=medalright class=medal></div>
+						<div id=headertext>
+							<!--System:Title-->
+						</div>
+					</div>
+					<div id=contentcontent>
+						<div id=contentleft></div>
+						<div id=contentright></div>
+						<div id=contentinner>
+							<div id=contenttext>
+								<div class=pagedesc><!--System:PageDesc--></div>
+								<!--System:Content-->
+							</div>
+						</div>
+					</div>
+
+					<div id=contentfooter>
+						<div id=footermid></div>
+						<div id=footerleft></div>
+						<div id=footerright></div>
+					</div>
+				</td>
+				<!--System:IfMenus:Right:Menu-->
+				<td id=right>
+					<div class=menuouter>
+						<!--System:Menus:Right:Menu-->
+					</div>
+				</td>
+				<!--System:EndIfMenus-->
+			</tr>
+		</table>
+
+		<br /><br />
+		<div class=copyright>
+			<!--System:Copyright-->
+		</div>
+
+		<div id=bottombar>
+			<div class="leavesleft" id="leavesbottomleft"></div>
+			<div class="leavesright" id="leavesbottomright"></div>
+		</div>
+		
+	</div>
+</body>
+</html>
+<script language=javascript>
+	var square_tabs = true;
+</script>

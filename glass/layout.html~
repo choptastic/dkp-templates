@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<style>
+		body{background-image:url(<!--System:Background-->) repeat};
+	</style>
+	<link rel="stylesheet" href="<!--System:CSS-->" type="text/css">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="alternate" title="<!--System:SiteName--> RSS" href="http://<!--System:SD-->.dkpsystem.com/feed.rss" type="application/rss+xml">
+	<title><!--System:SiteName--> - <!--System:Title--></title>
+	<script language="javascript" src="http://dkpfiles.com/dkp-templates/glass/glass.js"></script>
+</head>
+
+<body onload="Countdown_Capture()">
+<div id="divCountdown" style="position: absolute; display: none"><!-- System:CountDown --></div>
+
+<Table style="position: relative; left: 0px; padding: none; margin: none; width: 100%" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td class="Banner" colspan="2"><a href="news.php"><Img src="<!--System:Logo-->" border="0" alt=""></a></td>
+	</tr>
+</Table>
+<div style="position: absolute; top: 62px; right: 50px">
+<Table>
+	<tr>
+		<td style="font-size: 7.5pt"><!-- System:PopularThreads --></td>
+		<td><img src="http://dkpfiles.com/dkp-templates/glass/20Spcr.gif" border="0"></td>
+		<td><img src="http://dkpfiles.com/dkp-templates/glass/20Spcr.gif" border="0"></td>
+		<td style="font-size: 7.5pt"><!-- System:TopStats --></td>
+	</tr>
+</Table>
+</div>
+
+<Table style="z-index: 19; position: relative; left: 0px; padding: none; margin: none; width: 100%" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td style="vertical-align: top; width: 200px">
+			<Table id="tblMenu" style="width: 100%; padding: none; margin: none">
+				<col style="width: 10px;"><col style="width: 180px;"><col style="width: 10px;">
+				<tr>
+					<td>&nbsp;</td>
+					<td>
+						<table border=0 class="Menu" cellpadding="1" cellspacing="0" width="167">
+							<tr>
+								<td class="MenuCat" align="center" id="tdEventDisplay">No Event Captured</td>
+							</tr>
+							<tr>
+								<td class="MenuChoice" id="tdEventTimer" align="center" style="background-image: url('http://dkpfiles.com/dkp-templates/glass/Menu_C.png'); background-repeat: repeat-y;">00:00:00</td>
+							</tr>
+							<tr>
+								<td class="MenuFtr"><img src="http://dkpfiles.com/dkp-templates/glass/170_19Spcr.gif" border="0"></td>
+							</tr>
+						</table><br>
+						<!--System:Menus:Left-->	
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</Table>
+		</td>
+		<td style="vertical-align: top">
+			<Table id="tblHdr" style="width: 100%; padding: none; margin: none" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td style="width: 25px"><img src="http://dkpfiles.com/dkp-templates/glass/Body_TL.png" border="0"></td>
+					<td style="background-image: url('http://dkpfiles.com/dkp-templates/glass/Body_TC.png'); background-repeat: repeat-x"><span style="Width: 100%; Text-Align: center" id="pagetitle"  class="Subject"><!-- System:Title --></span></td>
+					<td style="width: 25px"><img src="http://dkpfiles.com/dkp-templates/glass/Body_TR.png" border="0"></td>
+				</tr>
+			</Table>
+			<Table id="tblHdr" style="width: 100%; padding: none; margin: none" cellpadding="0" cellspacing="0">
+				<tr>
+					<td style="width: 6px; background-image: url('http://dkpfiles.com/dkp-templates/glass/Body_L.png'); background-repeat: repeat-y"><img src="http://dkpfiles.com/dkp-templates/glass/6Spcr.gif" border="0"></td>
+					<td style="background-image: url('http://dkpfiles.com/dkp-templates/glass/Body_C.png'); background-repeat: repeat">
+						<span style="Width: 100%; Text-Align: center" id="pagedesc" class="SubSubject"><!-- System:PageDesc --></span><!-- System:Content -->
+					</td>
+					<td style="width: 6px; background-image: url('http://dkpfiles.com/dkp-templates/glass/Body_R.png'); background-repeat: repeat-y"><img src="http://dkpfiles.com/dkp-templates/glass/6Spcr.gif" border="0"></td>
+				</tr>
+			</Table>
+			<Table id="tblFdr" style="width: 100%; padding: none; margin: none" cellpadding="0" cellspacing="0">
+				<tr>
+					<td style="width: 25px"><img src="http://dkpfiles.com/dkp-templates/glass/Body_BL.png" border="0"></td>
+					<td style="background-image: url('http://dkpfiles.com/dkp-templates/glass/Body_BC.png'); background-repeat: repeat-x">&nbsp;</td>
+					<td style="width: 25px"><img src="http://dkpfiles.com/dkp-templates/glass/Body_BR.png" border="0"></td>
+				</tr>
+			</Table>
+			<center>
+				<span class=copyright>
+					<!-- System:Copyright -->
+				</span>
+			</center><br>
+			<Table id="tblPad" style="width: 100%; padding: none; margin: none" cellpadding="0" cellspacing="0">
+				<tr style="Height: 110px;" >
+					<td style="Height: 110px;" ><img src="http://dkpfiles.com/dkp-templates/glass/20Spcr.gif" border="0"></td>
+				</tr>
+			</Table>
+		</td>
+		<!--System:IfMenus:Right-->
+		<td style="vertical-align: top; width: 200px">
+			<Table id="tblMenu" style="width: 100%; padding: none; margin: none">
+				<col style="width: 10px;"><col style="width: 180px;"><col style="width: 10px;">
+				<tr>
+					<td>&nbsp;</td>
+					<td>
+						<!--System:Menus:Right-->	
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</Table>
+		</td>
+		<!--System:EndIfMenus-->
+	</tr>
+</Table>
+</body>
+</html>
+

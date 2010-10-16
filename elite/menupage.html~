@@ -1,0 +1,24 @@
+<table border=0 class="Menu" cellpadding="1" cellspacing="0" width="167">
+	<tr>
+		<td class="MenuCat" align="center">
+			<!--Menu:Title-->
+		</td>
+	</tr>
+	<!-- Menu:StartItemList -->
+	<tr>
+		<td class="MenuChoice" align="left">
+		<!-- Menu:StartItem -->
+			<li><a href="<!-- Menu:Link -->" <!--Menu:Popup -->><!-- Menu:LinkName --></a></li>
+		<!-- Menu:EndItem -->
+	</tr>
+	<!-- Menu:EndItemList -->
+
+	<!-- Menu:StartStandAlone -->
+	<tr>
+		<td class=MenuChoice align=left>
+			<!-- Menu:StandAloneContent -->
+		</td>
+	</tr>
+	<!-- Menu:EndStandAlone -->
+</table>
+

@@ -1,0 +1,18 @@
+<div id="menus">
+	<h1><!--Menu:Title--></h1>
+	<div id="menucontent">
+	<!-- Menu:StartItemList -->
+		<ul style="list-style:none;padding: 0 0 0 10px;margin:0px:text-align:left;">
+			<!-- Menu:StartItem -->
+				<li>
+					<a href="<!-- Menu:Link -->" <!--Menu:Popup -->><!-- Menu:LinkName --></a>
+				</li>
+			<!-- Menu:EndItem -->
+
+		</ul>
+	<!-- Menu:EndItemList -->
+	<!--Menu:StartStandalone-->
+		<!--Menu:StandAloneContent-->
+	<!--Menu:EndStandAlone-->
+</div></div>
+<div class="base"></div>

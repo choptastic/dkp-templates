@@ -1,0 +1,16 @@
+/* CSS Document */
+
+/* png hack */
+* html #guildname { 
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=settings/seventhcircle/files/renewal.png, sizingMethod=scale);
+}
+
+/* positioning hacks for IE's weird display */
+#toggle{ margin-top: 10px; }
+#MenuArea{ margin-top: 10px; }
+
+#guildname{ margin-left: 0px; }
+div#admin{ margin-left: 121px; }
+
+* html .TopStats#right {left: 0px;}

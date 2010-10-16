@@ -1,0 +1,32 @@
+BODY {
+	background: #000 url(http://www.semanticantics.net/clients/theominous/images/bg.png) top center repeat-y;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	color: white;
+	width: 1000px;
+}
+
+#header {
+	background: transparent url(http://www.semanticantics.net/clients/theominous/images/bgtop.png) top center no-repeat;
+	height: 351px;
+}
+
+#headerimg {
+	position: absolute;
+	z-index: 5;
+}
+
+#flameleft {
+	position: absolute;
+	margin: 45px 0 0 22px;
+}
+
+#flameright {
+	position: absolute;
+	margin: 45px 0 0 950px;
+}
+
+#bodywrapper {
+	background: transparent url(http://www.semanticantics.net/clients/theominous/images/bgbody.png) top center repeat-y;
+	padding: 0 80px;
+}

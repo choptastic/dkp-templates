@@ -1,0 +1,629 @@
+/* This is the body */
+BODY,.body {	cursor: default;
+		font-family: Georgia, Times New Roman, Times;
+		font-size: 9pt;
+		background-image: url(http://dkpfiles.com/dkp-templates/northrend/bluebg.jpg);
+		margin: 0;
+		padding: 0;
+		background-color: #000000;
+		color: #d5d9e7;}
+
+/* This is used when [quote] tags are used in posts */
+.quote{
+	font-size:7.5pt;
+	background-color: #000000;}
+
+.quoteheader {
+	font-size:9pt;
+	background: #000000;}
+
+/* For Lists */
+.List{	
+	background-color: #000000;
+	border: inset;
+	border-width: 1px;}
+
+
+/* used for the newsletter table */
+table.newsletter{
+		border: inset;
+		border-width: 1px;
+		font-family:monospace;
+		font-size: 9pt;}
+
+/* Used in the default base as the Title table.  Even with custom layouts, it's used in the Add/Edit Post and other popups that have a title */
+Table.Subject{
+		border: outset;
+		border-width: 1px;}
+
+/* This is used to define the Menus on the left */	
+.Menu{		width: 185px;
+		font-weight: bold;}
+
+/* This is used with [title] tags in guides and posts */
+.GuideTitle{	font-weight:bold;
+		font-size: 14pt;
+		color: white;}
+		
+/* This is used with [subtitle] tags in guides and posts */
+.GuideSubTitle{	font-weight:bold;
+		font-size: 11pt;
+		color:white;}
+
+/* This is the for Page Title */
+.Title{		font-size: 16pt;
+		font-weight: bold;
+		color: #FFFFFF}
+		
+		
+/* Style of the Next Event Name at the top */
+.EventName{	font-size:11pt;
+		font-weight:bold; }
+
+/* same as above, only for the Date/Time */
+.EventTime{	font-size:11pt;
+		font-weight:normal; }
+		
+/* TopStats, is the color of the Statistic itself */
+.StatCount{	color: #D6BA5A;}
+
+/* TopStats, is the color of a Statistic designed to get the user's attention */
+.StatAlert{	color: #FFFFFF;}
+
+/* Style of the "Top Stats" */
+.TopStats{	background: #000000;
+		font-size: 10pt}
+
+/* Is essentially the background information for the Next Event. */
+.content{	background: #000000;
+		background-image:url('http://dkpfiles.com/dkp-templates/northrend/page-bg.jpg');
+		font-size:9pt;}
+		
+/* Error box description */
+table.error{	border-width: 1px;
+		border-style:outset;}
+
+/* Error box description */
+td.error,.missing,div.error{	
+		font-size: 9pt;
+		background: #771111;
+		color: #FFFFFF;}
+
+/* Error box title */
+.errorlistlabel{background:#BB1111;
+		font-weight:bold;
+		color:#FFFFFF;
+		font-size:11pt}
+
+/* used on almost every page, is the style of one of the row-types in a table with alternating row types */
+.list1,.l1{	font-size: 9pt;
+		background: #04050c;}
+
+/* used on almost every page, is the style of the other of the row-types in a table with alternating row types */
+.list2,.l2{	font-size: 9pt;
+		background: #080b1c;}
+
+/* used commonly, is for rows that want to "Get Your attention" in a table.  IE, Missing Raids on your member profile. */
+.listred,.lr{	background: #FF9999;
+		color: #000000;
+		font-size: 9pt;}
+
+/* used to mark a "new or recently posted" thread. */
+.newlist1,.newl1{
+		background: #122207;
+		font-weight:bold;
+		font-size: 9pt;}
+
+.newlist2,.newl2{
+		background: #122207;
+		font-weight:bold;
+		font-size: 9pt;}
+
+/* used in the copyright notice */
+.copyright{font-size: 7.5pt;font-style:italic}
+
+/* used in a few places to just define a normal place to put simple kinda-small text */
+.plain{font-size:9pt}
+
+/* to define small text in random places */
+.xsmall{font-size:7.5pt}
+
+/* defines the Raid Calander */
+.calcurrent{
+		font-size: 9pt;
+		font-weight:bold;
+		color: ;
+		border-style:solid;
+		border-width:1px;
+		border-color:#D6BA5A;}
+
+
+/* The menu header (Menu, Resources, etc) as well as the Calendar Header, and the current date on the calendar */
+.MenuCat,.calheader{
+		font-size: 12pt;
+		font-weight: bold;
+		color: #FFFFFF;}
+		
+/* The cell record on the calendar for if there is something scheduled this day */
+.calsomething{}
+
+/* The header bar of tables that act as lists */
+.listlabel{
+		font-size: 9pt;
+		font-weight: bold;
+		background: #122207 url(http://dkpfiles.com/dkp-templates/northrend/listlabel.gif);
+		color: #FFFFFF;
+		border-style:solid;
+		border-width:1px;
+		border-color:#FFFFFF;}
+
+.description
+{
+	text-align:center;
+	font-weight:bold;
+	font-size:12pt;
+	color:#fff;
+}
+
+/* The Menu option contents, as well as the body for the calendar */
+.MenuChoice,.calbody{	
+		font-size: 9pt;
+		color: ;}
+
+/* is the information about the poster on the forum.  The left-most pane on each post */
+.PostInfo{	font-size: 9pt;
+		background: #080b1c;
+		padding:5px;
+		border-style:solid;
+		border-width:1px;
+		border-color: #D6BA5A;}
+		
+/* While rather rarely used, this is the "color picker" popup. Probably shouldn't ever change */
+.cp{		width:10;height:10}
+
+/*  On the forum, this is the little blurb at the top that gives statistic info "Total Posts" "Total Threads" "Deepest Thread" */
+.ThreadHeader{	font-size: 11pt;}
+	
+/* The style associated with the "Add a Post to this thread" link on the forum */
+.MakeAPost{	font-weight: bold;
+		font-size: 11pt;}
+
+/* The style associated with the pane in the layout containing the body of each post */
+.PostText{	font-size: 9pt;
+		background: #080b1c;
+		padding:10px;
+		border-style:solid;
+		border-width:1px;
+		border-color: #D6BA5A;}
+
+/* used on the [pre] tags in posts and stuff */
+pre{		font-size:11pt;}
+
+
+/* Basic Link Definition */
+A:visited	{color: #ffffff;}
+A:link		{color: #ffffff;}
+A:active	{color: #FFFFFF;}
+A:hover		{color: #FFFFFF;}
+
+/* for any list rows that must show up to get the user's attention, this is the link for them */
+A.inred:visited	{color:#000000;}
+A.inred:link	{color:#000000;}
+A.inred:active	{color:#444444;}
+A.inred:hover	{color:#444444;}
+
+/* used in on most pages as the buttom class */
+input.button{	background: #122207;
+		color: #D6BA5A;}
+
+/* used in the default layout as any list items */
+li{	
+		list-style-image:url(http://dkpfiles.com/<!--System:Sd-->/list);
+}
+
+#topmenu
+{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:32px;
+	background: #000;
+	font-size:12pt;
+	font-family:sans-serif;
+	font-weight:bold;
+	color:#ffffff;
+	z-index:500;
+	text-align:center;
+}
+
+#topmenu a:link, #topmenu a:hover, #topmenu a:visited, #topmenu a:active
+{
+	color:#ffffff;
+}
+
+#background
+{
+	position:absolute;
+	top:32px;
+	left:0;
+	width:100%;
+	height:288px;
+	overflow:hide;
+}
+
+#logo
+{
+	position:absolute;
+	top:30px;
+	left:30px;
+	z-index:350;
+}
+
+
+#characterimage
+{
+	position:absolute;
+	right:0;
+	top:30px;
+	height:320px;
+	width:441px;
+	background:url(http://dkpfiles.com/dkp-templates/northrend/arthas.png);
+	z-index:300;
+}
+
+#swordglow
+{
+	position:absolute;
+	bottom:0;
+	left:0;
+	background:url(http://dkpfiles.com/dkp-templates/northrend/glow2.png) no-repeat left bottom;
+	z-index:301;
+	width:266px;
+	height:151px;
+}
+
+.menuglow
+{
+	position:absolute;
+	left:-20px;
+	top:-20px;
+	right:-20px;
+	bottom:-20px;
+
+	background:url(http://dkpfiles.com/dkp-templates/northrend/menuglow.png) no-repeat center center;
+	z-index:-20;
+}
+
+
+#statsthinger
+{
+	position:absolute;
+	left:0px;
+	top:319px;
+	z-index:250;
+}
+
+#statshidden
+{
+	position:absolute;
+	left:0px;
+	top:319px;
+	z-index:200;
+}
+
+.icedrip
+{
+	position:absolute;
+	top:-1px;
+	left:0;
+	width:200px;
+	background:url(http://dkpfiles.com/dkp-templates/northrend/icedrip.gif) repeat-x;
+	height:51px;
+	z-index:20;
+
+}
+
+.blacktable
+{
+	table-layout:fixed;
+}
+
+.topleft
+{
+	background:url(http://dkpfiles.com/dkp-templates/northrend/TopLeftSide.gif) no-repeat;
+	width:14px;
+	height:28px;
+	padding:0px;
+	margin:0px;
+}
+
+.topright
+{
+	background:url(http://dkpfiles.com/dkp-templates/northrend/TopRightSide.gif) no-repeat;
+	width:14px;
+	height:28px;
+	padding:0px;
+	margin:0px;
+
+}
+
+.contenttopleft
+{
+	background:url(http://dkpfiles.com/dkp-templates/northrend/TopLeft.gif) no-repeat;
+	width:14px;
+	height:28px;
+}
+
+.contenttopright
+{
+	background:url(http://dkpfiles.com/dkp-templates/northrend/TopRight.gif) no-repeat;
+	width:14px;
+	height:28px;
+}
+
+.contentleft
+{
+	background:url(http://dkpfiles.com/dkp-templates/northrend/Left.gif) repeat-y;
+}
+
+.contentright
+{
+	background:url(http://dkpfiles.com/dkp-templates/northrend/Right.gif) repeat-y;
+}
+
+.contenttop
+{
+	background:url(http://dkpfiles.com/dkp-templates/northrend/Top.gif) repeat-x;
+	height:28px;
+	color:#ffffff;
+	font-size:12pt;
+	text-align:center;
+	font-weight:bold;
+}
+
+
+.topside
+{
+	background:url(http://dkpfiles.com/dkp-templates/northrend/TopSide.gif) repeat-x;
+	height:28px;
+	padding:0px;
+	margin:0px;
+
+}
+
+.leftside
+{
+	background:url(http://dkpfiles.com/dkp-templates/northrend/LeftSide.gif) repeat-y;
+	width:14px;
+	padding:0px;
+	margin:0px;
+
+}
+
+.rightside
+{
+	background:url(http://dkpfiles.com/dkp-templates/northrend/RightSide.gif) repeat-y;
+	width:14px;
+	padding:0px;
+	margin:0px;
+
+}
+
+.blackbg
+{
+	background: #000;
+	width:14px;
+}
+
+.black
+{
+	background:#000;
+}
+
+.greyline
+{
+	background:#888;
+}
+
+.blackline
+{
+	background:#000;
+}
+
+
+.bottomleft
+{
+	background:url(http://dkpfiles.com/dkp-templates/northrend/BottomLeftSide.gif) no-repeat;
+	width:14px;
+	height:38px;
+	padding:0px;
+	margin:0px;
+
+}
+
+.contentbottomleft
+{
+	background:url(http://dkpfiles.com/dkp-templates/northrend/BottomLeft.gif) no-repeat;
+	width:14px;
+	height:38px;
+}
+
+.contentbottomright
+{
+	background:url(http://dkpfiles.com/dkp-templates/northrend/BottomRight.gif) no-repeat;
+	width:14px;
+	height:38px;
+}
+
+.bottomside
+{
+	background:url(http://dkpfiles.com/dkp-templates/northrend/BottomSide.gif) repeat-x;
+	height:38px;
+	padding:0px;
+	margin:0px;
+
+}
+
+#maincontent
+{
+	position:absolute;
+	left:0px;
+	top:350px;
+	empty-cells:show;
+	z-index:200;
+}
+
+#maincontent > tbody > tr > td
+{
+	padding:0;
+	margin:0;
+}
+
+.contentbottom
+{
+	background:url(http://dkpfiles.com/dkp-templates/northrend/Bottom.gif) repeat-x;
+	height:38px;
+	padding:0px;
+	margin:0px;
+}
+
+.bottomright
+{
+	background:url(http://dkpfiles.com/dkp-templates/northrend/BottomRightSide.gif) no-repeat;
+	width:14px;
+	height:38px;
+	padding:0px;
+	margin:0px;
+
+}
+
+.statlabel
+{
+	font-weight:bold;
+	font-size:10pt;
+	color:white;
+	background:#000;
+}
+
+.countdown
+{
+	position:absolute;
+	font-size:13pt;
+	font-weight:bold;
+	text-align:left;
+}
+
+#countdownback
+{
+	z-index:400;
+	left:20px;
+	bottom:10px;
+	color:#000;
+}
+
+#countdown
+{
+	left:18px;
+	bottom:11px;
+	z-index:401;
+	color:#aaaaff;
+}
+
+
+#countdownback a
+{
+	color:#0a0e24 !important;
+}
+
+#countdown a
+{
+	color:#b2b2ff !important;
+}
+
+/* The following are the rules for tabs */
+div.tabrow{float:left;width:100%;padding-top:5px;}
+ul.tabrow, ul.tabrow li{list-style-type:none;margin:0;padding:0}
+ul.tabrow{margin-left:10px;}
+ul.tabrow li{list-style-image:none;float:left;margin-right: 3px;text-align:center;font-size:inherit}
+ul.tabrow a{float:left;width:8em;padding: 5px 0;background-color:#000000}
+ul.tabrow a:hover {background-color:#262626;}
+ul.tabrow li.selected a,ul.tabrow li.selected a:hover {background:#122207 url(http://dkpfiles.com/dkp-templates/northrend/listlabel.gif)}
+
+
+/* The next rules (all preceded with bigcal) are for the "Big Calendar" (bigcalendar.php) */
+
+/* this is the table that displays the calendar info */
+.bigcal {width:100%;border-style:inset;border-width:1px;}
+
+/* This is the header of the calendar, displaying the month and year, and the links to the next months */
+.bigcalheader{font-size:16pt;font-weight:bold;background: #122207 url(http://dkpfiles.com/dkp-templates/northrend/listlabel.gif);color:#FFFFFF}
+
+/* Day Labels "Sunday" "Monday" etc */
+.bigcaldayheader{font-size:10pt;font-weight:bold;background: #122207 url(http://dkpfiles.com/dkp-templates/northrend/listlabel.gif);color:#FFFFFF}
+
+/* This is the class for each day */
+.bigcalday {width:14%;border-style:solid;border-width:1px;height:100px;background: #080b1c;border-color:#FFCC33}
+
+/* This is a class that is displayed on event labels (8:00pm - Gruul's Lair) */
+.bigcallabel{font-size:8pt;cursor:pointer}
+
+/* This is the div containing the day of the month */
+.bigcaldaylabel{font-size:8pt;background:#080b1c;text-align:center}
+
+/* The class when a day on the calendar is being hovered over */
+.bigcalday_hover{background:#262626;border-color:#FFFFFF}
+
+/* One of the classes displayed on today */
+.bigcalcurrent{border-color:#000000;background:#262626}
+
+/* One of the classes to display is something is scheduled on that day */
+.bigcalsomething{}
+
+/* This is going to be the Arrows to the right and left */
+.bigcalheader a{color:#FFCC33}
+
+/* This is the div that gets clicked to add a new item.  The default image is a plus.  The Overflow:hidden is because IE, for whatever reason, wants to make it higher than the height attribute */
+.bigcalplus{	
+	position:relative;
+	top:2px;
+	float:right;
+	width:10px;
+	height:10px;
+	overflow:hidden;
+	line-height:1px;
+	background-image:url(plus.gif);
+	cursor:pointer;
+}		
+
+/* A day that's not in the current month (at the beginning and end of the calendar display) */
+.bigcalblank {background: #000000}
+
+
+.shoutbox
+{
+	height:300px;
+	overflow:auto;
+}
+
+/* DHTML-MENUS */
+div.dhtmlddl, div.dhtmlddl *, div.dhtmlcombo, div.dhtmlcombo *{
+	height:16px !important;
+	/*background-color:#4d557d !important;*/
+}
+
+tr.listlabel div.dhtmlddl, tr.listlabel div.dhtmlcombo{
+}
+
+div.dhtml_ddl_list, div.dhtml_combo_list {
+}
+
+.dhtml_ddl_listitem,.dhtml_ddl_listitem_highlight {
+	padding-top:2px;
+	margin:0;
+}
+
+div.dhtml_ddl_listitem_highlight{
+}
+/* END-DHTML-MENUS */
+

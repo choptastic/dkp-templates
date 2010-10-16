@@ -1,0 +1,1 @@
+HTML, CSS, and Javascript coding by DKPSystem.com.  Released under the Creative Commons Attribute Non-Commercial license.  Background and Kil'jaeden graphics copyright Blizzard Entertainment. DKPSystem.com is in no way affiliated with Blizzard Entertainment.

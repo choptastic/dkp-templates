@@ -1,0 +1,555 @@
+/*** Global Styles ***/
+body
+{
+	padding:          0;
+	margin:           0;
+	background-color: #212121;
+	color:            #f4f9e7;
+}
+h1, h2, h3, h4, h5, h6
+{
+	font-size: 1em;
+	margin:    0;
+}
+body
+{
+	font: 1em Arial, sans-serif;
+}
+* html td
+{
+	font-size: 1em;
+}
+a
+{
+	color: #c0dba5;
+}
+a:hover
+{
+	color:           #e1efcd;
+	text-decoration: none;
+}
+
+/* Section 508 */
+.nav
+{
+	display: none;
+}
+
+
+/* Color picker Squares */
+.cp{		width:10px;height:10px}
+
+
+
+/*** Header ***/
+#header
+{ 
+	position:    relative;
+	background:  url("http://dkpfiles.com/<!--System:SD-->/background") repeat-x center top;
+	height:      148px;
+	z-index:     2;
+}
+
+/** Main Logo **/
+#main_logo
+{
+	cursor:pointer;
+	position:   absolute;
+	top:        0;
+	left:       0;
+	height:     128px;
+	width:      600px;
+}
+
+#main_logo a
+{
+	display:         block;
+	position:        absolute;
+	top:             0;
+	left:            0;
+	height:          0;
+	width:           0;
+	padding:         120px 351px 0 0;
+	overflow:        hidden;
+	text-decoration: none;
+}
+
+/** Raid **/
+#raid
+{
+	position:   absolute;
+	top:        128px;
+	right:      15px;
+	height:     26px;
+	/*width:      186px;
+	padding:    128px 150px 0 75px;*/
+	background: no-repeat right top;
+	text-align: center;
+	font-size:  0.8em;
+	z-index:    1;
+}
+
+
+
+/** Header Bar **/
+#header ul
+{
+	position:   absolute;
+	top:        120px;
+	left:       0;
+	height:     28px;
+	width:      100%;
+	margin:     0;
+	padding:    0;
+	background: url("http://dkpfiles.com/dkp-templates/envy/header-bar.gif") repeat-x right top;
+	list-style: none;
+}
+
+/** Primary Navigation **/
+#header li
+{
+	float: left;
+}
+#header li a
+{
+	float:           left;
+	height:          28px;
+	line-height:     28px;
+	margin:          0 0 0 6px;
+	padding:         0 0 0 7px;
+	background:      url("http://dkpfiles.com/dkp-templates/envy/header-button.gif") no-repeat left top;
+	color:           #ffffff;
+	text-decoration: none;
+	font-weight:     bold;
+	font-size:       0.85em;
+}
+#header li a .outer
+{
+	display:    block;
+	padding:    0 7px 0 0;
+	background: url("http://dkpfiles.com/dkp-templates/envy/header-button.gif") no-repeat right -56px;
+}
+#header li a .inner
+{
+	display:    block;
+	background: url("http://dkpfiles.com/dkp-templates/envy/header-button.gif") repeat-x left -28px;
+}
+/* hover */
+#header li a:hover
+{
+	background-position: left -84px;
+}
+#header li a:hover .outer
+{
+	background-position: right -140px;
+}
+#header li a:hover .inner
+{
+	background-position: left -112px;
+}
+
+
+/*** Page Body ***/
+#body
+{
+	padding:    0 0 0 10em;
+	background: url("http://dkpfiles.com/dkp-templates/envy/body-trim.gif") repeat-x left top;
+	z-index:    1;
+}
+#body .outer
+{
+	background: url("http://dkpfiles.com/dkp-templates/envy/left-divider.gif") repeat-y left top;
+	padding:    0 12em 0 24px;
+}
+#body .inner
+{
+	background: url("http://dkpfiles.com/dkp-templates/envy/right-divider.gif") repeat-y right top;
+	padding:    0 24px 0 0;
+}
+/** Columns **/
+#left,
+#right
+{
+	padding-bottom: 7px;
+}
+#left
+{
+	float:        left;
+	margin-left: -10em;
+	width:        10em;
+}
+/* IE is strange */
+* html #left
+{
+	margin-left: -5em;
+}
+#right
+{
+	float:         right;
+	margin-right: -12em;
+	width:         12em;
+}
+/* IE is strange */
+* html #right
+{
+	margin-right: -6.5em;
+	position:      relative;
+	left:         -1px;
+}
+#center
+{
+	position:  relative;
+	z-index:   50;
+	overflow:  auto;
+}
+/* IE eats babies for breakfast */
+* html #center
+{
+	float:   right;
+	padding: 0 25px;
+}
+#body .clear
+{
+	clear: both;
+}
+
+/** Menus **/
+.menu
+{
+	font-size: 0.8em;
+}
+.menu .header
+{
+	position:    relative;
+	width:       100%;
+
+}
+.menu .header .text
+{
+	font-weight: bold;
+	text-align:  center;
+	padding:     0.15em 0;
+	cursor:      default;
+	color:       #e1efcd;
+	font-family: Verdana, sans-serif;
+}
+.menu .header .top,
+.menu .header .bottom
+{
+	height:    12px;
+	font-size: 0;
+}
+.first .menu .header
+{
+	margin-top: -8px;
+}
+/* Left Menus */
+#left .menu .header
+{
+	margin-right: -25px;
+	padding-right: 25px;
+	background:    url("http://dkpfiles.com/dkp-templates/envy/left-header-back.gif") repeat-y right center;
+}
+#left .menu .header .top
+{
+	margin-right: -25px;
+	background:    url("http://dkpfiles.com/dkp-templates/envy/left-header-top.gif") no-repeat right bottom;
+}
+#left .menu .header .bottom
+{
+	margin-right: -25px;
+	background:    url("http://dkpfiles.com/dkp-templates/envy/left-header-bottom.gif") no-repeat right top;
+}
+#left .first .menu .header .top
+{
+	margin-right: -25px;
+	background:    url("http://dkpfiles.com/dkp-templates/envy/left-header-top-first.gif") no-repeat right bottom;	
+}
+/* Right Menus */
+#right .menu .header
+{
+	margin-left: -25px;
+	padding-left: 25px;
+	background:   url("http://dkpfiles.com/dkp-templates/envy/right-header-back.gif") repeat-y left center;
+}
+#right .menu .header .top
+{
+	margin-left: -25px;
+	background:   url("http://dkpfiles.com/dkp-templates/envy/right-header-top.gif") no-repeat left bottom;
+}
+#right .menu .header .bottom
+{
+	margin-left: -25px;
+	background:   url("http://dkpfiles.com/dkp-templates/envy/right-header-bottom.gif") no-repeat left top;
+}
+#right .first .menu .header .top
+{
+	margin-left: -25px;
+	background:   url("http://dkpfiles.com/dkp-templates/envy/right-header-top-first.gif") no-repeat left bottom;	
+}
+/** Menu Items **/
+.menu ul
+{
+	position:   relative;
+	padding:    0;
+	list-style: none;
+	z-index:    100;
+}
+#left .menu ul
+{
+	margin:    -7px -4px -7px 0;
+}
+#right .menu ul
+{
+	margin:    -7px 0 -7px -4px;
+}
+.menu li a
+{
+	text-decoration: none;
+	font-weight:     normal;
+	display:         block;
+	padding:         0.25em 1em;
+
+}
+* html .menu li a
+{
+	display: inline-block;
+
+}
+.menu li a:hover
+{
+	background-color: #0f0f0f;
+}
+
+
+/*** Menu Content ***/
+.menu_body
+{
+	position:  relative;
+	z-index:   100;
+	padding:   0.25em;
+	font-size: 0.9em;
+}
+table.Menu
+{
+	border: 1px solid #101010;
+}
+/** Calendar **/
+.calheader
+{
+	background: #1b1b1b;
+}
+.calbody td
+{
+	border:      1px solid #1f1f1f;
+	width:       14.29%;
+	line-height: 1.5em;
+}
+.calday {width:4em}
+.calbody td.calsomething
+{
+	background: #191919;
+	border:     1px solid #090909;
+}
+/** Raid Signup **/
+.signup
+{
+	padding:    0.6em 0 0.3em 0;
+	text-align: center;
+}
+
+
+/*** Center Content ***/
+#content
+{
+	padding:     0.7em 0.5em;
+	font-size:   0.8em;
+	font-family: Verdana, sans-serif;
+}
+/** lists **/
+.List
+{
+	border-collapse: collapse !important;
+}
+.List td
+{
+	padding-top:    0.35em;
+	padding-bottom: 0.35em;
+}
+.listlabel
+{
+	background: #191919;
+}
+.List,
+.listlabel,
+.list1,
+.list2,
+.newlist1,
+.newlist2
+{
+	border: 1px solid #101010;
+}
+.list1
+{
+	background: #212121;
+}
+.list2
+{
+	background: #303030;
+}
+.newlist1
+{
+	background: #293b1f;
+}
+.newlist2
+{
+	background: #203117;
+}
+.listred
+{
+	background: #402525;
+}
+/** Forums **/
+.PostInfo
+{
+	background:  #191919;
+	border:      1px solid #101010;
+	padding:     0.5em;
+	white-space: nowrap;
+}
+.PostText
+{
+	padding:     0.75em;
+	border:      1px solid #101010;
+	background:  #1d1d1d;
+}
+.MakeAPost
+{
+	border:     1px solid #101010;
+}
+
+.radiotable table
+{
+	width: 100%;
+}
+.radiotable table table
+{
+	width: auto;
+}
+
+.taglist td
+{
+	white-space: auto !important;
+}
+
+
+/*** Footer ***/
+#footer
+{
+	border-top: 1px solid #000000;
+	background: #161616;
+	text-align: center;
+	font-size:  0.7em;
+	padding:    2em;
+}
+#footer td
+{
+	padding: 1.5em;
+}
+
+.GuideTitle {
+	display: block;
+	font-size: 1.5em;
+	border-bottom: 1px solid #333;
+}
+
+.GuideSubTitle {
+	display: block;
+	font-size: 1.35em;
+	border-bottom: 1px solid #333;
+}
+
+/* The following are the rules for tabs */
+div.tabrow{float:left;width:100%;padding-top:5px;}
+ul.tabrow, ul.tabrow li{list-style-type:none;margin:0;padding:0}
+ul.tabrow{margin-left:10px;}
+ul.tabrow li{list-style-image:none;float:left;margin-right: 3px;text-align:center;font-size:inherit}
+ul.tabrow a{float:left;width:8em;padding: 5px 0;background-color:#354616;}
+ul.tabrow a:hover {background:#444444;}
+ul.tabrow li.selected a,ul.tabrow li.selected a:hover {background-color:#191919;color:#ffffff}
+
+/* The next rules (all preceded with bigcal) are for the 'Big Calendar' (bigcalendar.php) */
+
+/* this is the table that displays the calendar info */
+.bigcal {width:100%;border-style:inset;border-width:1px;border-color:black}
+
+/* This is the header of the calendar, displaying the month and year, and the links to the next months */
+.bigcalheader{font-size:16pt;font-weight:bold;background: #191919;}
+
+/* Day Labels 'Sunday' 'Monday' etc */
+.bigcaldayheader{font-size:10pt;font-weight:bold;background: #191919;}
+
+/* This is the class for each day */
+.bigcalday {width:14%;border-style:solid;border-color:#3DE34D;border-width:1px;height:100px;background:#303030;}
+
+/* This is a class that is displayed on event labels (8:00pm - Gruul's Lair) */
+.bigcallabel{font-size:8pt;cursor:pointer}
+
+/* This is the div containing the day of the month */
+.bigcaldaylabel{font-size:8pt;background:#191919;text-align:center}
+
+/* The class when a day on the calendar is being hovered over */
+.bigcalday_hover{border-color:white}
+
+/* One of the classes displayed on today */
+.bigcalcurrent{border-color:#000000;background:#293b1f}
+
+/* One of the classes to display is something is scheduled on that day */
+.bigcalsomething{}
+
+/* This is going to be the Arrows to the right and left */
+.bigcalheader a{background:transparent}
+
+/* This is the div that gets clicked to add a new item.  The default image is a plus.  The Overflow:hidden is because IE, for whatever reason, wants to make it higher than the height attribute */
+.bigcalplus{	position:relative;
+		top:2px;
+		float:right;
+		width:10px;
+		height:10px;
+		overflow:hidden;
+		line-height:1px;
+		background-image:url(http://www.dkpsystem.com/plus.gif);
+		cursor:pointer;}		
+
+/* A day that's not in the current month (at the beginning and end of the calendar display) */
+.bigcalblank {}
+
+#shoutbox_menu{
+	height:300px;
+	overflow:auto;
+}
+
+
+
+/* DHTML-MENUS */
+div.dhtmlddl, div.dhtmlddl *, div.dhtmlcombo, div.dhtmlcombo *{
+	height:16px !important;
+}
+
+tr.listlabel div.dhtmlddl, tr.listlabel div.dhtmlcombo{
+
+}
+
+div.dhtml_ddl_list, div.dhtml_combo_list {
+	font-size:9pt;
+}
+
+.dhtml_ddl_listitem,.dhtml_ddl_listitem_highlight {
+	padding-top:2px;
+	margin:0;
+}
+
+div.dhtml_ddl_listitem_highlight{
+}
+/* END-DHTML-MENUS */
+

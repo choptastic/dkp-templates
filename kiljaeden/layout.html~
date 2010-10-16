@@ -1,0 +1,208 @@
+<!DOCTYPE HTML SYSTEM>
+<html>
+	<head>
+		<style>
+			#background{
+				background: url(http://dkpfiles.com/<!--System:SD-->/background) top center;
+			}
+		</style>
+		<link rel="stylesheet" href="<!--System:CSS-->" type="text/css">
+		<link rel="shortcut icon" href="http://dkpfiles.com/<!--System:SD-->/icon">
+		<link rel="icon" href="http://dkpfiles.com/<!--System:SD-->/icon">
+		<script type="text/javascript" language="JavaScript1.2" src="http://dkpfiles.com/dkp-templates/kiljaeden/showhide.js"></script>
+		<title><!--System:SiteName--> - <!-- System:Title --></title>
+
+		<script language=javascript>
+			function togglestats()
+			{
+				var s = document.getElementById("statsthinger");
+				s.style.display = s.style.display == "none" ? "" : "none";
+			}
+		</script>
+		<!--[if lte IE 6]>
+			<style type="text/css">
+				.greyline,.blackline
+				{
+					display:none
+				}
+			</style>
+		<![endif]-->
+	</head>
+	<body>
+		<div id=topmenu>
+			<!--System:StartEmbedMenu:Menu-->
+				<!--Menu:StartItemList-->
+					<!--Menu:StartItem-->
+						&nbsp; <a href="<!--Menu:Link-->" <!--Menu:Popup-->><!--Menu:LinkName--></a> &nbsp;
+					<!--Menu:EndItem-->
+				<!--Menu:EndItemList-->
+			<!--System:EndEmbedMenu-->
+
+			<div class=greyline style="position:absolute;width:100%;bottom:2px;height:2px;left:0px;"></div>
+			<div class=blackline style="position:absolute;width:100%;bottom:0px;height:2px;left:0px"></div>
+
+		</div>
+
+		<div id=background>
+			<img src="<!--System:Logo-->" id=logo style="cursor:pointer" onClick="location.href='news.php'" />
+
+			<div id=countdown><!--System:CountDown --></div>
+
+			<div class=blackline style="position:absolute;width:100%;left:0px;bottom:0px;height:2px;padding:0;margin:0"></div>
+			<div class=greyline style="position:absolute;left:0;width:100%;bottom:2px;height:2px"></div>
+			<div id=characterimage></div>
+		</div>
+
+		
+		<div id="statshidden">
+			<table cellspacing=0 cellpadding=0>
+				<colgroup>
+					<col style="14px">
+					<col style="width:80px">
+					<col style="14px">
+				</colgroup>
+				<tr>
+					<td class=blackbg></td>
+					<td class=black style="font-size:9pt;padding-top:5px">
+						<a href="javascript:togglestats()">Show Stats</a>
+					</td>
+					<td class=rightside></td>
+				</tr>
+				<tr>
+					<td class=bottomside colspan=2></td>
+					<td class=bottomright colspan=1></td>
+				</tr>
+			</table>
+		</div>
+		<div id="statsthinger" style="display:none">
+			<table cellspacing=0 cellpadding=0>
+				<colgroup>
+					<col style="width:14px">
+					<col style="width:250px">
+					<col style="width:14px">
+					<col style="width:250px">
+					<!--System:IfFeature:Forum-->
+						<col style="width:14px">
+						<col style="width:344px">
+					<!--System:EndIffeature-->
+					<col style="width:14px">
+				</colgroup>
+				<tr>
+					<td class=top colspan=4></td>
+					<!--System:ifFeature:Forum-->
+						<td class=top colspan=2></td>
+					<!--System:EndIfFeature-->
+					<td class=stattopright></td>
+				</tr>
+				<tr>
+					<td class="blackbg">
+					<td class="topside statlabel">Next 5 Events</td>
+					<td class="blackbg"></td>
+					<td class="topside statlabel">Statistics</td>
+					<!--System:IfFeature:Forum-->
+						<td class="blackbg"></td>
+						<td class="topside statlabel">Popular Threads</td>
+					<!--System:EndIfFeature-->
+					<td class="rightside"></td>
+				</tr>
+				<tr>
+					<td class=blackbg></td>
+					<td class=black style="font-size:9pt"><!--System:Next5Events--></td>
+					<td class=blackbg></td>
+					<td class=black style="font-size:9pt"><!--System:TopStats--></td>
+					<!--System:IfFeature:Forum-->
+						<td class=blackbg></td>
+						<td class=black style="font-size:9pt"><!--System:PopularThreads--></td>
+					<!--System:EndIfFeature-->
+					<td class=rightside></td>
+				</tr>
+				<tr>
+					<td class=black colspan=3></td>
+					<!--System:IfFeature:Forum-->
+						<td class=black colspan=2></td>
+					<!--System:EndIfFeature-->
+					<td class=black style="text-align:right;font-size:9pt">
+						<br />
+						<a href="javascript:togglestats()">Hide Stats</a>
+					</td>
+					<td class=rightside></td>
+				</tr>
+				<tr>
+					<td class=bottomside></td>
+					<td colspan=3 class=bottomside></td>
+					<!--System:IfFeature:Forum-->
+						<td colspan=2 class=bottomside></td>
+					<!--System:EndIfFeature-->
+					<td class=bottomright></td>
+				</tr>
+			</table>
+		</div>
+
+		<table id=maincontent style="width: 99%" cellpadding="0" cellspacing=0 align=center>
+			<colgroup>
+				<!--System:IfMenus:Left:Menu-->
+					<col style="width:14px">
+					<col style="width:220px">
+				<!--System:EndIfMenus-->
+				<col style="width:14px">
+				<col>
+				<col style="width:14px">
+				<!--System:IfMenus:Right:Menu-->
+					<col style="width:220px">
+					<col style="width:14px">
+				<!--System:EndIfMenus-->
+			</colgroup>
+			<tr>
+				<!--System:IfMenus:Left:Menu-->
+					<td class=topleft></td>
+					<td class=topside></td>
+				<!--System:EndIfMenus-->
+				<td class=contenttopleft></td>
+				<td class=contenttop><!--System:Title--></td>
+				<td class=contenttopright></td>
+				<!--System:IfMenus:Right:Menu-->
+					<td class=topside></td>
+					<td class=topright></td>
+				<!--System:EndIfMenus-->
+			</tr>
+			<tr valign=top style="vertical-align:top">
+				<!--System:IfMenus:Left:Menu-->
+					<td class=leftside></td>
+					<td class="black leftmenu" style="text-align:center">
+						<!--System:Menus:Left:Menu-->
+					</td>
+				<!--System:EndIfMenus-->
+				<td class=contentleft></td>
+				<td style="vertical-align:top;" class=black>
+					<div class=description><!-- System:PageDesc --></div>
+					<br />
+					<!-- System:Content -->
+					<br>
+					<center style="font-size:9pt">
+						<!--System:Copyright-->
+					</center>
+				</td>
+				<td class=contentright></td>
+				<!--System:IfMenus:Right:Menu-->
+					<td class="black rightmenu" style="padding-left:10px">
+						<!--System:Menus:Right:Menu-->
+					</td>
+					<td class=rightside></td>
+				<!--System:EndIfMenus-->
+			</tr>
+			<tr>
+				<!--System:IfMenus:Left:Menu-->
+					<td class=bottomleft></td>
+					<td class=bottomside></td>
+				<!--System:EndIfMenus-->
+				<td class=contentbottomleft></td>
+				<td class=contentbottom></td>
+				<td class=contentbottomright></td>
+				<!--System:IfMenus:Right:Menu-->
+					<td class=bottomside></td>
+					<td class=bottomright></td>
+				<!--System:EndIfMenus-->
+			</tr>
+		</table>
+	</body>
+</html>

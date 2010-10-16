@@ -1,0 +1,223 @@
+/* CSS Document */
+
+/* used when [quote] tags are used in posts */
+.quote{
+		font-size: 7.5pt;
+}
+
+/* Most tables use this type    */
+.List, .list{
+	border-collapse: collapse;
+	margin-top: 10px;
+	text-align: left;
+	background: #FFFFFF;
+	border: 1px solid #000000;
+}
+
+/* The header bar of tables that act as lists */
+.listlabel{
+	font-size: 9pt;
+	font-weight: bold;
+	color: #393939;
+	background: #EEEEEE;
+	padding: 5px;
+}
+
+/* used on almost every page, is the style of one of the row-types in a table with alternating row types */
+.list1,.l1{
+		font-size: 9pt;
+		padding: 5px;
+		background: #FFFFFF;
+}
+
+/* used on almost every page, is the style of the other of the row-types in a table with alternating row types */
+.list2,.l2{
+		font-size: 9pt;
+		padding: 5px;
+		background: #FFFFFF;
+}
+
+/* used commonly, is for rows that want to "Get Your attention" in a table.  IE, Missing Raids on your member profile. */
+.listred,.lr{
+		background: #FF9999;
+		color: #000000;
+		padding: 5px;
+		font-size: 9pt;
+}
+
+/* used to mark a "new or recently posted" thread. */
+.newlist1,.newl1{
+		background: #FFECB5;
+		font-weight:bold;
+		padding: 5px;
+		font-size: 9pt;
+}
+
+.newlist2,.newl2{
+		background: #FFECB5;
+		font-weight:bold;
+		padding: 5px;
+		font-size: 9pt;
+}
+
+
+/* used for the newsletter table */
+table.newsletter{
+		border: 1px solid #000000;
+		font-family: monospace;
+		font-size: 9pt;
+}
+
+/* This is used with [title] tags in guides and posts */
+.GuideTitle{
+		font-weight:bold;
+		font-size: 16pt;
+		color: #000000;
+}
+
+		
+/* used with [subtitle] tags in guides and posts */
+.GuideSubTitle{
+		font-weight:bold;
+		font-size: 11pt;
+		color: #3E3F43;
+}
+
+
+/* Error box description */
+table.error{
+	border: 1px solid #FFFFFF;
+}
+
+/* Error box description */
+td.error,.missing,div.error{	
+		font-size: 9pt;
+		background: #771111;
+		color: #FFFFFF;
+}
+
+/* Error box title */
+.errorlistlabel{
+		background:#BB1111;
+		font-weight:bold;
+		color:#FFFFFF;
+		font-size: 11pt;
+}
+
+
+/* used in a few places to just define a normal place to put simple kinda-small text */
+.plain{
+		font-size: 9pt;
+}
+
+/* to define small text in random places */
+.xsmall{
+		font-size: 7.5pt;
+}
+
+
+/* Calendar Header, and the current date on the calendar */
+.calheader{ /* extends from .MenuCat */
+	font-size: 9pt;
+	font-weight: bold;
+	color: #393939;
+	text-align: center;
+	background: #EEEEEE;
+
+}
+
+a.calheader {
+	border: none;
+}
+
+/* The body for the calendar */
+.calbody{
+	font-size: 9pt;
+}
+
+/* Current day in the calendar */
+.calcurrent {
+	font-size: 7.5pt;
+	color: #FFFFFF;
+	background: #DFDFDF;
+	border: 1px solid #AEB7C8;
+}
+
+.calcurrent a:link, .calcurrent a:visited {
+	color: #F25F02; 
+	text-decoration: none;
+}
+
+.calcurrent a:active, .calcurrent a:hover {
+	color: #F3AF01;
+	text-decoration: underline;
+}
+
+
+/* The cell record on the calendar for if there is something scheduled this day */
+.calsomething{}
+
+.calsomething a:link, .calsomething a:visited {
+	color: #F25F02; 
+	text-decoration: none;
+}
+
+.calsomething a:active, .calsomething a:hover {
+	color: #F3AF01;
+	text-decoration: underline;
+}
+
+
+
+/* is the information about the poster on the forum.  The left-most pane on each post */
+.PostInfo{
+		font-size: 9pt;
+		background: #FFFFFF;
+		width: 150px;
+		border: 1px solid #000000;
+		border-collapse: collapse;
+}
+
+.PostText{
+		font-size: 9pt;
+		background: #FFFFFF;
+		border: 1px solid #000000;
+		border-collapse: collapse;
+}
+
+		
+/* While rather rarely used, this is the "color picker" popup. Probably shouldn't ever change */
+.cp{
+		width: 10px;
+		height: 10px;
+}
+
+/*  On the forum, this is the little blurb at the top that gives statistic info "Total Posts" "Total Threads" "Deepest Thread" */
+.ThreadHeader{
+		font-size: 11pt;
+}
+	
+/* The style associated with the "Add a Post to this thread" link on the forum */
+.MakeAPost{
+		font-weight: bold;
+		font-size: 11pt;
+}
+
+/* The style associated with the pane in the layout containing the body of each post */
+
+/* used on the [pre] tags in posts and stuff */
+pre{
+		font-size: 11pt;
+}
+
+/* used in on most pages as the buttom class */
+input.button{
+		background: #FFFFFF;
+		color: #000000;
+}
+
+/* used in the default layout as any list items */
+li{
+	list-style-type:disc;
+	list-style-position: inside;
+}

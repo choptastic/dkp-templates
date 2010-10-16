@@ -1,0 +1,477 @@
+<!DOCTYPE HTML SYSTEM>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="/settings/tnb/files/TNB4.css" type="text/css">
+		<link rel="shortcut icon" href="/settings/tnb/icon">
+		<link rel="icon" href="/settings/tnb/icon">
+		<script type="text/javascript" language="JavaScript1.2" src="/settings/tnb/files/stmenu.js"></script>
+		<script type="text/javascript" language="JavaScript1.2" src="/settings/tnb/files/menuscroll.js"></script>
+		<script type="text/javascript" language="JavaScript1.2" src="/settings/tnb/files/showhide.js"></script>
+		<title>The New Beginning - <!-- System:Title --></title>
+	</head>
+	<body>
+
+	<!-- Place Holder for Scrolling Menu at the Top for when it is scrolling-->
+		<span style="margin-left: auto;margin-right: auto;margin: 0;padding: 0;border: 0;background-color:#000000;display:block;">
+			<img src="/settings/tnb/files/spacer.gif" border=0 height="28" width="100%">
+		</span>
+
+	<!-- Scrolling Menu at the Top -->
+		<table id="TopMenu" class="HeaderMenu">
+			<tr>
+				<td>
+					<script type="text/javascript" language="JavaScript1.2" src="/settings/tnb/files/Menu2<!--System:IfRank:3-->Admin<!--System:EndIfRank-->.js"></script>
+				</td>
+			</tr>
+		</table>
+		<img src="http://dkpfiles.com/tnb/files/Grey.gif" height=2px width=100% border=0 style="display:block"alt=""/>
+
+	<!-- Header of the page with the images and the Orc -->
+		<div style="height:288px;border:0;padding:0;margin:0;background-image:url('/settings/tnb/files/HeaderBackground.gif');background-repeat:repeat-x;display:block;">
+			<img src="/settings/tnb/files/Header2.gif" style="border:0;padding:0;margin:0;background-repeat:no-repeat;display:block;" alt=""/>
+		</div>
+
+		<img src="http://dkpfiles.com/tnb/files/Grey.gif" height=2px width=100% border=0 style="display:block"alt=""/>
+		<img src="http://dkpfiles.com/tnb/files/Black.gif" height=2px width=100% border=0 style="display:block" alt=""/>
+		<img src="/settings/tnb/files/Orc3.gif" style="border:0;padding:0;margin:0;background-repeat:no-repeat;display:block;" class="OrcOverlay" alt="OrcOverlay">
+
+	<!--  This starts out hidden and gets displayed when the statistics are shown -->
+		<div id="OrcOverlay2" style="display:none">
+			<img src="/settings/tnb/files/OrcBottom.gif" class="OrcOverlayBottom" alt="OrcOverlayBottom">
+		</div>
+
+
+	<!-- Scrolling marquee that announces next event. -->
+		<script>
+			//set style for NS4 to ''
+			if (document.layers)
+			var ns4def=''
+		</script>
+
+		<table id="Marquee" style="width:100%;" class="Standard" cellpadding="0">
+			<tr>
+				<td>
+					<span class="CountDown" id="flyin" style="position:relative;left:-400;width:100%;"><!--System:CountDown --></span>
+				</td>
+			</tr>
+		</table>
+
+		<script language="JavaScript1.2">
+			if (document.getElementById||document.all)
+				var crossheader=document.getElementById? document.getElementById("flyin").style : document.all.flyin.style
+
+			function animatein(){
+				if (parseInt(crossheader.left)<300)
+					crossheader.left=parseInt(crossheader.left)+20
+				else{
+					crossheader.left=300
+					crossheader.fontStyle="normal"
+					clearInterval(start)
+				}
+			}
+
+			if (document.getElementById||document.all)
+				start=setInterval("animatein()",50)
+		</script>
+
+	<!-- Links for Showing Stastics and for going to bottom of page -->
+		<span style="position:absolute;left:5px;top:297px;" id="ShowStat" style="display:none"><b><a href="javascript:togglestats()">Show Statistics</a></b></span>
+		<span style="position:absolute;left:5px;top:297px;" id="HideStat" style="display:none"><b><a href="javascript:togglestats()">Hide Statistics</a></b></span>
+		<span style="position:absolute;left:150px;top:297px;"><b><a href="#Table_Search">Search Wow Sites</a></b></span>
+
+	<!-- The Statistics that get shown and hidden -->
+		<div id="statsthinger" style="display:none">
+			<table id="Stats" style="width: 900px;" class="Standard" cellpadding="0">
+				<col width=14>
+				<col width=250>
+				<col width=14>
+				<col width=250>
+				<col width=14>
+				<col width=344>
+				<col width=14>
+
+		<!-- Top Graphics -->
+				<tr style="height:28;">
+					<td style="background-image:url('/settings/tnb/files/TopLeftSide.gif');background-repeat:no-repeat;">
+						<img src="/settings/tnb/files/spacer.gif" border=0 height=28 width=12>
+					</td>
+					<td colspan=5 style="background-image:url('/settings/tnb/files/TopSide.gif');background-repeat:repeat-x;">
+						<img src="/settings/tnb/files/spacer.gif" border=0 height=28>
+					</td>
+					<td style="background-image:url('/settings/tnb/files/TopRightSide.gif');background-repeat:no-repeat;">
+						<img src="/settings/tnb/files/spacer.gif" border=0 height=28 width=12>
+					</td>
+				</tr>
+
+		<!-- Statistics Headers -->
+				<tr style="margin-left: auto;margin-right: auto;">
+					<td style="background-image:url('/settings/tnb/files/LeftSide.gif');">
+						<img src="/settings/tnb/files/spacer.gif" border=0 width=14>
+					</td>
+					<td  style="vertical-align:top;" class=TopStats>
+						<span class="WhiteText">Next 5 Events</span><br>
+					</td>
+					<td class="BlackBG">
+						<img src="/settings/tnb/files/spacer.gif" border=0 width=12>
+					</td>
+					<td style="vertical-align:top;" class=TopStats>
+						<span class="WhiteText">Forum Stats</span><br>
+					</td>
+					<td class="BlackBG">
+						<img src="/settings/tnb/files/spacer.gif" border=0 width=12>
+					</td>
+					<td style="vertical-align:top;" class=TopStats>
+						<span class="WhiteText">Popular Threads</span><br>
+					</td>
+					<td style="background-image:url('/settings/tnb/files/RightSide.gif');">
+						<img src="/settings/tnb/files/spacer.gif" border=0 width=12>
+					</td>
+				</tr>
+
+		<!-- Statistics -->
+				<tr>
+					<td style="background-image:url('/settings/tnb/files/LeftSide.gif');">
+
+					</td>
+					<td style="vertical-align:top;margin-left: auto;margin-right: auto;" class="Event">
+						<div style='font-size:10pt'><!--System:Next5Events--></div><br>
+						<a href="forum.php">[Go To Forum]</a> | <a href="http://tnb.dkpsystem.com/feed.rss">[Forum RSS]</a>
+					</td>
+					<td class="BlackBG">
+						<img src="/settings/tnb/files/spacer.gif" border=0 width=14>
+					</td>
+					<td style="vertical-align:top;" class="Event">
+						<!--System:TopStats-->
+					</td>
+					<td class="BlackBG">
+						<img src="/settings/tnb/files/spacer.gif" border=0 width=12>
+					</td>
+					<td style="vertical-align:top;" class="Event">
+						<!--System:PopularThreads-->
+					</td>
+					<td style="background-image:url('/settings/tnb/files/RightSide.gif');">
+						<img src="/settings/tnb/files/spacer.gif" border=0 width=12>
+					</td>
+				</tr>
+
+		<!-- Bottom Graphics -->
+				<tr style="height:38;">
+					<td style="background-image:url('/settings/tnb/files/BottomLeftSide.gif');background-repeat:no-repeat;">
+						<img src="/settings/tnb/files/spacer.gif" border=0 height=38 width=12>
+					</td>
+					<td colspan=5 style="background-image:url('/settings/tnb/files/BottomSide.gif');background-repeat:repeat-x;">
+						<img src="/settings/tnb/files/spacer.gif" border=0 height=38>
+					</td>
+					<td style="background-image:url('/settings/tnb/files/BottomRightSide.gif');background-repeat:no-repeat;">
+						<img src="/settings/tnb/files/spacer.gif" border=0 height=38 width=12>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	<!-- The End of the Statistics that get shown and hidden -->
+
+		<br>
+
+	<!-- The Main Page Goodness here -->
+		<table id="MainBody" style="width: 99%;" class="Standard" cellpadding="0">
+			<col width=14>
+			<col width=153>
+			<col width=14>
+			<col width=14>
+			<col width="*">
+			<col width=14>
+			<col width=14>
+			<col width=171>
+			<col width=14>
+
+	<!-- First Row - Contains Graphics for top of the sections -->
+			<tr style="height:28;">
+				<td style="background-image:url('/settings/tnb/files/TopLeftSide.gif');background-repeat:no-repeat;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 height=28 width=14>
+				</td>
+				<td style="background-image:url('/settings/tnb/files/TopSide.gif');background-repeat:repeat-x;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 height=28>
+				</td>
+				<td style="background-image:url('/settings/tnb/files/TopSide.gif');background-repeat:repeat-x;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 height=28 width=14>
+				</td>
+				<td style="background-image:url('/settings/tnb/files/TopLeft.gif');background-repeat:no-repeat;background-color:#000000;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 height=28 width=14>
+				</td>
+				<td style="background-image:url('/settings/tnb/files/Top.gif');background-repeat:repeat-x;background-color:#000000;" class="Title">
+					<center><div id="pagetitle"><!-- System:Title --></div></center>
+				</td>
+				<td style="background-image:url('/settings/tnb/files/TopRight.gif');background-repeat:no-repeat;background-color:#000000;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 height=28 width=14>
+				</td>
+				<td style="background-image:url('/settings/tnb/files/TopSide.gif');background-repeat:repeat-x;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 height=28 width=14>
+				</td>
+				<td style="background-image:url('/settings/tnb/files/TopSide.gif');background-repeat:repeat-x;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 height=28>
+				</td>
+				<td style="background-image:url('/settings/tnb/files/TopRightSide.gif');background-repeat:no-repeat;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 height=28 width=14>
+				</td>
+			</tr>
+
+	<!-- Second Row - Contains Main Content -->
+			<tr class="BlackBG">
+
+		<!-- Left Side Border Image -->
+				<td style="vertical-align:top;background-image:url('/settings/tnb/files/LeftSide.gif');background-repeat:repeat-y;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 width=14>
+				</td>
+
+		<!-- Left Side Menus -->
+				<td style="vertical-align:top;">
+					<div onclick="toggleMenu2('ServerStatus', 'L1')" class="MenuCat" style="background-image:url('/settings/tnb/files/Menu-HeadOpen2.gif');height:40px;width:200px;" name="L1" id="L1">
+						<center>Server Status</center>
+					</div>
+					<br>
+					<span id="ServerStatus" class="hideMenu">
+						<!--System:Menu:Server Status--><br>
+					</span>
+					<div onclick="toggleMenu2('TNB', 'L2')" class="MenuCat" style="background-image:url('/settings/tnb/files/Menu-HeadOpen2.gif');height:40px;width:200px;" name="L2" id="L2">
+						<center>The New Beginning</center>
+					</div>
+					<br>
+					<span id="TNB" class="hideMenu">
+						<!--System:Menu:The New Beginning--><br>
+					</span>
+					<div onclick="toggleMenu2('Guides', 'L3')" class="MenuCat" style="background-image:url('/settings/tnb/files/Menu-HeadOpen2.gif');height:40px;width:200px;" name="L3" id="L3">
+						<center>Guides</center>
+					</div>
+					<br>
+					<span id="Guides" class="hideMenu">
+						<!--System:Menu:Guides--><br>
+					</span>
+					<div onclick="toggleMenu2('Recruitment', 'L4')" class="MenuCat" style="background-image:url('/settings/tnb/files/Menu-HeadOpen2.gif');height:40px;width:200px;" name="L4" id="L4">
+						<center>Recruitment Status</center>
+					</div>
+					<br>
+					<span id="Recruitment" class="hideMenu">
+						<!--System:Menu:Recruitment Status--><br>
+					</span>
+					<div onclick="toggleMenu2('Ventrilo', 'L5')" class="MenuCat" style="background-image:url('/settings/tnb/files/Menu-HeadOpen2.gif');height:40px;width:200px;" name="L5" id="L5">
+						<center>Ventrilo</center>
+					</div>
+					<br>
+					<span id="Ventrilo" class="hideMenu">
+						<!--System:Menu:ventrilo--><br>
+					</span>
+				</td>
+
+		<!-- Spacer -->
+				<td style="background-image:url('/settings/tnb/files/Black.gif');">
+					<img src="/settings/tnb/files/spacer.gif" border=0 width=14>
+				</td>
+
+		<!-- Left Graphic for center panel -->
+				<td style="background-image:url('/settings/tnb/files/Left.gif');background-repeat:repeat-y;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 width=14>
+				</td>
+
+		<!-- Center panel content -->
+				<td style="vertical-align:top;">
+					<table id="Center" class="Standard" style="width: 100%;">
+						<tr>
+							<td class="Description">
+								<center><font size="2"><!-- System:PageDesc --></font></center>
+							</td>
+						</tr>
+						<tr>
+							<td class=Description>
+								<!-- System:Content -->
+							</td>
+						</tr>
+					</table>
+				</td>
+
+		<!-- Right Graphic for center panel -->
+				<td style="vertical-align:top;background-image:url('/settings/tnb/files/Right.gif');background-repeat:repeat-y;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 width=14>
+				</td>
+
+		<!-- Spacer -->
+				<td style="vertical-align:top;background-image:url('/settings/tnb/files/Black.gif');">
+					<img src="/settings/tnb/files/spacer.gif" border=0 width=14>
+				</td>
+
+		<!-- Right Side Menus -->
+				<td style="vertical-align:top;">
+					<div onclick="toggleMenu2('Login', 'R1')" class="MenuCat" style="background-image:url('/settings/tnb/files/Menu-HeadOpen2.gif');height:40px;width:200px;" name="R1" id="R1">
+						<center>Login</center>
+					</div>
+					<br>
+						<span id="Login" class="hideMenu">
+							<!--System:Login --><br>
+						</span>
+					<div onclick="toggleMenu2('Online', 'R2')" class="MenuCat" style="background-image:url('/settings/tnb/files/Menu-HeadOpen2.gif');height:40px;width:200px;" name="R2" id="R2">
+						<center>Members Online</center>
+					</div>
+					<br>
+						<span id="Online" class="hideMenu">
+							<!--System:Online --><br>
+						</span>
+					<div onclick="toggleMenu2('Calendar', 'R3')" class="MenuCat" style="background-image:url('/settings/tnb/files/Menu-HeadOpen2.gif');height:40px;width:200px;" name="R3" id="R3">
+						<center>Event Calendar</center>
+					</div>
+					<br>
+						<span id="Calendar" class="hideMenu">
+							<!--System:Calendar --><br>
+						</span>
+					<div onclick="toggleMenu2('RaidProgression', 'R4')" class="MenuCat" style="background-image:url('/settings/tnb/files/Menu-HeadOpen2.gif');height:40px;width:200px;" name="R4" id="R4">
+						<center>Raid Progression</center>
+					</div>
+					<br>
+						<span id="RaidProgression" class="hideMenu">
+							<!--System:Menu:Raid Progression --><br>
+						</span>
+					<div onclick="toggleMenu2('Ony', 'R5')" class="MenuCat" style="background-image:url('/settings/tnb/files/Menu-HeadOpen2.gif');height:40px;width:200px;" name="R5" id="R5">
+						<center>World Bosses & Ony</center>
+					</div>
+					<br>
+						<span id="Ony" class="hideMenu">
+							<!--System:Menu:DKP:7 --><br>
+						</span>
+					<div onclick="toggleMenu2('BlackWingLair', 'R6')" class="MenuCat" style="background-image:url('/settings/tnb/files/Menu-HeadOpen2.gif');height:40px;width:200px;" name="R6" id="R6">
+						<center>Black Wing Lair</center>
+					</div>
+					<br>
+						<span id="BlackWingLair" class="hideMenu">
+							<!--System:Menu:DKP:9 --><br>
+						</span>
+					<div onclick="toggleMenu2('Gruul', 'R7')" class="MenuCat" style="background-image:url('/settings/tnb/files/Menu-HeadOpen2.gif');height:40px;width:200px;" name="R7" id="R7">
+						<center>Gruul's Lair</center>
+					</div>
+					<br>
+						<span id="Gruul" class="hideMenu">
+							<!--System:Menu:DKP:10 --><br>
+						</span>
+					<div onclick="toggleMenu2('Karazhan', 'R8')" class="MenuCat" style="background-image:url('/settings/tnb/files/Menu-HeadOpen2.gif');height:40px;width:200px;" name="R8" id="R8">
+						<center>Karazhan</center>
+					</div>
+					<br>
+						<span id="Karazhan" class="hideMenu">
+							<!--System:Menu:DKP:11 --><br>
+						</span>
+				</td>
+				<td style="background-image:url('/settings/tnb/files/RightSide.gif');">
+					<img src="/settings/tnb/files/spacer.gif" border=0 width=14>
+				</td>
+			</tr>
+
+	<!-- Third Row - Contains Graphics for bottom of the sections -->
+			<tr style="height:38;">
+				<td style="background-image:url('/settings/tnb/files/BottomLeftSide.gif');background-repeat:no-repeat;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 height=38 width=14>
+				</td>
+				<td style="background-image:url('/settings/tnb/files/BottomSide.gif');background-repeat:repeat-x;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 height=38>
+				</td>
+				<td style="background-image:url('/settings/tnb/files/BottomSide.gif');background-repeat:repeat-x;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 height=38 width=14>
+				</td>
+				<td style="background-image:url('/settings/tnb/files/BottomLeft.gif');background-repeat:no-repeat;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 height=38 width=14>
+				</td>
+				<td style="background-image:url('/settings/tnb/files/Bottom.gif');background-repeat:repeat-x;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 height=38>
+				</td>
+				<td style="background-image:url('/settings/tnb/files/BottomRight.gif');background-repeat:no-repeat;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 height=38 width=14>
+				</td>
+				<td style="background-image:url('/settings/tnb/files/BottomSide.gif');background-repeat:repeat-x;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 height=38 width=14>
+				</td>
+				<td style="background-image:url('/settings/tnb/files/BottomSide.gif');background-repeat:repeat-x;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 height=38>
+				</td>
+				<td style="background-image:url('/settings/tnb/files/BottomRightSide.gif');background-repeat:no-repeat;">
+					<img src="/settings/tnb/files/spacer.gif" border=0 height=38 width=14>
+				</td>
+			</tr>
+		</table>
+
+	<!-- The End of the Main Page Goodness -->
+
+		<br>
+
+	<!-- Get FireFox -->
+		<center>
+			<a target=new href="http://getfirefox.com/" title="Get Firefox - The Browser, Reloaded."><img src="/settings/tnb/files/Firefox.gif" border=0 alt="Get Firefox"></a>
+		</center>
+
+		<br>
+		<br>
+
+	<!-- Search Section -->
+	<table id="Table_Search" class="Standard" cellpadding="0">
+		<col width=14>
+		<col width=300>
+		<col width=300>
+		<col width=300>
+		<col width=300>
+		<col width=14>
+		<tr style="height:28;">
+			<td style="background-image:url('/settings/tnb/files/TopLeftSide2.gif');background-repeat:no-repeat;">
+				<img src="/settings/tnb/files/spacer.gif" border=0 height=28 width=12>
+			</td>
+			<td colspan=4 style="background-image:url('/settings/tnb/files/TopSide.gif');background-repeat:repeat-x;">
+				<img src="/settings/tnb/files/spacer.gif" border=0 height=28>
+			</td>
+			<td style="background-image:url('/settings/tnb/files/TopRightSide2.gif');background-repeat:no-repeat;">
+				<img src="/settings/tnb/files/spacer.gif" border=0 height=28 width=12>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-image:url('/settings/tnb/files/LeftSide.gif');">
+				<img src="/settings/tnb/files/spacer.gif" border=0 height=28 width=12>
+			</td>
+			<td class="BlackBG">
+				<form name="sa" action="http://wow.allakhazam.com/search.html" method="get" style="margin-top:0;margin-right:0;margin-left:0;">
+				<img src="/settings/tnb/files/blank.gif" width=20px height=28px alt=""><img src="/settings/tnb/files/Alla.gif" alt="Search Allakhazam's" style="width: 110px;height: 32px;">
+				<input type="text" name="q" style="border: 1px solid black; width: 80px;"/>
+				<input type="submit" value="Go"/></form>
+			</td>
+			<td class="BlackBG">
+				<form name="stb" action="http://www.thotbott.com/?s=" method="get" style="margin-top:0;margin-right:0;margin-left:0;">
+				<img src="/settings/tnb/files/blank.gif" style="width:30px;height:28px;" alt=""><img src="/settings/tnb/files/Thottbot.jpg" alt="Search Thottbot" style="width: 100px;height: 28px;">
+				<input type=text name="s" style="border: 1px solid black; width: 80px;">
+				<input type=submit value="Go"/></form>
+			</td>
+			<td class="BlackBG">
+				<form name="swh" action="http://www.wowhead.com" method="get" style="margin-top:0;margin-right:0;margin-left:0;">
+				<img src="/settings/tnb/files/blank.gif" style="width:47px;height:28px;" alt=""><img src="/settings/tnb/files/WowHead.gif" alt="Search Wow Head" style="width: 83px;height: 41px;">
+				<input type=text name="search" style="border: 1px solid black; width: 80px;">
+				<input type=submit value="Go"/></form>
+			</td>
+			<td class="BlackBG">
+				<form name="swh" action="http://www.wowwiki.com/Special:Search?ns0=1&amp;search=" method="get" style="margin-top:0;margin-right:0;margin-left:0;">
+				<img src="/settings/tnb/files/Wiki.gif" alt="Search Wowwiki" style="width: 130px;height: 29px;">
+				<input type=text name="search" style="border: 1px solid black; width: 80px;">
+				<input type=submit value="Go"/></form>
+			</td>
+			<td style="background-image:url('/settings/tnb/files/RightSide.gif');">
+				<img src="/settings/tnb/files/spacer.gif" border=0 height=28 width=12>
+			</td>
+		</tr>
+		<tr style="height:38;">
+			<td style="background-image:url('/settings/tnb/files/BottomLeftSide.gif');background-repeat:no-repeat;">
+				<img src="/settings/tnb/files/spacer.gif" border=0 height=38 width=12>
+			</td>
+			<td colspan=4 style="background-image:url('/settings/tnb/files/BottomSide.gif');background-repeat:repeat-x;">
+				<img src="/settings/tnb/files/spacer.gif" border=0 height=38>
+			</td>
+			<td style="background-image:url('/settings/tnb/files/BottomRightSide.gif');background-repeat:no-repeat;">
+				<img src="/settings/tnb/files/spacer.gif" border=0 height=38 width=12>
+			</td>
+		</tr>
+	</table>
+
+	<!-- End Search Section -->
+	</body>
+</html>
