@@ -2,7 +2,7 @@
 BODY,.body {	cursor: default;
 		font-family: Georgia, Times New Roman, Times;
 		font-size: 9pt;
-		background-image: url(http://dkpfiles.com/dkp-templates/orc/background.jpg);
+		background-image: url(http://dkpfiles.com/dkp-templates/cataworgen/background.jpg);
 		margin: 0;
 		padding: 0;
 		background-color: #000000;
@@ -78,7 +78,7 @@ Table.Subject{
 
 /* Is essentially the background information for the Next Event. */
 .content{	background: #000000;
-		background-image:url('http://dkpfiles.com/dkp-templates/orc/page-bg.jpg');
+		background-image:url('http://dkpfiles.com/dkp-templates/cataworgen/page-bg.jpg');
 		font-size:9pt;}
 		
 /* Error box description */
@@ -153,7 +153,7 @@ td.error,.missing,div.error{
 .listlabel{
 		font-size: 9pt;
 		font-weight: bold;
-		background: #330000 url(http://dkpfiles.com/dkp-templates/orc/listlabel.gif);
+		background: #330000 url(http://dkpfiles.com/dkp-templates/cataworgen/listlabel.gif);
 		color: #FFFFFF;
 		border-style:solid;
 		border-width:1px;
@@ -270,7 +270,7 @@ li{
 	top:18px;
 	height:298px;
 	width:321px;
-	background:url(http://dkpfiles.com/dkp-templates/orc/Orc3.gif);
+	background:url(http://dkpfiles.com/dkp-templates/cataworgen/cataworgen3.gif);
 	z-index:300;
 }
 
@@ -298,7 +298,7 @@ li{
 
 .topleft
 {
-	background:url(http://dkpfiles.com/dkp-templates/orc/TopLeftSide.gif) no-repeat;
+	background:url(http://dkpfiles.com/dkp-templates/cataworgen/TopLeftSide.gif) no-repeat;
 	width:14px;
 	height:28px;
 	padding:0px;
@@ -307,7 +307,7 @@ li{
 
 .topright
 {
-	background:url(http://dkpfiles.com/dkp-templates/orc/TopRightSide.gif) no-repeat;
+	background:url(http://dkpfiles.com/dkp-templates/cataworgen/TopRightSide.gif) no-repeat;
 	width:14px;
 	height:28px;
 	padding:0px;
@@ -317,31 +317,31 @@ li{
 
 .contenttopleft
 {
-	background:url(http://dkpfiles.com/dkp-templates/orc/TopLeft.gif) no-repeat;
+	background:url(http://dkpfiles.com/dkp-templates/cataworgen/TopLeft.gif) no-repeat;
 	width:14px;
 	height:28px;
 }
 
 .contenttopright
 {
-	background:url(http://dkpfiles.com/dkp-templates/orc/TopRight.gif) no-repeat;
+	background:url(http://dkpfiles.com/dkp-templates/cataworgen/TopRight.gif) no-repeat;
 	width:14px;
 	height:28px;
 }
 
 .contentleft
 {
-	background:url(http://dkpfiles.com/dkp-templates/orc/Left.gif) repeat-y;
+	background:url(http://dkpfiles.com/dkp-templates/cataworgen/Left.gif) repeat-y;
 }
 
 .contentright
 {
-	background:url(http://dkpfiles.com/dkp-templates/orc/Right.gif) repeat-y;
+	background:url(http://dkpfiles.com/dkp-templates/cataworgen/Right.gif) repeat-y;
 }
 
 .contenttop
 {
-	background:url(http://dkpfiles.com/dkp-templates/orc/Top.gif) repeat-x;
+	background:url(http://dkpfiles.com/dkp-templates/cataworgen/Top.gif) repeat-x;
 	height:28px;
 	color:#ffffff;
 	font-size:12pt;
@@ -352,7 +352,7 @@ li{
 
 .topside
 {
-	background:url(http://dkpfiles.com/dkp-templates/orc/TopSide.gif) repeat-x;
+	background:url(http://dkpfiles.com/dkp-templates/cataworgen/TopSide.gif) repeat-x;
 	height:28px;
 	padding:0px;
 	margin:0px;
@@ -361,7 +361,7 @@ li{
 
 .leftside
 {
-	background:url(http://dkpfiles.com/dkp-templates/orc/LeftSide.gif) repeat-y;
+	background:url(http://dkpfiles.com/dkp-templates/cataworgen/LeftSide.gif) repeat-y;
 	width:14px;
 	padding:0px;
 	margin:0px;
@@ -370,7 +370,7 @@ li{
 
 .rightside
 {
-	background:url(http://dkpfiles.com/dkp-templates/orc/RightSide.gif) repeat-y;
+	background:url(http://dkpfiles.com/dkp-templates/cataworgen/RightSide.gif) repeat-y;
 	width:14px;
 	padding:0px;
 	margin:0px;
@@ -401,7 +401,7 @@ li{
 
 .bottomleft
 {
-	background:url(http://dkpfiles.com/dkp-templates/orc/BottomLeftSide.gif) no-repeat;
+	background:url(http://dkpfiles.com/dkp-templates/cataworgen/BottomLeftSide.gif) no-repeat;
 	width:14px;
 	height:38px;
 	padding:0px;
@@ -411,21 +411,21 @@ li{
 
 .contentbottomleft
 {
-	background:url(http://dkpfiles.com/dkp-templates/orc/BottomLeft.gif) no-repeat;
+	background:url(http://dkpfiles.com/dkp-templates/cataworgen/BottomLeft.gif) no-repeat;
 	width:14px;
 	height:38px;
 }
 
 .contentbottomright
 {
-	background:url(http://dkpfiles.com/dkp-templates/orc/BottomRight.gif) no-repeat;
+	background:url(http://dkpfiles.com/dkp-templates/cataworgen/BottomRight.gif) no-repeat;
 	width:14px;
 	height:38px;
 }
 
 .bottomside
 {
-	background:url(http://dkpfiles.com/dkp-templates/orc/BottomSide.gif) repeat-x;
+	background:url(http://dkpfiles.com/dkp-templates/cataworgen/BottomSide.gif) repeat-x;
 	height:38px;
 	padding:0px;
 	margin:0px;
@@ -449,7 +449,7 @@ li{
 
 .contentbottom
 {
-	background:url(http://dkpfiles.com/dkp-templates/orc/Bottom.gif) repeat-x;
+	background:url(http://dkpfiles.com/dkp-templates/cataworgen/Bottom.gif) repeat-x;
 	height:38px;
 	padding:0px;
 	margin:0px;
@@ -457,7 +457,7 @@ li{
 
 .bottomright
 {
-	background:url(http://dkpfiles.com/dkp-templates/orc/BottomRightSide.gif) no-repeat;
+	background:url(http://dkpfiles.com/dkp-templates/cataworgen/BottomRightSide.gif) no-repeat;
 	width:14px;
 	height:38px;
 	padding:0px;
@@ -493,7 +493,7 @@ ul.tabrow{margin-left:10px;}
 ul.tabrow li{list-style-image:none;float:left;margin-right: 3px;text-align:center;font-size:inherit}
 ul.tabrow a{float:left;width:8em;padding: 5px 0;background-color:#000000}
 ul.tabrow a:hover {background-color:#262626;}
-ul.tabrow li.selected a,ul.tabrow li.selected a:hover {background:#330000 url(http://dkpfiles.com/dkp-templates/orc/listlabel.gif)}
+ul.tabrow li.selected a,ul.tabrow li.selected a:hover {background:#330000 url(http://dkpfiles.com/dkp-templates/cataworgen/listlabel.gif)}
 
 
 /* The next rules (all preceded with bigcal) are for the "Big Calendar" (bigcalendar.php) */
@@ -502,10 +502,10 @@ ul.tabrow li.selected a,ul.tabrow li.selected a:hover {background:#330000 url(ht
 .bigcal {width:100%;border-style:inset;border-width:1px;}
 
 /* This is the header of the calendar, displaying the month and year, and the links to the next months */
-.bigcalheader{font-size:16pt;font-weight:bold;background: #330000 url(http://dkpfiles.com/dkp-templates/orc/listlabel.gif);color:#FFFFFF}
+.bigcalheader{font-size:16pt;font-weight:bold;background: #330000 url(http://dkpfiles.com/dkp-templates/cataworgen/listlabel.gif);color:#FFFFFF}
 
 /* Day Labels "Sunday" "Monday" etc */
-.bigcaldayheader{font-size:10pt;font-weight:bold;background: #330000 url(http://dkpfiles.com/dkp-templates/orc/listlabel.gif);color:#FFFFFF}
+.bigcaldayheader{font-size:10pt;font-weight:bold;background: #330000 url(http://dkpfiles.com/dkp-templates/cataworgen/listlabel.gif);color:#FFFFFF}
 
 /* This is the class for each day */
 .bigcalday {width:14%;border-style:solid;border-width:1px;height:100px;background: #291f13;border-color:#FFCC33}
