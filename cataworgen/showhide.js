@@ -15,18 +15,16 @@ function setCookie( name, value, expires, path, domain, secure ) {
 
 
 function toggleMenu2(menu) {
-	var headerimg = "L" + menu;
-	var menucontents = "M" + menu;
-	var ob = document.getElementById(menucontents).style;
-	var status = "";
+	var headerimg = dge("L" + menu);
+	var ob = dge("M" + menu);
 
-	if (ob.display == 'none') {
-		ob.display = 'block';
-		document.getElementById(headerimg).style.background="url(http://dkpfiles.com/dkp-templates/orc/Menu-HeadOpen2.gif)";
+	if (jq(headerimg).hasClass("MenuClosed")) {
+		jq(ob).slideDown(300);
+		jq(headerimg).removeClass("MenuClosed").addClass("MenuOpen");
 		setCookie(menu, true, 365);
 	} else {
-		ob.display = 'none';
-		document.getElementById(headerimg).style.background="url(http://dkpfiles.com/dkp-templates/orc/Menu-HeadClosed2.gif)";
+		jq(ob).slideUp(300);
+		jq(headerimg).removeClass("MenuOpen").addClass("MenuClosed");
 		setCookie(menu, false, 365);
 	}
 }
@@ -41,14 +39,12 @@ function readCookies(e) {
 			if(parts[1]!='true')
 				if(dge("M" + parts[0]))
 				{
-					dge("L" + parts[0]).style.background="url(http://dkpfiles.com/dkp-templates/orc/Menu-HeadClosed2.gif)";
+					dge("L" + parts[0]).style.background="url(http://dkpfiles.com/dkp-templates/cataworgen/Menu-HeadClosed2.gif)";
 					dge("M" + parts[0]).style.display="none";
 				}
 		}
 	}
 }
 
-if(window.addEventListener)
-	window.addEventListener("load",readCookies,false);
-else if(window.attachEvent)
-	window.attachEvent("onload",readCookies);
+jq_preload(readCookies);
+
