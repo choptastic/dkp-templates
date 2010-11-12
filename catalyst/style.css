@@ -55,7 +55,7 @@ BODY {
 	PADDING-LEFT: 0px;
 	FONT-SIZE: 10pt;
 	BACKGROUND-ATTACHMENT: fixed;
-	BACKGROUND-IMAGE: url('/settings/never/files/background.jpg');
+	BACKGROUND-IMAGE: url('/http://dkpfiles.com/dkp-templates/catalyst/background.jpg');
 	PADDING-BOTTOM: 0px;
 	MARGIN: 0px;
 	COLOR: #d7cea4;
@@ -623,13 +623,13 @@ TEXTAREA {
 	FONT-WEIGHT: bold; FONT-SIZE: 12pt; FONT-FAMILY: Arial, Helvetica; TEXT-DECORATION: none
 }
 .table {
-	BACKGROUND-IMAGE: url('/settings/never/files/rand.gif'); WIDTH: 100%
+	BACKGROUND-IMAGE: url('/http://dkpfiles.com/dkp-templates/catalyst/rand.gif'); WIDTH: 100%
 }
 .tablecategoryline {
 	BACKGROUND-COLOR: #2b2e37
 }
 .tablehead {
-	FONT-WEIGHT: bold; FONT-SIZE: 13px; BACKGROUND-IMAGE: url('/settings/never/files/table_head.gif'); COLOR: #fec254;
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; BACKGROUND-IMAGE: url('/http://dkpfiles.com/dkp-templates/catalyst/table_head.gif'); COLOR: #fec254;
 }
 .tablelinea {
 	BACKGROUND: #000000; COLOR: #d7cea4
@@ -759,11 +759,11 @@ td.row2	{ background-color: #353535; }
 td.row3	{ background-color: #454545; }
 td.rowpic {
 		background-color: #000000;
-		background-image: url(/settings/never/files/cellpic1.gif);
+		background-image: url(/http://dkpfiles.com/dkp-templates/catalyst/cellpic1.gif);
 		background-repeat: repeat-y;
 }
 td.cat,td.catHead,td.catSides,td.catLeft,td.catRight,td.catBottom {
-			background-image: url(/settings/never/files/cellpic1.gif);
+			background-image: url(/http://dkpfiles.com/dkp-templates/catalyst/cellpic1.gif);
 			background-color:#454545; border: #202020; border-style: solid; height: 28px;
 }
 td.cat,td.catHead,td.catBottom {
