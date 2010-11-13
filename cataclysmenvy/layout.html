@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title><!--System:SiteName-->: <!--System:Title--></title>
+		<style>
+			#main_logo{
+				background:url(<!--System:Logo-->) no-repeat top left;
+			}
+			#header{
+				background:url(<!--System:Background-->) repeat-x center top;
+			}
+		</style>
+
+		<link rel="stylesheet" href="<!--System:CSS-->" type="text/css" media="screen" title="normal" />
+		<link rel="shortcut icon" href="http://dkpfiles.com/<!--System:SD-->/icon" />
+	</head>
+	<body>
+		<h1 class="nav"><!--System:SiteName-->: <!--System:Title--></h1>		
+		<div id="header">
+			<h2 class="nav">Main Navigation:</h2>
+			<div id="main_logo"><a href="/news.php" title="<!--System:SiteName-->"><!--System:SiteName--> Homepage</a></div>
+			<ul>
+				<!--System:StartEmbedMenu:Menu-->
+					<!--Menu:StartItemList-->
+						<!--Menu:StartItem-->
+							<li><a href="<!--Menu:Link-->" <!--Menu:Popup-->><span class="outer"><span class="inner"><!--Menu:LinkName--></span></span></a></li>
+						<!--Menu:EndItem-->
+					<!--Menu:EndItemList-->
+				<!--System:EndEmbedMenu-->
+			</ul>
+			<h2 class="nav">Upcoming Event:</h2>
+			<div id=raid><!--System:Countdown--></div>	
+		</div>
+		<div id="body">
+			<div id="left">
+				<!--System:Menus:Left:Menu-->
+				<div class="menu">
+					<div class="header">
+						<div class="top"></div>
+						<div class="text">Statistics</div>
+						<div class="bottom"></div>
+					</div>
+					<div class="menu_body">
+						<!-- System:TopStats -->
+					</div>
+				</div>
+				<!-- System:IfFeature:Forum-->
+				<div class="menu">
+					<div class="header">
+						<div class="top"></div>
+						<div class="text">Popular Threads</div>
+						<div class="bottom"></div>
+					</div>
+					<div class="menu_body">
+						<!-- System:PopularThreads -->
+					</div>
+				</div>
+				<!--System:EndIfFeature-->
+			</div>
+			<div class="outer">
+				<div id="right">
+					<div class="menu">
+						<div class="header">
+							<div class="top"></div>
+							<div class="text">Upcoming Events</div>
+							<div class="bottom"></div>
+						</div>
+						<div class="menu_body">
+							<!-- System:Next5Events -->
+						</div>
+					</div>
+					<!--System:Menus:Right:Menu-->
+				</div>
+				<div class="inner">
+					<div id="center">
+						<div id="content">
+							<div style="text-align: center; font-size: 1.5em;font-weight:bold" id=pagetitle><!-- System:Title --></div>
+							<div style="text-align: center; font-size: 0.9em;"><!-- System:PageDesc --></div>
+							<!-- System:Content -->
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<!-- System:Copyright -->
+		</div>
+	</body>
+</html>
