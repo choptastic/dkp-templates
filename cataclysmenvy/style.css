@@ -362,7 +362,7 @@ table.Menu
 /*** Center Content ***/
 #content
 {
-	padding:     0.7em 0.5em;
+	padding:     0.7em 2em;
 	font-size:   0.8em;
 	font-family: Verdana, sans-serif;
 }
@@ -380,7 +380,11 @@ table.Menu
 {
 	background: #040d15;
 }
+
+span#tradforum > table,
+span#normalforum > table,
 .List,
+.list,
 .listlabel,
 .list1,
 .list2,
