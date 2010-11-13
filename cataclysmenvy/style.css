@@ -221,8 +221,14 @@ a:hover
 {
 	position:    relative;
 	width:       100%;
+	margin-top:8px;
 
 }
+
+.menu:first-child .header {
+	margin-top:0px;
+}
+
 .menu .header .text
 {
 	font-weight: bold;
@@ -296,11 +302,11 @@ a:hover
 }
 #left .menu ul
 {
-	margin:    0px -4px -7px 0;
+	margin:    0px 0 -7px 0;
 }
 #right .menu ul
 {
-	margin:    0px 0 -7px -4px;
+	margin:    0px 0 -7px 0;
 }
 .menu li a
 {
