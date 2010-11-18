@@ -1,0 +1,20 @@
+/* CSS Document */
+
+#wrapper {
+	display: block;
+	height: 366px;
+	width: 900px;
+	background-image: url(undercon-banner.jpg);
+
+	position: absolute;
+	right: 20px;
+	top: 250px;
+}
+
+#wrapper p{
+	display: none;
+	}
+
+body {
+	background-image: url(content-bg.gif);
+}
