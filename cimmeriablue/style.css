@@ -307,10 +307,20 @@ div.content-wrapper	 { background: #c2a374; margin: 0 auto; margin-top: -20px; }
 {
 	background:		#ead8b4;
 	border: 		1px solid #bc9970;
-	color: 			#fff;
-	height: 		25px !important;
 	font-weight:	bold;
 	vertical-align: middle;
+}
+
+div.listlabel {
+	color: 			#1e293d;
+}
+
+.listlabel td a:link, .listlabel td a:visited {
+	color: #c9d4e5;
+}
+
+.listlabel td a:hover, .listlabel td a:active {
+	color: #fff;
 }
 
 #forumthreadsettings table td 
@@ -327,6 +337,7 @@ div.content-wrapper	 { background: #c2a374; margin: 0 auto; margin-top: -20px; }
 	height:			28px;
 	padding: 		0 10px 0 10px;
 	vertical-align:	middle;
+	color: #fff;
 }
 
 .listlabel i
