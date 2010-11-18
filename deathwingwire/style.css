@@ -50,7 +50,7 @@ BODY,.body {
 	margin-right:auto;
 	width:100%;
 	height:204px;
-	background:url(http://dkpfiles.com/dkp-templates/renewalcata/newbanner.gif);
+	background:url(http://dkpfiles.com/dkp-templates/deathwingwire/newbanner.gif);
 	text-align:center;
 	width:100%;
 }
@@ -78,7 +78,7 @@ BODY,.body {
 	position:relative;
 	margin-right:auto;
 	margin-left:auto;
-	background: #333 url(http://dkpfiles.com/dkp-templates/renewalcata/topmenu.png) repeat-x;
+	background: #333 url(http://dkpfiles.com/dkp-templates/deathwingwire/topmenu.png) repeat-x;
 	height:69px;
 	margin-right:180px;
 	margin-left:180px;
@@ -95,7 +95,7 @@ BODY,.body {
 
 #menubarright{
 	position:absolute;
-	background:url(http://dkpfiles.com/dkp-templates/renewalcata/topmenuright.png) no-repeat;
+	background:url(http://dkpfiles.com/dkp-templates/deathwingwire/topmenuright.png) no-repeat;
 	width:300px;
 	height:69px;
 	right:-180px;
@@ -104,7 +104,7 @@ BODY,.body {
 
 #menubarleft {
 	position:absolute;
-	background:url(http://dkpfiles.com/dkp-templates/renewalcata/topmenuleft.png) no-repeat;
+	background:url(http://dkpfiles.com/dkp-templates/deathwingwire/topmenuleft.png) no-repeat;
 	width:300px;
 	height:69px;
 	left:-180px;
@@ -139,7 +139,7 @@ BODY,.body {
 
 /* main information container */
 #main{
-	background: url(http://dkpfiles.com/dkp-templates/renewalcata/bluebg.png);
+	background: url(http://dkpfiles.com/dkp-templates/deathwingwire/bluebg.png);
 	padding: 0px;
 	width: 100%;
 	margin: 2px auto;
@@ -211,7 +211,7 @@ div.Subject, td.Subject{
 
 /* used to define the Menus */	
 .menu {
-	background:url(http://dkpfiles.com/dkp-templates/renewalcata/redbg1.png);
+	background:url(http://dkpfiles.com/dkp-templates/deathwingwire/redbg1.png);
 	border: 1px solid #c33608;
 	margin-bottom: 15px;
 	width: 198px;
@@ -244,7 +244,7 @@ div.Subject, td.Subject{
 
 /* TopStats container */
 #stats{
-	background:url(http://dkpfiles.com/dkp-templates/renewalcata/redbg1.png);
+	background:url(http://dkpfiles.com/dkp-templates/deathwingwire/redbg1.png);
 	border: 1px solid #c33608;
 	margin: 5px auto;
 	display: block;
@@ -293,10 +293,8 @@ div.Subject, td.Subject{
 #footer{
 	font-size: 10px;
 	color: #FFFFFF;
-/*	background-image: url(http://dkpfiles.com/dkp-templates/renewalcata/footer-bg.gif);*/
 	text-align: center;
 	width: 100%;
-/*	border-top: 1px solid #000000;*/
 	padding: 5px 0px;
 	margin: 0px;
 	line-height: 16px;
