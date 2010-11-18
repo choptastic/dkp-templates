@@ -7,10 +7,12 @@
 
 html
 {
-	background: 	#000 url('http://dkpfiles.com/cimmeria/background') no-repeat top center;
 	height: 		100%;
 }
 
+body > center {
+	height:400%;
+}
 
 body
 {
@@ -18,10 +20,6 @@ body
 	font-size:		11px;
 	text-align:		center;
 	height:			100%;
-}
-
-body > center {
-	height:100%;
 }
 
 #body
@@ -722,6 +720,32 @@ table.ttb table
 	height:300px;
 	overflow:auto;
 	font-weight:normal;
+}
+
+
+table.lastitemsreceived * {
+	padding:1px !important;
+	background: none !important;
+}
+
+table.lastitemsreceived a {
+	font-weight:bold !important;
+	padding-top:3px !important;
+}
+
+#pagetitle {
+	width:100%;
+	font-size:12pt;
+	font-weight:bold;
+	text-align:center;
+}
+
+#pagedesc {
+	width:100%;
+	font-size:10pt;
+	font-weight:bold;
+	color:#777;
+	text-align:center;
 }
 
 
