@@ -17,6 +17,11 @@ body
 	color:			#20140C;
 	font-size:		11px;
 	text-align:		center;
+	height:			100%;
+}
+
+body > center {
+	height:100%;
 }
 
 #body
@@ -116,6 +121,7 @@ table.list td {
 	position:	relative;
 	height:		100%;
 	width: 		100%;
+	vertical-align:	top;
 }
 
 #wrapper
