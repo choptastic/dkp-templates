@@ -20,7 +20,7 @@ BODY,.body {
 	cursor: default;
 	font-family: Arial, sans-serif;
 	font-size: 9pt;
-	color: #d6e2e2;
+	color: #9ebaba;
 	margin: 0px;
 	padding: 0px;
 }
@@ -124,7 +124,7 @@ BODY,.body {
 #menubar a:hover, #menubar a:active {
 	color:#000;
 	text-decoration: underline;
-	text-shadow: 0 0 0.3em #900, 0 0 0.3em #900, 0 0 0.3em #900;
+	text-shadow: 0 0 0.3em #df6309, 0 0 0.3em #df6309, 0 0 0.3em #df6309;
 
 }
 
@@ -334,7 +334,7 @@ div.Subject, td.Subject{
 
 /* Basic Link Definition */
 a:link, a:visited {
-	color: #c33608; 
+	color: #df6309; 
 	text-decoration: none;
 }
 
