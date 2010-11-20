@@ -23,6 +23,7 @@ function toggleMenu2(menu) {
 		jq(headerimg).removeClass("MenuClosed").addClass("MenuOpen");
 		setCookie(menu, true, 365);
 	} else {
+		jq(ob).css("height",jq(ob).height() + "px");
 		jq(ob).slideUp(300);
 		jq(headerimg).removeClass("MenuOpen").addClass("MenuClosed");
 		setCookie(menu, false, 365);
@@ -39,12 +40,15 @@ function readCookies(e) {
 			if(parts[1]!='true')
 				if(dge("M" + parts[0]))
 				{
-					dge("L" + parts[0]).style.background="url(http://dkpfiles.com/dkp-templates/cataworgen/Menu-HeadClosed2.gif)";
-					dge("M" + parts[0]).style.display="none";
+					var Cat = dge("L" + parts[0]);
+					var Menu = dge("M" + parts[0]);
+					jq(Cat).removeClass("MenuOpen").addClass("MenuClosed");
+					jq(Menu)
+						.css("height",jq(Menu).height() + "px")
+						.hide();
 				}
 		}
 	}
 }
 
-jq_preload(readCookies);
 
