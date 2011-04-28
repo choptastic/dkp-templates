@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
+<head>
+	<title><!--System:Title--> - <!--System:SiteName--></title>
+	<link rel=icon href="<!--System:Icon-->">
+	<link rel="shortcut icon" href="<!--System:Icon-->">
+
+	<style>
+		body {
+			background-image:url(<!--System:Background-->);
+		}
+	</style>
+
+	<link rel="stylesheet" href="<!--System:CSS-->" type="text/css">
+</head>
+
+<body>
+<div id=topmenu>
+
+	<!--System:StartEmbedMenu:Menu-->
+		<!--Menu:StartItemList-->
+			<!--Menu:StartItem-->
+				&nbsp; <a href="<!--Menu:Link-->" <!--Menu:popup-->><!--Menu:LinkName--></a> &nbsp;
+			<!--Menu:EndItem-->
+		<!--Menu:EndItemList-->
+	<!--System:EndEmbedMenu-->
+</div>
+
+<div class="logo-top">
+	<div class="header">
+		<div id="logo">
+			<img src="<!--System:Logo-->" alt="<!--System:SiteName-->" title="<!--System:SiteName-->" />
+		</div>
+	</div>
+</div>
+
+<div class="topbar">
+	<Table>
+		<tr>
+			<!--System:IfFeature:Forum-->
+				<td class="popularthreads" valign=top><!-- System:PopularThreads --></td>
+			<!--System:EndIfFeature-->
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td class="stats" valign=top><!-- System:TopStats --></td>
+		</tr>
+	</Table>
+</div>
+
+
+<table class = "countdowntable" border="0">
+	<tr valign=top>
+		<td id="content">
+			<div id="wrapper">
+				<div class="border-top">
+					<div class="left"></div>
+					<div class=countdown><!-- System:CountDown --></div>
+					<div class="right"></div>
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>
+
+<table class="content-table" border="0">
+	<tr>
+		<!--System:IfMenus:Left:Menu-->
+			<td valign=top align=left>
+				<!--System:Menus:Left:Menu-->
+			</td>
+		<!--System:EndIfMenus-->
+
+		<td valign=top style="" align=center width="100%">
+			<Table class="tblHdr" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td class="content-top-left">
+						<img src="px.gif" />
+					</td>
+					<td class="content-top-middle">
+						<div id="pagetitle"  class="Subject"><!-- System:Title --></div>
+					</td>
+					<td class="content-top-right" >
+						<img src="px.gif" />
+					</td>
+				</tr>
+			</Table>
+			<Table class="tblHdr" cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="content-mid-left">
+						<img src="px.gif" />
+					</td>
+					<td >
+						<div id="pagedesc" class="SubSubject"><!-- System:PageDesc --></div>
+						<div class="content"> <!-- System:Content --> </div>
+					</td>
+					<td class=content-mid-right>
+						<img src="px.gif" />
+					</td>
+				</tr>
+			</Table>
+			<Table class="tblFdr" cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="content-bottom-left">
+						<img src="px.gif" />
+					</td>
+					<td class="content-bottom-middle">
+						<img src="px.gif" />
+					</td>
+					<td class="content-bottom-right">
+						<img src="px.gif" />
+					</td>
+				</tr>
+			</Table>
+		<td>
+
+		<!--System:IfMenus:Right:Menu-->
+			<td valign=top align=right>
+				<!--System:Menus:Right-->
+			</td>
+		<!--System:EndIfMenus-->
+	</tr>
+</table>
+
+
+</body>
+</html>
+
