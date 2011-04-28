@@ -659,3 +659,574 @@ div.dhtml_ddl_listitem_highlight{
 }
 /* END-DHTML-MENUS */
 
+
+/* Text description, ie "Someone posted to someone's wall" on the menu
+.membercomment_summary {
+}
+
+/* The date of the comment, ie '8 months ago' on the menu */
+.membercomment_date {
+color:#888;
+padding-bottom:4px;
+}
+
+/* The container div of the wall post list on the menu on the menu */
+.membercomment_wall_history {
+height:300px;
+overflow:auto;
+}
+
+
+/* CHARACTER PROFILE PAGE: START */
+
+/* Character Name on character profile page */
+.memberprofile_name {
+	font-size:24pt;
+	font-weight:bold;
+}
+
+/* Level, Race, Class */
+.memberprofile_lrc {
+	font-size:12pt;
+	font-weight:bold;
+}
+
+/* Character server */
+.memberprofile_server {
+	font-size:12pt;
+}
+
+/* Character guild */
+.memberprofile_guild {
+	font-size:18pt;
+}
+
+/* Character rank */
+.memberprofile_rank {
+	font-size:12pt;
+}
+
+/* Character login information */
+#memberprofile_login {
+	font-size:10pt;
+	font-weight:bold;
+	text-align:right;
+}
+
+/* Character "other characters" drop down */
+#memberprofile_login select {
+	font-size:9pt;
+}
+
+/* Link for "Claim this character" */
+.memberprofile_claim {
+	font-weight:bold;
+	font-size:14pt;
+}
+
+/* notification that this character is pending an association with the logged in account */
+.memberprofile_claimed {
+	font-size:10pt;
+}
+
+/* where the profile picture and future pictures go */
+#memberprofile_pics {
+	text-align:center;
+	width:100%;
+}
+
+/* Wrapper on character profile */
+.memberprofile_main {
+	width:100%;
+}
+
+/* profile picture, and gear summar section */
+.memberprofile_picsgear {
+	width:400px;
+	vertical-align:top;
+}
+
+/* Character Wall */
+.memberprofile_wall {
+	padding-left:20px;
+	vertical-align:top;
+}
+
+/* "Delete" link when NOT hovering over a character profile */
+.memberprofile_comment_nohover > .memberprofile_comment_date > a.memberprofile_comment_delete {
+	display:none !important;
+}
+
+/* "Delete" link when hovering over a character profile comment/wall post */
+.memberprofile_comment_hover > .memberprofile_comment_date > a.memberprofile_comment_delete {
+	display:block !important;
+}
+
+/* Wall Post when hovering over */
+.memberprofile_comment_hover {
+	/*border: 1px #777 solid;*/
+}
+
+/* Wall post text */
+.memberprofile_comment_text {
+
+}
+
+/* positioning of the comment "Delete" */
+.memberprofile_comment_delete {
+	float:right;
+}
+
+/* comment post button */
+.memberprofile_post_comment {
+	width:100%;
+	text-align:right;
+}
+
+/* Comment post textarea */
+.memberprofile_post_comment textarea {
+	width:100%;
+	margin-bottom:5px;
+}
+
+/* Individual wall page list */
+.memberprofile_comment_pages {
+	font-size:7pt;
+	text-align:center;
+}
+
+/* Wall post individual comment wrapper */
+.memberprofile_comment_wrapper {
+	width:100%;
+	padding:2px;
+	margin:2px;
+	font-size:9pt;
+}
+
+/* space out the individual conversations */
+#memberprofile_all_comments > .memberprofile_comment_wrapper {
+	margin-bottom:15px;
+}
+
+/* profile comment icon */
+.memberprofile_comment_icon {
+	width:50px;
+	float:left;
+}
+
+/* wall post date */
+.memberprofile_comment_date {
+	margin-top:8px;
+	margin-bottom:8px;
+	font-size:8pt;
+}
+
+/* wall post comment text */
+.memberprofile_comment_text {
+	display:table-cell;
+	width:10000px;
+	margin:5px;
+}
+
+/* profession skills */
+.memberprofile_prof_skills {
+	white-space:nowrap;
+}
+
+/* add profession button */
+.memberprofile_prof_addprof {
+	text-align:center;
+	padding-bottom:10px;
+}
+
+/* profession edit button */
+.memberprofile_prof_edit {
+	text-align:center;
+}
+
+/* tradeskill */
+.memberprofile_prof_skills {
+	margin-bottom:30px;
+}
+
+/* professions table */
+#memberprofile_professions {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* textboxes, buttons, and dropdowns in the profession table */
+#memberprofile_professions input, #memberprofile_professions select {
+	font-size:8pt;
+}
+
+/* Profession div around save button */
+.memberprofile_profession_save {
+	margin-top:10px;
+	text-align:right;
+}
+
+/* profession save button */
+.memberprofile_profession_save input {
+	padding:10px;
+}
+
+
+/* Profile Talent Spec Spacing */
+.memberprofile_talent_spec {
+	padding:20px;
+}
+
+/* Profile pvp table */
+.memberprofile_pvp {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* profile team wrapper */
+.memberprofile_pvp_teamwrapper {
+	border: 1px outset #777;
+	width:180px;
+	padding:10px;
+	margin:10px;
+}
+
+/* center pretty much all text inside divs inside the pvp info page */
+.memberprofile_pvp div {
+	text-align:center;
+}
+
+/* the team header, ie 2v2, 3v3, etc */
+.memberprofile_pvp_header {
+	font-size:18pt;
+	font-weight:bold;
+	padding-bottom:20px;
+}
+
+/* table listing members */
+.memberprofile_pvp_teammembers {
+	width:100%;
+}
+
+/* arena team name */
+.memberprofile_pvp_arenateam {
+	font-size:14pt;
+	height:50px;
+}
+
+/* arena team rating */
+.memberprofile_pvp_rating {
+	font-size:24pt;
+	font-weight:bold;
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+/* arena team record */
+.memberprofile_pvp_record {
+	font-size:18pt;
+	height:30px;
+}
+
+/* graph drop down menu */
+.memberprofile_graph_dropdown {
+	text-align:center;
+}
+
+/* actual graph wrapper */
+.memberprofile_graph {
+	width:450px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* destination for attendance */
+.memberprofile_dkp_attendance {
+}
+
+/* description for the raid snapshot */
+.memberprofile_dkp_attendance_desc {
+	font-size:7pt;
+	color:#777;
+}
+
+/* dkp actvity table */
+.memberprofile_dkp_history {
+	width:100%;
+}
+
+/* any cells in the dkp activity table */
+.memberprofile_dkp_history td {
+	vertical-align:top;
+}
+
+/* any cells in the dkp table that involve points (numbers), right align */
+td.memberprofile_dkp_points {
+	text-align:right;
+}
+
+/* wrapper on the activity filter */
+.memberprofile_dkp_activity_filter {
+	text-align:right;
+}
+
+/* page list on dkp activity */
+.memberprofile_dkp_pages {
+	text-align:center;
+}
+
+/* format if a row is an absent notification */
+.memberprofile_dkp_absent td {
+	color:#888;
+	font-style:italic;
+	font-size:smaller;
+}
+
+/* dkp "Challenge" window ("I was there") */
+.memberprofile_dkp_challenge {
+	text-align:center;
+}
+
+/* textarea inside the dkp challenge window */
+.memberprofile_dkp_challenge textarea {
+	width:100%;
+}
+
+/* text containing the text "Loot Systems" above the list of dkp systems */
+.memberprofile_dkp_system_header {
+	font-size:18pt;
+}
+
+/* Currently active page in dkp activity */
+.memberprofile_pagenum {
+	font-weight:bold;
+}
+
+/* notification of pending challenge, or accepted, rejected */
+.memberprofile_dkp_challenge_status {
+	font-size:smaller;
+}
+
+/* character inventory wrapper */
+.memberprofile_bank_wrapper {
+	width:100%;
+}
+
+/* inventory wrapper cells, just to space out the diferent tables */
+.memberprofile_bank_wrapper > tbody > tr > td {
+	width:33%;
+	padding-left:7px;
+	padding-right:7px;
+}
+
+/* individual inventory sections: Equipped, Bank, Bags */
+.memberprofile_bank_wrapper table {
+	width:90%;
+}
+
+/* inventory edit button */
+.memberprofile_bank_edit {
+	width:100%;
+	text-align:center;
+	padding:10px;
+}
+
+/* header for factions and quests */
+.memberprofile_faction_category, .memberprofile_quest_category {
+	font-size:12pt;
+	font-weight:bold;
+	padding-bottom:20px;
+}
+
+/* list of factions/quests */
+.memberprofile_faction_category_list,.memberprofile_quest_category_list {
+	padding-top:8px;
+	padding-left:30px;
+}
+
+/* faction and quest list tables */
+.memberprofile_faction_category_list table {
+	width:500px;
+}
+
+.memberprofile_quest_category_list table {
+	width:500px;
+}
+
+/* faction name: obvious */
+.memberprofile_faction_name {
+	width:250px;
+}
+
+/* quest name */
+.memberprofile_quest_name {
+	width:250px;
+	font-weight:bold;
+	font-size:larger;
+}
+
+/* quest criteria completed */
+.memberprofile_quest_crit_complete {
+	text-decoration:line-through;
+	color:#777;
+}
+
+/* quest complete header */
+.memberprofile_quest_complete_header {
+	font-weight:bold;
+}
+
+/* quest criteria */
+.memberprofile_quest_criteria {
+	width:250px;
+}
+
+/* faction level: "Exalted" , "Revered" , etc */
+.memberprofile_faction_level {
+	width:125px;
+}
+
+/* numbers of the reputation status */
+.memberprofile_faction_level_nums {
+	width:125px;
+}
+
+/* the "Header Core" is a wrapper for things like character name, realm, level, race, etc */
+.memberprofile_header_core {
+	left:0;
+	top:0;
+	vertical-align:top;
+}
+
+/* This is for custom headers, which show on the right side of the character header */
+.memberprofile_header_custom {
+	font-size:smaller;
+	top:0;
+	vertical-align:bottom;
+	text-align:right;
+}
+
+/* memberprofile header wrapper */
+.memberprofile_header_table {
+	width:100%;
+}
+
+/* customfield label */
+.memberprofile_customfield_field {
+	font-weight:bold;
+}
+
+/* wanted gear edit button */
+#memberprofile_wantedgear_editbutton {
+	text-align:center;
+}
+
+/* dkpprofiler path in windows */
+pre.memberprofile_dkpp_path {
+	font-size:9pt;
+	font-weight:bold;
+}
+
+/* achievement wrapper */
+.memberprofile_cheeves {
+	width:100%;
+}
+
+/* achievement subcat */
+.memberprofile_cheeve_subcat {
+	padding-left:20px;
+	display:none;
+}
+
+/* achievement criteria */
+.memberprofile_cheeve_crit {
+	color:#777;
+}
+
+/* achievement points */
+.memberprofile_cheeve_points {
+	font-size:24pt;
+	font-weight:bold;
+	text-align:center;
+}
+
+/* achievement completion date */
+.memberprofile_cheeve_date {
+	text-align:center;
+}
+ 
+/* achievement */
+.memberprofile_cheeve {
+	font-weight:bold;
+}
+
+/* achievement main parent categories */
+.memberprofile_cheeve_catlist > .memberprofile_cheeve_cat {
+	font-weight:bold;
+	font-size:12pt;
+}
+
+/* achievement subcategories */
+.memberprofile_cheeve_catlist > .memberprofile_cheeve_subcat {
+	font-size:10pt;
+
+}
+
+/* list of achievement categories */
+.memberprofile_cheeve_catlist {
+	width:200px;
+}
+
+/* achievement table */
+.memberprofile_cheeve_list > table {
+	width:100%;
+}
+
+/* header key/attunement not-completed (inside the hover popup) */
+.memberprofile_key_hover_notcompleted {
+	color:red;
+	font-weight:normal;
+}
+
+/* header key/attunement when complete (inside the hover popup) */
+.memberprofile_key_hover_completed {
+	color:green;
+	font-weight:bold;
+}
+
+/* key/attunement link when a key is completed */
+a.memberprofile_key_selected:link, 
+a.memberprofile_key_selected:hover, 
+a.memberprofile_key_selected:visited,
+a.memberprofile_key_selected:active {
+	font-weight:bold;
+	font-size:9pt;
+}
+
+/* key/attunement link when key is not completed. Text slightly smaller, color set to gray */
+a.memberprofile_key_unselected:link,
+a.memberprofile_key_unselected:hover,
+a.memberprofile_key_unselected:visited,
+a.memberprofile_key_unselected:active {
+	font-weight:normal;
+	font-size:8pt;
+	color: #777;
+}
+
+/* CHARACTER PROFILE: END */
+
+
+/* THIS MUST BE SET TO display:none, or the default character profile stylesheet will be loaded automatically */
+#memberprofile_css_tester {
+	display:none;
+}
+
+
+
+
+
+/* THIS MUST BE SET TO display:none, or the default character profile stylesheet will be loaded automatically */
+#memberprofile_css_tester {
+	display:none;
+}
+

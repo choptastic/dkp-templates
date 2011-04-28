@@ -1085,3 +1085,19 @@ a.memberprofile_key_unselected:active {
 	display:none;
 }
 
+
+/* Text description, ie "Someone posted to someone's wall" on the menu
+.membercomment_summary {
+}
+
+/* The date of the comment, ie '8 months ago' on the menu */
+.membercomment_date {
+color:#888;
+padding-bottom:4px;
+}
+
+/* The container div of the wall post list on the menu on the menu */
+.membercomment_wall_history {
+height:300px;
+overflow:auto;
+}
