@@ -639,6 +639,11 @@ ul.tabrow a:hover {background-image:url(http://dkpfiles.com/dkp-templates/wow/li
 		font-size:8pt
 	}
 
+table.lastitemsreceived tr, table.lastitemsreceived td {
+	background: none;
+}
+
+
 /* DHTML-MENUS */
 div.dhtmlddl, div.dhtmlddl *, div.dhtmlcombo, div.dhtmlcombo *{
 	height:16px !important;
@@ -1214,13 +1219,6 @@ a.memberprofile_key_unselected:active {
 }
 
 /* CHARACTER PROFILE: END */
-
-
-/* THIS MUST BE SET TO display:none, or the default character profile stylesheet will be loaded automatically */
-#memberprofile_css_tester {
-	display:none;
-}
-
 
 
 
