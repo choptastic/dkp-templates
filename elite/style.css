@@ -1060,13 +1060,6 @@ a.memberprofile_key_unselected:active {
 /* CHARACTER PROFILE: END */
 
 
-/* THIS MUST BE SET TO display:none, or the default character profile stylesheet will be loaded automatically */
-#memberprofile_css_tester {
-	display:none;
-}
-
-
-
 
 
 /* THIS MUST BE SET TO display:none, or the default character profile stylesheet will be loaded automatically */
