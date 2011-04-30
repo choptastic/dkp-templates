@@ -687,6 +687,12 @@ table.ttb table
 	font-weight:normal;
 }
 
+table.lastitemsreceived td {
+	background: none;
+	padding:0;
+}
+
+
 
 /* DHTML-MENUS */
 div.dhtmlddl, div.dhtmlddl *, div.dhtmlcombo, div.dhtmlcombo *{
@@ -1264,13 +1270,6 @@ a.memberprofile_key_unselected:active {
 }
 
 /* CHARACTER PROFILE: END */
-
-
-/* THIS MUST BE SET TO display:none, or the default character profile stylesheet will be loaded automatically */
-#memberprofile_css_tester {
-	display:none;
-}
-
 
 
 

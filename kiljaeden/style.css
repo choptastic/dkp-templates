@@ -234,7 +234,7 @@ li{
 	font-family:sans-serif;
 	font-weight:bold;
 	color:#ffffff;
-	z-index:500;
+	z-index:1000;
 	text-align:center;
 }
 
@@ -1128,13 +1128,6 @@ a.memberprofile_key_unselected:active {
 }
 
 /* CHARACTER PROFILE: END */
-
-
-/* THIS MUST BE SET TO display:none, or the default character profile stylesheet will be loaded automatically */
-#memberprofile_css_tester {
-	display:none;
-}
-
 
 
 
