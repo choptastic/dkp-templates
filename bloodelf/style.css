@@ -32,7 +32,6 @@ body
 
 #header
 {
-	background: url('http://dkpfiles.com/<!--System:SD-->/background') no-repeat top center;
 	height: 205px;
 	position: relative;
 	text-align: center;
@@ -973,6 +972,13 @@ table.ttb table
 }
 
 
+table.lastitemsreceived td {
+	background:none !important;
+	padding:none !important;
+	height:auto !important;
+}
+
+
 /* DHTML-MENUS */
 div.dhtmlddl, div.dhtmlddl *, div.dhtmlcombo, div.dhtmlcombo *{
 	font-variant:normal !important;
@@ -1555,13 +1561,6 @@ a.memberprofile_key_unselected:active {
 }
 
 /* CHARACTER PROFILE: END */
-
-
-/* THIS MUST BE SET TO display:none, or the default character profile stylesheet will be loaded automatically */
-#memberprofile_css_tester {
-	display:none;
-}
-
 
 
 

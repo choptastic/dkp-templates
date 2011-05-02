@@ -45,7 +45,6 @@ a:hover
 #header
 { 
 	position:    relative;
-	background:  url("http://dkpfiles.com/<!--System:SD-->/background") repeat-x center top;
 	height:      148px;
 	z-index:     2;
 }
@@ -1109,13 +1108,6 @@ a.memberprofile_key_unselected:active {
 }
 
 /* CHARACTER PROFILE: END */
-
-
-/* THIS MUST BE SET TO display:none, or the default character profile stylesheet will be loaded automatically */
-#memberprofile_css_tester {
-	display:none;
-}
-
 
 
 

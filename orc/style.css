@@ -482,7 +482,7 @@ li{
 	font-size:16pt;
 	text-align:center;
 	font-weight:bold;
-	z-index:500;
+	z-index:200;
 }
 
 
@@ -1125,13 +1125,6 @@ a.memberprofile_key_unselected:active {
 }
 
 /* CHARACTER PROFILE: END */
-
-
-/* THIS MUST BE SET TO display:none, or the default character profile stylesheet will be loaded automatically */
-#memberprofile_css_tester {
-	display:none;
-}
-
 
 
 

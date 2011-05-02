@@ -673,6 +673,19 @@ ul.tabrow li.selected a,ul.tabrow li.selected a:hover {background-color:#22224f;
 	overflow:auto;
 }
 
+table.lastitemsreceived tr {
+	background:#132737;
+
+}
+
+table.lastitemsreceived {
+	border-style:inset;
+	border-color:#132737;
+	border-width:1px;
+	width:220px !important;
+
+}
+
 /* DHTML-MENUS */
 div.dhtmlddl, div.dhtmlddl *, div.dhtmlcombo, div.dhtmlcombo *{
 	height:16px !important;
@@ -1249,13 +1262,6 @@ a.memberprofile_key_unselected:active {
 }
 
 /* CHARACTER PROFILE: END */
-
-
-/* THIS MUST BE SET TO display:none, or the default character profile stylesheet will be loaded automatically */
-#memberprofile_css_tester {
-	display:none;
-}
-
 
 
 

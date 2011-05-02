@@ -535,6 +535,11 @@ ul.tabrow li.selected a,ul.tabrow li.selected a:hover {background-color:#191919;
 	overflow:auto;
 }
 
+table.lastitemsreceived tr, table.lastitemsreceived td {
+	background: none;
+}
+
+
 /* DHTML-MENUS */
 div.dhtmlddl, div.dhtmlddl *, div.dhtmlcombo, div.dhtmlcombo *{
 	height:16px !important;
@@ -1113,13 +1118,6 @@ a.memberprofile_key_unselected:active {
 }
 
 /* CHARACTER PROFILE: END */
-
-
-/* THIS MUST BE SET TO display:none, or the default character profile stylesheet will be loaded automatically */
-#memberprofile_css_tester {
-	display:none;
-}
-
 
 
 

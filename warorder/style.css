@@ -544,6 +544,21 @@ textarea{
 	font-family:monospace;
 }
 
+table.lastitemsreceived * {
+	background: none;
+	padding:none;
+}
+
+td.itemsreceivedlink {
+	padding:1px;
+}
+
+td.itemsreceivedinfo {
+	padding: 1px 1px 4px 1px;
+}
+
+
+
 /* DHTML-MENUS */
 div.dhtmlddl, div.dhtmlddl *, div.dhtmlcombo, div.dhtmlcombo *{
 	height:13px !important;
@@ -1134,13 +1149,6 @@ a.memberprofile_key_unselected:active {
 }
 
 /* CHARACTER PROFILE: END */
-
-
-/* THIS MUST BE SET TO display:none, or the default character profile stylesheet will be loaded automatically */
-#memberprofile_css_tester {
-	display:none;
-}
-
 
 
 
