@@ -1354,3 +1354,28 @@ a.memberprofile_key_unselected:active {
 	display:none;
 }
 
+
+
+div.social_button {
+	padding:8px;
+
+}
+iframe.twitter-follow-button {
+	/* This is the twitter follow button, but it 
+	 * loads at 300 pixels wide by default, so this resizes the
+	 * button to max width of the container. */
+	width:100% !important;
+}
+
+/* NOTE: This MUST be set to display:none or the socialbuttons.css file will be loaded by the page */
+#social_css_tester {
+	display:none;
+}
+
+
+
+
+iframe.FB_UI_Hidden {
+	display:none;	/* Facebook widget likes to stretch the page even if it's supposed to be hidden.  This forces it to hide */
+}
+
