@@ -318,6 +318,7 @@ A.inred:hover	{color:#828C8C;}
 	background-repeat:no-repeat;
 	background-position:center center;
 	height:241px;
+	cursor:pointer;
 }
 
 .menucalendar 
