@@ -18,7 +18,7 @@ BODY,.body
 	z-index:50px;
 	text-align:left;
 	top:38px;
-	background:url(http://dkpfiles.com/dkp-templates/swtordominion/coruscantbackground.jpg);
+	background:url(http://dkpfiles.com/dkp-templates/swtorcoruscant/coruscantbackground.jpg);
 }
 
 .headerbot {
@@ -26,12 +26,12 @@ BODY,.body
 	height:6px;
 	width:100%;
 	top:37px;
-	background:url(http://dkpfiles.com/dkp-templates/swtordominion/headerbot.png) repeat-x;
+	background:url(http://dkpfiles.com/dkp-templates/swtorcoruscant/headerbot.png) repeat-x;
 }
 
 div#topmenu
 {
-	background: url("http://dkpfiles.com/dkp-templates/swtordominion/top_menu.png") repeat-x scroll 0 0 transparent;
+	background: url("http://dkpfiles.com/dkp-templates/swtorcoruscant/top_menu.png") repeat-x scroll 0 0 transparent;
 	z-index:200;
 	position:fixed;
 	top:0;
@@ -65,7 +65,7 @@ div#topmenu
 	left:80px;
 	top:30px;
 	position:absolute;
-	background:url(http://dkpfiles.com/dkp-templates/swtordominion/knight.png);
+	background:url(http://dkpfiles.com/dkp-templates/swtorcoruscant/knight.png);
 }
 
 .topbar
@@ -78,7 +78,7 @@ div#topmenu
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 	box-shadow: #4d98c0 0 0 10px;
-	background: url("http://dkpfiles.com/dkp-templates/swtordominion/blue_menu_back.png") repeat scroll 0 0 transparent;
+	background: url("http://dkpfiles.com/dkp-templates/swtorcoruscant/blue_menu_back.png") repeat scroll 0 0 transparent;
 	border: 1px solid #4d98c0;
 }
 
@@ -121,18 +121,18 @@ div#topmenu
 
 .content-top-left img
 {
-	background-image:url(http://dkpfiles.com/dkp-templates/swtordominion/content-top-left.png);
+	background-image:url(http://dkpfiles.com/dkp-templates/swtorcoruscant/content-top-left.png);
 }
 
 .content-top-right img
 {
-	background-image:url(http://dkpfiles.com/dkp-templates/swtordominion/content-top-right.png);
+	background-image:url(http://dkpfiles.com/dkp-templates/swtorcoruscant/content-top-right.png);
 }
 
 
 .content-top-middle 
 {
-	background-image:url(http://dkpfiles.com/dkp-templates/swtordominion/content-top-middle.png);
+	background-image:url(http://dkpfiles.com/dkp-templates/swtorcoruscant/content-top-middle.png);
 	background-repeat:repeat-x;
 }
 
@@ -146,14 +146,14 @@ div#topmenu
 .content-mid-right img, .content-mid-left img 
 {
 	width:95px;
-	background-image:url(http://dkpfiles.com/dkp-templates/swtordominion/content-mid-spacer.png);
+	background-image:url(http://dkpfiles.com/dkp-templates/swtorcoruscant/content-mid-spacer.png);
 	height:100%;
 }
 
 .content-mid-left 
 {
 	width: 95px;
-	background-image:url(http://dkpfiles.com/dkp-templates/swtordominion/content-mid-spacer.png);
+	background-image:url(http://dkpfiles.com/dkp-templates/swtorcoruscant/content-mid-spacer.png);
 	background-repeat: repeat-y;
 }
 
@@ -166,18 +166,18 @@ div#topmenu
 
 .content-bottom-left img
 {
-	background-image:url(http://dkpfiles.com/dkp-templates/swtordominion/content-bottom-left.png);
+	background-image:url(http://dkpfiles.com/dkp-templates/swtorcoruscant/content-bottom-left.png);
 }
 
 .content-bottom-right img
 {
-	background-image:url(http://dkpfiles.com/dkp-templates/swtordominion/content-bottom-right.png);
+	background-image:url(http://dkpfiles.com/dkp-templates/swtorcoruscant/content-bottom-right.png);
 }
 
 .content-bottom-middle 
 {
 	height:51px;
-	background-image:url(http://dkpfiles.com/dkp-templates/swtordominion/content-bottom-middle.png);
+	background-image:url(http://dkpfiles.com/dkp-templates/swtorcoruscant/content-bottom-middle.png);
 	background-repeat:repeat-x;
 }
 
@@ -198,7 +198,7 @@ div#topmenu
     -moz-border-radius: 15px;
     border-radius: 15px;
     box-shadow: #4d98c0 0 0 10px;
-    background: url("http://dkpfiles.com/dkp-templates/swtordominion/blue_menu_back.png") repeat scroll 0 0 transparent;
+    background: url("http://dkpfiles.com/dkp-templates/swtorcoruscant/blue_menu_back.png") repeat scroll 0 0 transparent;
     border: 1px solid #4d98c0;
     padding: 0;
     width: 198px;
