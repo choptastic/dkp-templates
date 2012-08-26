@@ -366,6 +366,17 @@ A.inred:hover	{color:#828C8C;}
 	text-align:center;
 }
 
+/* This is the div that gets clicked to add a new item.  The default image is a plus.  The Overflow:hidden is because IE, for whatever reason, wants to make it higher than the height attribute */
+.bigcalplus{	position:relative;
+		top:2px;
+		float:right;
+		width:10px;
+		height:10px;
+		overflow:hidden;
+		line-height:1px;
+		background-image:url(http://www.dkpsystem.com/plus.gif);
+		cursor:pointer;}		
+
 .bigcalheader {
     font-size: 16pt;
     font-weight: bold;
