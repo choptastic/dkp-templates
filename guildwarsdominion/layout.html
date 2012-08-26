@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
+<head>
+	<title><!--System:Title--> - <!--System:SiteName--></title>
+	<link rel=icon href="<!--System:Icon-->">
+	<link rel="shortcut icon" href="<!--System:Icon-->">
+
+	<style>
+		#logoheader {
+			background-image:url(<!--System:Background-->);
+		}
+	</style>
+
+	<link rel="stylesheet" href="<!--System:CSS-->" type="text/css">
+</head>
+
+<body>
+	<div id=topmenu>
+
+		<!--System:StartEmbedMenu:Menu-->
+			<!--Menu:StartItemList-->
+				<!--Menu:StartItem-->
+					&nbsp; <a href="<!--Menu:Link-->" <!--Menu:popup-->><!--Menu:LinkName--></a> &nbsp;
+				<!--Menu:EndItem-->
+			<!--Menu:EndItemList-->
+		<!--System:EndEmbedMenu-->
+	</div>
+
+
+
+	<div id="logoheader">
+		<div id=logo>
+			<a href="news.php"><img src="<!--System:Logo-->" border=0 /></a>
+		</div>
+		<div id=countdown><!--System:CountDown --></div>
+		<div class="headerbot" style="position:absolute;width:100%;bottom:0px;height:20px;left:0px;"></div>
+	</div>
+
+	<div id=characterimage></div>
+
+	<div id="statshidden">
+			<table cellspacing=0 cellpadding=0>
+				<colgroup>
+					<col style="14px">
+					<col style="width:80px">
+					<col style="14px">
+				</colgroup>
+				<tr>
+					<td class=blackbg></td>
+					<td class=black style="font-size:9pt;padding-top:5px">
+						<a href="javascript:togglestats()">Show Stats</a>
+					</td>
+					<td class=rightside></td>
+				</tr>
+				<tr>
+					<td class=bottomside colspan=2></td>
+					<td class=bottomright colspan=1></td>
+				</tr>
+			</table>
+		</div>
+		<div id="statsthinger" style="display:none">
+			<table cellspacing=0 cellpadding=0>
+				<colgroup>
+					<col style="width:14px">
+					<col style="width:250px">
+					<col style="width:14px">
+					<col style="width:250px">
+					<!--System:IfFeature:Forum-->
+						<col style="width:14px">
+						<col style="width:344px">
+					<!--System:EndIffeature-->
+					<col style="width:14px">
+				</colgroup>
+				<tr>
+					<td class=top colspan=4></td>
+					<!--System:ifFeature:Forum-->
+						<td class=top colspan=2></td>
+					<!--System:EndIfFeature-->
+					<td class=stattopright></td>
+				</tr>
+				<tr>
+					<td class="blackbg">
+					<td class="topside statlabel">Next 5 Events</td>
+					<td class="blackbg"></td>
+					<td class="topside statlabel">Statistics</td>
+					<!--System:IfFeature:Forum-->
+						<td class="blackbg"></td>
+						<td class="topside statlabel">Popular Threads</td>
+					<!--System:EndIfFeature-->
+					<td class="rightside"></td>
+				</tr>
+				<tr>
+					<td class=blackbg></td>
+					<td class=black style="font-size:9pt"><!--System:Next5Events--></td>
+					<td class=blackbg></td>
+					<td class=black style="font-size:9pt"><!--System:TopStats--></td>
+					<!--System:IfFeature:Forum-->
+						<td class=blackbg></td>
+						<td class=black style="font-size:9pt"><!--System:PopularThreads--></td>
+					<!--System:EndIfFeature-->
+					<td class=rightside></td>
+				</tr>
+				<tr>
+					<td class=black colspan=3></td>
+					<!--System:IfFeature:Forum-->
+						<td class=black colspan=2></td>
+					<!--System:EndIfFeature-->
+					<td class=black style="text-align:right;font-size:9pt">
+						<br />
+						<a href="javascript:togglestats()">Hide Stats</a>
+					</td>
+					<td class=rightside></td>
+				</tr>
+				<tr>
+					<td class=bottomside></td>
+					<td colspan=3 class=bottomside></td>
+					<!--System:IfFeature:Forum-->
+						<td colspan=2 class=bottomside></td>
+					<!--System:EndIfFeature-->
+					<td class=bottomright></td>
+				</tr>
+			</table>
+		</div>
+
+	<table class="content-table" border="0">
+	<tr>
+		<!--System:IfMenus:Left:Menu-->
+			<td valign=top align=left>
+				<!--System:Menus:Left:Menu-->
+			</td>
+		<!--System:EndIfMenus-->
+
+		<td valign=top style="" align=center width="100%">
+			<Table class="tblHdr" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td class="content-top-left">
+						<img src="px.gif" />
+					</td>
+					<td class="content-top-middle">
+						<div id="pagetitle"  class="Subject"><!-- System:Title --></div>
+					</td>
+					<td class="content-top-right" >
+						<img src="px.gif" />
+					</td>
+				</tr>
+			</Table>
+			<Table class="tblHdr" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td>
+						<div id="pagedesc" class="SubSubject"><!-- System:PageDesc --></div>
+						<div class="content"> <!-- System:Content --> </div>
+					</td>
+				</tr>
+			</Table>
+			<Table class="tblFdr" cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="content-bottom-left">
+						<img src="px.gif" />
+					</td>
+					<td class="content-bottom-middle">
+						<img src="px.gif" />
+					</td>
+					<td class="content-bottom-right">
+						<img src="px.gif" />
+					</td>
+				</tr>
+			</Table>
+		<td>
+
+		<!--System:IfMenus:Right:Menu-->
+			<td valign=top align=right>
+				<!--System:Menus:Right-->
+			</td>
+		<!--System:EndIfMenus-->
+	</tr>
+</table>
+
+	<center>
+		Part of the
+		<a target="_blank" href="http://www.dkpsystem.com">DKPSystem.com</a>
+		Network.
+	</center>
+
+</body>
+</html>
+
