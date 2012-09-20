@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+xml:lang="en" lang="en">
+
+<head>
+	<title><!--System:SiteName--> - <!-- System:Title --></title>
+	<style>
+		html{
+			background-image:url(<!--System:Background-->);
+		}
+	</style>
+
+	<link rel=icon href="http://dkpfiles.com/<!--System:SD-->/icon">
+	<link rel="shortcut icon" href="http://dkpfiles.com/<!-System:SD-->/icon">
+
+	<link href="<!--System:CSS-->" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<div id="menubar">
+	<div id=menubarmiddle>
+		<div id=menubarleft></div>
+		<div id=menubarright></div>
+		<div id=menutext>
+		<!--System:StartEmbedMenu:Menu-->	
+			<!--Menu:StartItemList-->
+				<!--Menu:StartItem-->
+					<a href="<!--Menu:Link-->" <!--Menu:Popup-->><!--Menu:LinkName--></a> 
+				<!--Menu:EndItem-->
+			<!--Menu:EndItemList-->
+			<!--System:EndEmbedMenu-->
+		</div>
+	</div>
+</div> <!-- #menubar -->
+
+<table id="layoutwrapper">
+	<tr valign=top>
+		<!--System:IfMenus:Left:Menu-->
+			<td id="leftmenuwrapper">
+				<!--System:Menus:Left:Menu-->
+			</td>
+		<!--System:endIfMenus-->
+		<td id="centerwrapper">
+			<div id="wrapper">
+
+				<div id=logowrapper>
+					<a href="news.php"><img src="<!--System:Logo-->" alt="" title="" border=0 /></a>
+				</div>
+					
+				
+				<div id="main">
+					<div class="Subject">
+						<div id="pagetitle"><!-- System:Title --></div>
+						<div id="SubSubject"><!-- System:PageDesc --></div>
+					</div>
+					
+						
+					<div id="content">
+						<div id="ContentArea">
+
+							<!-- System:Content-->
+
+							<div id="stats">
+								<div class="TopStats" id="invisible">
+									<!-- System:TopStats -->
+								</div>
+								<div class="TopStats" id="right">
+									<b>Popular Threads</b><br />
+									<!-- System:PopularThreads -->
+								</div>
+								<div class="TopStats" id="left">					
+									<!-- System:TopStats -->
+								</div>
+
+							</div> <!-- #stats -->
+
+
+						</div> <!-- #ContentArea -->
+
+					</div> <!-- #content -->
+
+					<div id="footer">	
+						<div id="copyright">
+							<!-- System:Copyright -->
+						</div> <!-- #copyright -->
+
+					</div> <!-- #footer -->
+				</div> <!-- #content -->
+
+				
+
+			</div> <!-- #main -->	  
+		</td>
+		<!--System:IfMenus:Right:Menu-->
+			<td id="rightmenuwrapper">
+				<!--System:Menus:Right:Menu-->
+			</td>
+		<!--System:endIfMenus-->
+	</tr>
+</table>
+
+</body>
+</html>
+
